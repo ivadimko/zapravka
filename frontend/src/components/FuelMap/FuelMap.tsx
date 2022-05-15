@@ -8,7 +8,7 @@ import styles from './FuelMap.module.scss';
 
 const containerStyle = {
   width: '100%',
-  height: 'calc(100vh - 90px)',
+  height: '100%',
 };
 
 const center = {
