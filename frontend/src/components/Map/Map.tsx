@@ -89,7 +89,7 @@ export const Map: FC<Props> = (props) => {
             content: station.data.workDescription,
             coordinates: station.data.coordinates,
             name: station.data.name,
-            schedule: Object.values(station.data.schedule[0] ?? []).join(': '),
+            schedule: station.data.schedule[0],
           }))
         }
       />

@@ -62,7 +62,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
   let start = 0;
 
-  const STEP = 15;
+  const STEP = 100;
 
   while (start < data.stations.length) {
     const end = Math.min(start + STEP, data.stations.length);
