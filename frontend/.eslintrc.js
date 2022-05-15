@@ -9,6 +9,8 @@ module.exports = {
     project: `${__dirname}/tsconfig.json`,
   },
   rules: {
+    'react/jsx-key': 'error',
+    '@next/next/no-img-element': 'error',
     'react/function-component-definition': 'off',
     'react/react-in-jsx-scope': 'off',
     'react/jsx-props-no-spreading': 'off',
@@ -28,6 +30,7 @@ module.exports = {
       aspects: ['invalidHref', 'preferButton'],
     }],
     'react-hooks/exhaustive-deps': 'error',
+    'import/extensions': 'off',
   },
   ignorePatterns: [
     '**/*/graphql/generated.ts',
