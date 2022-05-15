@@ -8,6 +8,9 @@ const Home: NextPage = () => {
 
   console.log(a);
 
+
+
+
   return (
     <div className={styles.container}>
       <Head>
