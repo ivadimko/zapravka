@@ -1,6 +1,5 @@
-import { useMemo, useState } from 'react';
+import { FC, useMemo, useState } from 'react';
 import Select, { SingleValue } from 'react-select';
-import stations from '@/data/wog/station-status.json';
 import descriptions from '@/data/wog/descriptions.json';
 import { FuelMap } from '@/components/FuelMap';
 import styles from './Map.module.scss';
@@ -19,7 +18,14 @@ const fuelOptions = [
   { value: 'gas', label: 'Газ' },
 ];
 
-export const Map = () => {
+interface Props {
+  data: Record<string, any>[]
+  updatedAt: string
+}
+
+export const Map: FC<Props> = (props) => {
+  const { data, updatedAt } = props;
+
   const [
     fuel,
     setFuel,
@@ -36,10 +42,10 @@ export const Map = () => {
 
   const stationsToRender = useMemo(() => {
     if (!fuel || !status) {
-      return stations;
+      return data;
     }
 
-    return stations.filter((station) => (
+    return data.filter((station) => (
       Object.entries(station.data.status).some(([fuelName, fuelStatus]) => {
         // @ts-ignore
         const mappedFuel = descriptions.fuelsMap[fuelName];
@@ -50,7 +56,7 @@ export const Map = () => {
         );
       })
     ));
-  }, [fuel, status]);
+  }, [data, fuel, status]);
 
   return (
     <div className={styles.container}>
@@ -87,6 +93,8 @@ export const Map = () => {
           }))
         }
       />
+
+      <p className={styles.updatedAt}>{`Updated at: ${updatedAt}`}</p>
     </div>
   );
 };

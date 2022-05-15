@@ -9,5 +9,20 @@
 }
 
 .container {
-  margin: 1rem;
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-height: fill-available;
+  min-height: -webkit-fill-available;
+}
+
+.mapContainer {
+  flex-grow: 1;
+}
+
+.updatedAt {
+  margin-bottom: 0;
+  text-align: right;
 }
