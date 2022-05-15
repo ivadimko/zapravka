@@ -1,6 +1,7 @@
 module.exports = {
   extends: [
     'next/core-web-vitals',
+    'airbnb',
     'airbnb-typescript',
     'plugin:react-hooks/recommended',
   ],
@@ -8,6 +9,7 @@ module.exports = {
     project: `${__dirname}/tsconfig.json`,
   },
   rules: {
+    'react/function-component-definition': 'off',
     'react/react-in-jsx-scope': 'off',
     'react/jsx-props-no-spreading': 'off',
     'react/prop-types': 'off',

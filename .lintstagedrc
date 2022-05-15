@@ -1,5 +1,5 @@
 {
-  "frontend/*.{js,ts,tsx}": [
+  "frontend/**/*.{js,ts,tsx}": [
     "eslint --fix"
   ],
   "cms/*.{js,ts,tsx}": [
