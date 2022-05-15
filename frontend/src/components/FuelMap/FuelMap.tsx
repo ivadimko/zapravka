@@ -3,6 +3,8 @@ import {
   FC, useCallback, useEffect, useState,
 } from 'react';
 import { Station, StationMarker } from '@/components/FuelMap/StationMarker';
+import { IconTarget } from '@/components/FuelMap/IconTarget';
+import styles from './FuelMap.module.scss';
 
 const containerStyle = {
   width: '100%',
@@ -46,7 +48,13 @@ export const FuelMap: FC<Props> = (props) => {
     setMap(null);
   }, []);
 
-  useEffect(() => {
+  const goToLocation = useCallback(() => {
+    if (userLocation && map) {
+      map.setCenter(userLocation);
+
+      return;
+    }
+
     if (navigator.geolocation && map) {
       navigator.geolocation.getCurrentPosition((position) => {
         const initialLocation = new google.maps.LatLng(
@@ -62,7 +70,11 @@ export const FuelMap: FC<Props> = (props) => {
         map.setCenter(initialLocation);
       });
     }
-  }, [map]);
+  }, [map, userLocation]);
+
+  useEffect(() => {
+    goToLocation();
+  }, [goToLocation]);
 
   useEffect(() => {
     setOpenedStation(-1);
@@ -77,6 +89,14 @@ export const FuelMap: FC<Props> = (props) => {
         onLoad={onLoad}
         onUnmount={onUnmount}
       >
+        <button
+          type="button"
+          className={styles.locationButton}
+          onClick={goToLocation}
+        >
+          <IconTarget />
+        </button>
+
         {userLocation && (
           <Marker
             position={userLocation}

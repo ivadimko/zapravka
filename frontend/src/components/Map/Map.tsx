@@ -13,9 +13,10 @@ const statusOptions = [
 ];
 
 const fuelOptions = [
-  { value: 'Petrol', label: 'Бензин' },
-  { value: 'Diesel', label: 'Дизель' },
-  { value: 'Gas', label: 'Газ' },
+  { value: 'petrol_92', label: 'Бензин А92' },
+  { value: 'petrol', label: 'Бензин А95+' },
+  { value: 'diesel', label: 'Дизель' },
+  { value: 'gas', label: 'Газ' },
 ];
 
 export const Map = () => {
@@ -23,7 +24,7 @@ export const Map = () => {
     fuel,
     setFuel,
   ] = useState<SingleValue<{ label: string, value: string }>>(
-    fuelOptions[0],
+    fuelOptions[1],
   );
 
   const [
