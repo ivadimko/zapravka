@@ -58,31 +58,51 @@ export const getStaticProps: GetStaticProps = async () => {
 
   const result: Record<string, any>[] = [];
 
-  await data.stations.reduce(
-    async (promise: Promise<any>, station: Record<string, any>, i: number) => {
+  const parts = [];
+
+  let start = 0;
+
+  const STEP = 15;
+
+  while (start < data.stations.length) {
+    const end = Math.min(start + STEP, data.stations.length);
+
+    const part = data.stations.slice(start, end);
+
+    parts.push(part);
+
+    start = end;
+  }
+
+  await parts.reduce(
+    async (promise: Promise<any>, part: Record<string, any>[], i: number) => {
       await promise;
 
       // eslint-disable-next-line no-console
-      console.info(`procesing station ${i + 1}/${data.stations.length}`, station.name);
+      console.info(`procesing part ${i + 1}/${parts.length}, ${part.length} items`);
 
-      const stationData = await fetch(station.link)
-        .then((response) => response.json());
+      const temp = await Promise.all(part.map(async (station) => {
+        const stationData = await fetch(station.link)
+          .then((response) => response.json());
 
-      const description = stationData.data.workDescription;
+        const description = stationData.data.workDescription;
 
-      stationData.data.status = {};
+        stationData.data.status = {};
 
-      const rows = description.split('\n');
+        const rows = description.split('\n');
 
-      rows.forEach((row: string) => {
-        const [fuel, status] = row.split(' - ');
+        rows.forEach((row: string) => {
+          const [fuel, status] = row.split(' - ');
 
-        if (fuel && status) {
-          stationData.data.status[fuel] = status;
-        }
-      });
+          if (fuel && status) {
+            stationData.data.status[fuel] = status;
+          }
+        });
 
-      result.push(stationData);
+        return stationData;
+      }));
+
+      result.push(...temp);
     },
     Promise.resolve(),
   );
