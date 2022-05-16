@@ -2,8 +2,9 @@ import { GoogleMap, Marker, useJsApiLoader } from '@react-google-maps/api';
 import {
   FC, useCallback, useEffect, useState,
 } from 'react';
-import { Station, StationMarker } from '@/components/FuelMap/StationMarker';
+import { StationMarker } from '@/components/FuelMap/StationMarker';
 import { IconTarget } from '@/components/FuelMap/IconTarget';
+import { GasStation } from '@/controllers/station/station.typedefs';
 import styles from './FuelMap.module.scss';
 
 const containerStyle = {
@@ -17,7 +18,7 @@ const center = {
 };
 
 interface Props {
-  stations: Station[];
+  stations: Array<GasStation>;
 }
 
 export const FuelMap: FC<Props> = (props) => {

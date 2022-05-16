@@ -1,22 +1,13 @@
 import { InfoWindow, Marker } from '@react-google-maps/api';
 import { FC, useMemo, useState } from 'react';
+import {
+  GasStation,
+  StationStatus,
+} from '@/controllers/station/station.typedefs';
 import styles from './StationMarker.module.scss';
 
-export interface Station {
-  name: string
-  schedule?: {
-    'day': string // 'Сьогодні'
-    'interval': string // '09:00 - 17:00'
-  },
-  content: string
-  coordinates: {
-    latitude: number
-    longitude: number
-  }
-}
-
 interface Props {
-  station: Station
+  station: GasStation
   opened: boolean
   open: () => void
   close: () => void
@@ -32,16 +23,14 @@ export const StationMarker: FC<Props> = (props) => {
   ] = useState<google.maps.MVCObject | null>(null);
 
   const stationStatus = useMemo(() => {
-    if (!station.schedule?.interval) {
-      return 'UNKNOWN';
+    if (!station.schedule) {
+      return StationStatus.Unknown;
     }
 
     const currentDate = new Date();
 
-    const [start, end] = station.schedule.interval.split(' - ');
-
-    const [startH, startM] = start.split(':');
-    const [endH, endM] = end.split(':');
+    const [startH, startM] = station.schedule.opensAt.split(':');
+    const [endH, endM] = station.schedule.closesAt.split(':');
 
     const startDate = new Date(
       currentDate.getFullYear(),
@@ -63,11 +52,11 @@ export const StationMarker: FC<Props> = (props) => {
       currentDate.getTime() >= startDate.getTime()
       && currentDate.getTime() <= endDate.getTime()
     ) {
-      return 'OPENED';
+      return StationStatus.Opened;
     }
 
-    return 'CLOSED';
-  }, [station.schedule?.interval]);
+    return StationStatus.Closed;
+  }, [station.schedule]);
 
   return (
     <>
@@ -75,15 +64,10 @@ export const StationMarker: FC<Props> = (props) => {
         onLoad={(marker) => {
           setMarkerInstance(marker);
         }}
-        key={
-        station.coordinates.latitude + station.coordinates.longitude
-      }
-        position={{
-          lat: station.coordinates.latitude,
-          lng: station.coordinates.longitude,
-        }}
+        key={station.id}
+        position={station.coordinates}
         options={{
-          opacity: stationStatus === 'OPENED' ? 1 : 0.5,
+          opacity: stationStatus === StationStatus.Opened ? 1 : 0.5,
         }}
         onClick={open}
       />
@@ -96,12 +80,12 @@ export const StationMarker: FC<Props> = (props) => {
         >
           <div>
             <p className={styles.title}>{station.name}</p>
-            {station.schedule && (
-              <p>{`${station.schedule.day}: ${station.schedule.interval}`}</p>
+            {station.scheduleString && (
+              <p>{station.scheduleString}</p>
             )}
 
             <p className={styles.description}>
-              {station.content}
+              {station.workDescription}
             </p>
           </div>
         </InfoWindow>

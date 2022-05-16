@@ -1,25 +1,27 @@
 import { FC, useMemo, useState } from 'react';
 import Select, { SingleValue } from 'react-select';
-import descriptions from '@/data/wog/descriptions.json';
 import { FuelMap } from '@/components/FuelMap';
+import { GasStation } from '@/controllers/station/station.typedefs';
+import { FuelStatus, FuelType } from '@/controllers/fuel/fuel.typedefs';
+import { FuelStatusPriority } from '@/controllers/fuel/fuel.constants';
 import styles from './Map.module.scss';
 
 const statusOptions = [
-  { value: 'empty', label: 'Пальне відсутнє' },
-  { value: 'only_critical_vehicles', label: 'Тільки спецтранспорт' },
-  { value: 'available_cash', label: 'Можна купити' },
-  { value: 'available_fuel_cards', label: 'Тільки по талонах' },
+  { value: FuelStatus.Available, label: 'Можна купити' },
+  { value: FuelStatus.AvailableFuelCards, label: 'Тільки по талонах' },
+  { value: FuelStatus.OnlyCriticalVehicles, label: 'Тільки спецтранспорт' },
+  { value: FuelStatus.Empty, label: 'Всі станції' },
 ];
 
 const fuelOptions = [
-  { value: 'petrol_92', label: 'Бензин А92' },
-  { value: 'petrol', label: 'Бензин А95+' },
-  { value: 'diesel', label: 'Дизель' },
-  { value: 'gas', label: 'Газ' },
+  { value: FuelType.Petrol92, label: 'Бензин А92' },
+  { value: FuelType.Petrol, label: 'Бензин А95+' },
+  { value: FuelType.Diesel, label: 'Дизель' },
+  { value: FuelType.Gas, label: 'Газ' },
 ];
 
 interface Props {
-  data: Record<string, any>[]
+  data: Array<GasStation>
   updatedAt: string
 }
 
@@ -29,15 +31,15 @@ export const Map: FC<Props> = (props) => {
   const [
     fuel,
     setFuel,
-  ] = useState<SingleValue<{ label: string, value: string }>>(
+  ] = useState<SingleValue<{ label: string, value: FuelType }>>(
     fuelOptions[1],
   );
 
   const [
     status,
     setStatus,
-  ] = useState<SingleValue<{ label: string, value: string }>>(
-    statusOptions[2],
+  ] = useState<SingleValue<{ label: string, value: FuelStatus }>>(
+    statusOptions[0],
   );
 
   const stationsToRender = useMemo(() => {
@@ -45,17 +47,14 @@ export const Map: FC<Props> = (props) => {
       return data;
     }
 
-    return data.filter((station) => (
-      Object.entries(station.data.status).some(([fuelName, fuelStatus]) => {
-        // @ts-ignore
-        const mappedFuel = descriptions.fuelsMap[fuelName];
+    return data.filter((station) => {
+      const stationPriority = FuelStatusPriority[station.status[fuel.value]];
+      const filterPriority = FuelStatusPriority[status.value];
 
-        return mappedFuel === fuel.value && (
-          // @ts-ignore
-          descriptions.statuses[fuelStatus] === status.value
-        );
-      })
-    ));
+      return (
+        stationPriority >= filterPriority
+      );
+    });
   }, [data, fuel, status]);
 
   return (
@@ -84,14 +83,7 @@ export const Map: FC<Props> = (props) => {
       </div>
 
       <FuelMap
-        stations={
-          stationsToRender.map((station) => ({
-            content: station.data.workDescription,
-            coordinates: station.data.coordinates,
-            name: station.data.name,
-            schedule: station.data.schedule[0],
-          }))
-        }
+        stations={stationsToRender}
       />
 
       <p className={styles.updatedAt}>{`Updated at: ${updatedAt}`}</p>
