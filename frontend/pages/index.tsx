@@ -29,7 +29,6 @@ const Home: NextPage<Props> = (props) => {
           name="description"
           content="Fuel status"
         />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Map
