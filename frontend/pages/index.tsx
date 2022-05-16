@@ -7,6 +7,30 @@ interface Props {
   data: Record<string, any>[]
   revalidated: number
 }
+
+const withRetry = async (
+  action: () => Promise<any>,
+  step = 1,
+): Promise<any> => {
+  if (step === 3) {
+    console.warn(`Failed to fetch after ${step} attempts, return null`);
+
+    return null;
+  }
+
+  try {
+    const result = await action();
+
+    return result;
+  } catch (error) {
+    const next = step + 1;
+
+    console.warn(`Couldn't fetch, retry ${next}`);
+
+    return withRetry(action, next);
+  }
+};
+
 const Home: NextPage<Props> = (props) => {
   const { data, revalidated } = props;
 
@@ -15,7 +39,7 @@ const Home: NextPage<Props> = (props) => {
     month: 'short',
     hour: 'numeric',
     minute: 'numeric',
-    hourCycle: 'h24',
+    hourCycle: 'h23',
   }), [revalidated]);
   return (
     <>
@@ -29,7 +53,6 @@ const Home: NextPage<Props> = (props) => {
           name="description"
           content="Fuel status"
         />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Map
@@ -53,8 +76,10 @@ export const getStaticProps: GetStaticProps = async () => {
     };
   }
 
-  const { data } = await fetch('https://api.wog.ua/fuel_stations')
-    .then((res) => res.json());
+  const { data } = await withRetry(
+    () => fetch('https://api.wog.ua/fuel_stations')
+      .then((res) => res.json()),
+  );
 
   const result: Record<string, any>[] = [];
 
@@ -82,8 +107,8 @@ export const getStaticProps: GetStaticProps = async () => {
       console.info(`procesing part ${i + 1}/${parts.length}, ${part.length} items`);
 
       const temp = await Promise.all(part.map(async (station) => {
-        const stationData = await fetch(station.link)
-          .then((response) => response.json());
+        const stationData = await withRetry(() => fetch(station.link)
+          .then((response) => response.json()));
 
         const description = stationData.data.workDescription;
 
@@ -102,7 +127,9 @@ export const getStaticProps: GetStaticProps = async () => {
         return stationData;
       }));
 
-      result.push(...temp);
+      const items = temp.filter((item) => item !== null);
+
+      result.push(...items);
     },
     Promise.resolve(),
   );
