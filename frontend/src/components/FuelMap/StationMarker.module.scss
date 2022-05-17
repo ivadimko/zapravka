@@ -4,6 +4,17 @@
 }
 
 .description {
+  ol, ul {
+    margin-top: 0;
+    margin-bottom: 4px;
+  }
+
+  p:not(:last-child) {
+    margin-bottom: 4px;
+  }
+}
+
+.preLine {
   white-space: pre-line;
 }
 

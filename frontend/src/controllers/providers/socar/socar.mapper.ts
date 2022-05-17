@@ -1,6 +1,8 @@
-import { GasStation } from '@/controllers/station/station.typedefs';
-import { FuelStatusPriority } from '@/controllers/fuel/fuel.constants';
-import { FuelStatus, FuelType } from '@/controllers/fuel/fuel.typedefs';
+import {
+  GasStation,
+  GasStationDescriptionType,
+} from '@/controllers/station/station.typedefs';
+import { FuelType } from '@/controllers/fuel/fuel.typedefs';
 import {
   SocarFuelType,
   SocarGasStation,
@@ -14,11 +16,11 @@ const mapFuelStatus = (
   statuses: SocarGasStation['status'],
 ): GasStation['status'] => {
   const result: GasStation['status'] = {
-    [FuelType.Petrol92]: FuelStatus.Empty,
-    [FuelType.Petrol]: FuelStatus.Empty,
-    [FuelType.Diesel]: FuelStatus.Empty,
-    [FuelType.Gas]: FuelStatus.Empty,
-    [FuelType.AdBlue]: FuelStatus.Empty,
+    [FuelType.Petrol92]: {},
+    [FuelType.Petrol]: {},
+    [FuelType.Diesel]: {},
+    [FuelType.Gas]: {},
+    [FuelType.AdBlue]: {},
   };
 
   Object.entries(statuses).forEach((entry) => {
@@ -27,12 +29,11 @@ const mapFuelStatus = (
     const mappedFuel = SocarFuelMapping[fuel as SocarFuelType];
     const mappedStatus = status;
 
-    const savedPriority = FuelStatusPriority[result[mappedFuel]];
-    const currentPriority = FuelStatusPriority[mappedStatus];
-
-    if (!result[mappedFuel] || savedPriority < currentPriority) {
-      result[mappedFuel] = mappedStatus;
+    if (!result[mappedFuel]) {
+      result[mappedFuel] = {};
     }
+
+    result[mappedFuel][mappedStatus] = true;
   });
 
   return result;
@@ -40,8 +41,10 @@ const mapFuelStatus = (
 
 const mapWorkDescription = (station: SocarGasStation): string => {
   const fuels = `
-    Доступне пальне:
-    - ${station.attributes.fuelPrices.join(',\n')}
+    <strong>Доступне пальне:</strong>
+    <ul>
+        ${station.attributes.fuelPrices.map((el) => `<li>${el}</li>`)}
+    </ul>
   `;
 
   return fuels;
@@ -59,6 +62,7 @@ export const socarMapper = (station: SocarGasStation): GasStation => ({
     lng: station.attributes.marker.lng,
   },
   workDescription: mapWorkDescription(station),
+  descriptionType: GasStationDescriptionType.HTML,
   status: mapFuelStatus(station.status),
   schedule: null,
   scheduleString: '',

@@ -1,0 +1,11 @@
+{
+  "fuels": {
+    "А-92": true,
+    "А-95": true,
+    "PULLS 95": true,
+    "ДП": true,
+    "PULLS Diesel": true,
+    "ГАЗ": true
+  },
+  "statuses": {}
+}
