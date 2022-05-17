@@ -37,7 +37,7 @@ const parseSchedule = (content) => (content.split(SCHEDULE).pop() || '').trim();
       'sec-fetch-site': 'none',
       'sec-fetch-user': '?1',
       'upgrade-insecure-requests': '1',
-      cookie: '_gcl_au=1.1.602557681.1652799618; _ga=GA1.2.732797486.1652799619; _gid=GA1.2.392139137.1652799619; homeBanerSlide=1; visid_incap_2141272=W25emqN+RnapANLl09S/58m3g2IAAAAAQkIPAAAAAACAJVSkAdmTpfRKxxKySXLseqZZsKBk5Z9t; incap_ses_324_2141272=r34QTuou/GeC/C4KmhR/BPPAg2IAAAAAPEBSX6sy3AJSLmKVdtaPxw==',
+      cookie: '_gcl_au=1.1.602557681.1652799618; _ga=GA1.2.732797486.1652799619; _gid=GA1.2.392139137.1652799619; visid_incap_2141272=W25emqN+RnapANLl09S/58m3g2IAAAAAQ0IPAAAAAACUeef0uNJdYuZ3OmrwHVGg; incap_ses_324_2141272=fWbOWFtk6xuKYjwKmhR/BEbug2IAAAAAAEb45aXKdVLehVW2Dk3MLA==; homeBanerSlide=2',
     },
     referrerPolicy: 'strict-origin-when-cross-origin',
     body: null,
