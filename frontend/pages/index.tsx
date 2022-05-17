@@ -67,7 +67,6 @@ export const getStaticProps: GetStaticProps = async () => {
       ],
       revalidated: Date.now(),
     },
-    revalidate: 600,
   };
 };
 
