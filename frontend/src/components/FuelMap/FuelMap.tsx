@@ -19,10 +19,11 @@ const center = {
 
 interface Props {
   stations: Array<GasStation>;
+  updatedAt: string;
 }
 
 export const FuelMap: FC<Props> = (props) => {
-  const { stations } = props;
+  const { stations, updatedAt } = props;
 
   const [map, setMap] = useState<google.maps.Map | null>(null);
 
@@ -115,6 +116,7 @@ export const FuelMap: FC<Props> = (props) => {
             opened={openedStation === index}
             open={() => setOpenedStation(index)}
             close={() => setOpenedStation(-1)}
+            updatedAt={updatedAt}
           />
         ))}
       </GoogleMap>

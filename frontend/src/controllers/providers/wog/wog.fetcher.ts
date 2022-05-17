@@ -98,6 +98,7 @@ export const fetchWogStations = async () => {
 };
 
 export const processWogStations = async () => {
+  console.info('Fetch WOG stations: START');
   const stations = await fetchWogStations();
 
   return stations.map(wogMapper);

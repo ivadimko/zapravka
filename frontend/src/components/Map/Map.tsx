@@ -3,7 +3,6 @@ import Select, { SingleValue } from 'react-select';
 import { FuelMap } from '@/components/FuelMap';
 import { GasStation } from '@/controllers/station/station.typedefs';
 import { FuelStatus, FuelType } from '@/controllers/fuel/fuel.typedefs';
-import { FuelStatusPriority } from '@/controllers/fuel/fuel.constants';
 import styles from './Map.module.scss';
 
 const statusOptions = [
@@ -43,18 +42,13 @@ export const Map: FC<Props> = (props) => {
   );
 
   const stationsToRender = useMemo(() => {
-    if (!fuel || !status) {
+    if (!fuel || !status || status.value === FuelStatus.Empty) {
       return data;
     }
 
-    return data.filter((station) => {
-      const stationPriority = FuelStatusPriority[station.status[fuel.value]];
-      const filterPriority = FuelStatusPriority[status.value];
-
-      return (
-        stationPriority >= filterPriority
-      );
-    });
+    return data.filter(
+      (station) => station.status[fuel.value] === status.value,
+    );
   }, [data, fuel, status]);
 
   return (
@@ -84,9 +78,10 @@ export const Map: FC<Props> = (props) => {
 
       <FuelMap
         stations={stationsToRender}
+        updatedAt={updatedAt}
       />
 
-      <p className={styles.updatedAt}>{`Updated at: ${updatedAt}`}</p>
+      <p className={styles.updatedAt}>{`Дані оновлено: ${updatedAt}`}</p>
     </div>
   );
 };

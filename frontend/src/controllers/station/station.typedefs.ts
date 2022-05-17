@@ -22,4 +22,9 @@ export interface GasStation {
   status: Record<FuelType, FuelStatus>
   schedule: GasStationSchedule | null
   scheduleString: string
+  icon: string
+  reference: {
+    title: string
+    link: string
+  }
 }

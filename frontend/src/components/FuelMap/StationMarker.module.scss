@@ -1,7 +1,25 @@
 .title {
   font-weight: bold;
+  white-space: pre-line;
 }
 
 .description {
   white-space: pre-line;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footerItem {
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 2px 4px;
+}
+
+.link {
+  color: blue;
+  text-decoration: underline;
 }

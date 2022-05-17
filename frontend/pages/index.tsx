@@ -4,6 +4,9 @@ import { useMemo } from 'react';
 import { Map } from '@/components/Map';
 import { processWogStations } from '@/controllers/providers/wog/wog.fetcher';
 import { GasStation } from '@/controllers/station/station.typedefs';
+import {
+  processSocarStations,
+} from '@/controllers/providers/socar/socar.fetcher';
 
 interface Props {
   data: Array<GasStation>
@@ -46,14 +49,17 @@ const Home: NextPage<Props> = (props) => {
 export const getStaticProps: GetStaticProps = async () => {
   const [
     wogStations,
+    socarStations,
   ] = await Promise.all([
     processWogStations(),
+    processSocarStations(),
   ]);
 
   return {
     props: {
       data: [
         ...wogStations,
+        ...socarStations,
       ],
       revalidated: Date.now(),
     },

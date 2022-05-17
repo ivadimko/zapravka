@@ -12,6 +12,9 @@ import {
 } from '@/controllers/providers/wog/wog.constants';
 import { FuelStatusPriority } from '@/controllers/fuel/fuel.constants';
 import { FuelStatus, FuelType } from '@/controllers/fuel/fuel.typedefs';
+import {
+  makeExternalUtm,
+} from '@/controllers/analytics/analytics.utils/makeExternalUtm';
 
 const mapFuelStatus = (
   statuses: WogGasStation['status'],
@@ -21,6 +24,7 @@ const mapFuelStatus = (
     [FuelType.Petrol]: FuelStatus.Empty,
     [FuelType.Diesel]: FuelStatus.Empty,
     [FuelType.Gas]: FuelStatus.Empty,
+    [FuelType.AdBlue]: FuelStatus.Empty,
   };
 
   Object.entries(statuses).forEach((entry) => {
@@ -72,4 +76,9 @@ export const wogMapper = (station: WogGasStation): GasStation => ({
   status: mapFuelStatus(station.status),
   schedule: mapSchedule(station.schedule[0]),
   scheduleString: mapScheduleString(station.schedule[0]),
+  icon: '/marker/wog.svg',
+  reference: {
+    title: 'wog.ua',
+    link: makeExternalUtm('https://wog.ua/ua/map/'),
+  },
 });
