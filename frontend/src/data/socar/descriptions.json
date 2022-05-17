@@ -1,0 +1,13 @@
+{
+  "fuels": {
+    "A 92": true,
+    "A 95": true,
+    "NANO 95": true,
+    "NANO 98": true,
+    "NANO ДП": true,
+    "Diesel Nano Extro": true,
+    "LPG": true,
+    "AdBlue": true
+  },
+  "statuses": {}
+}

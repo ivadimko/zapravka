@@ -11,10 +11,11 @@ interface Props {
   opened: boolean
   open: () => void
   close: () => void
+  updatedAt: string
 }
 export const StationMarker: FC<Props> = (props) => {
   const {
-    station, opened, open, close,
+    station, opened, open, close, updatedAt,
   } = props;
 
   const [
@@ -67,9 +68,10 @@ export const StationMarker: FC<Props> = (props) => {
         key={station.id}
         position={station.coordinates}
         options={{
-          opacity: stationStatus === StationStatus.Opened ? 1 : 0.5,
+          opacity: stationStatus === StationStatus.Closed ? 0.5 : 1,
         }}
         onClick={open}
+        icon={station.icon}
       />
 
       {opened && markerInstance && (
@@ -87,6 +89,25 @@ export const StationMarker: FC<Props> = (props) => {
             <p className={styles.description}>
               {station.workDescription}
             </p>
+
+            <div className={styles.footer}>
+              <p className={styles.footerItem}>
+                За даними
+                {' '}
+                <a
+                  className={styles.link}
+                  href={station.reference.link}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {station.reference.title}
+                </a>
+              </p>
+              <p className={styles.footerItem}>
+                {`Оновлено: ${updatedAt}`}
+              </p>
+            </div>
+
           </div>
         </InfoWindow>
       )}

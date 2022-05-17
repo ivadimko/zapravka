@@ -15,7 +15,7 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'react/jsx-props-no-spreading': 'off',
     'react/prop-types': 'off',
-    'no-console': ['error', { allow: ['warn', 'error'] }],
+    'no-console': ['error', { allow: ['warn', 'error', 'info'] }],
     'import/prefer-default-export': 'off',
     'max-len': ['error', 80, {
       ignoreStrings: true,
