@@ -14,7 +14,7 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  min-height: stretch;
+  max-height: stretch;
 }
 
 .mapContainer {
