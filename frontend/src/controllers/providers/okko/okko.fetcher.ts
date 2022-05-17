@@ -51,6 +51,9 @@ export const fetchOkkoStations = async () => {
     return fallback;
   }
 
+  // Temporary return fallback until okko API is fixed
+  return fallback;
+
   try {
     const API_ENDPOINT = 'https://www.okko.ua/api/uk/fuel-map';
 
