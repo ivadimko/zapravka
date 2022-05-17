@@ -1,4 +1,5 @@
 import { FuelStatus, FuelType } from '@/controllers/fuel/fuel.typedefs';
+import { PartialRecord } from '@/utils/PartialRecord';
 
 export enum StationStatus {
   Opened = 'OPENED',
@@ -11,6 +12,11 @@ export interface GasStationSchedule {
   closesAt: string // 23:50
 }
 
+export enum GasStationDescriptionType {
+  Raw = 'RAW',
+  HTML = 'HTML',
+}
+
 export interface GasStation {
   id: string
   name: string
@@ -19,7 +25,8 @@ export interface GasStation {
     lat: number
   }
   workDescription: string
-  status: Record<FuelType, FuelStatus>
+  descriptionType: GasStationDescriptionType
+  status: Record<FuelType, PartialRecord<FuelStatus, boolean>>
   schedule: GasStationSchedule | null
   scheduleString: string
   icon: string

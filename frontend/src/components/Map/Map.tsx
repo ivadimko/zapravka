@@ -47,7 +47,7 @@ export const Map: FC<Props> = (props) => {
     }
 
     return data.filter(
-      (station) => station.status[fuel.value] === status.value,
+      (station) => station.status[fuel.value]?.[status.value] === true,
     );
   }, [data, fuel, status]);
 

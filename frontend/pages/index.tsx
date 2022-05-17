@@ -7,6 +7,7 @@ import { GasStation } from '@/controllers/station/station.typedefs';
 import {
   processSocarStations,
 } from '@/controllers/providers/socar/socar.fetcher';
+import { processOkkoStations } from '@/controllers/providers/okko/okko.fetcher';
 
 interface Props {
   data: Array<GasStation>
@@ -50,9 +51,11 @@ export const getStaticProps: GetStaticProps = async () => {
   const [
     wogStations,
     socarStations,
+    okkoStations,
   ] = await Promise.all([
     processWogStations(),
     processSocarStations(),
+    processOkkoStations(),
   ]);
 
   return {
@@ -60,6 +63,7 @@ export const getStaticProps: GetStaticProps = async () => {
       data: [
         ...wogStations,
         ...socarStations,
+        ...okkoStations,
       ],
       revalidated: Date.now(),
     },

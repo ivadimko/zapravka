@@ -1,7 +1,9 @@
 import { InfoWindow, Marker } from '@react-google-maps/api';
 import { FC, useMemo, useState } from 'react';
+import cn from 'classnames';
 import {
   GasStation,
+  GasStationDescriptionType,
   StationStatus,
 } from '@/controllers/station/station.typedefs';
 import styles from './StationMarker.module.scss';
@@ -86,9 +88,18 @@ export const StationMarker: FC<Props> = (props) => {
               <p>{station.scheduleString}</p>
             )}
 
-            <p className={styles.description}>
-              {station.workDescription}
-            </p>
+            <p
+              className={cn(
+                styles.description,
+                {
+                  [styles.preLine]: station.descriptionType
+                    === GasStationDescriptionType.Raw,
+                },
+              )}
+              dangerouslySetInnerHTML={{
+                __html: station.workDescription,
+              }}
+            />
 
             <div className={styles.footer}>
               <p className={styles.footerItem}>
