@@ -44,13 +44,20 @@ const parseFuel = (options: {
 
 const parseSchedule = (content: string) => (content.split(SCHEDULE).pop() || '').trim();
 
-const parseCookie = (cookieArray: string[]): string => cookieArray
-  .map((element) => {
+const parseCookie = (cookieArray: string[], oldCookie?: string) => {
+  const cookieString = cookieArray.map((element) => {
     const [cookie] = element.split(';');
 
     return cookie;
   })
-  .join('; ');
+    .join('; ');
+
+  if (oldCookie) {
+    return [cookieString, oldCookie].join('; ');
+  }
+
+  return cookieString;
+};
 
 const fetchData = async (
   cookies?: string,
@@ -64,7 +71,7 @@ const fetchData = async (
     insecureHTTPParser: true,
     headers: {
       'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; AdsBot-Google-Mobile; +http://www.google.com/mobile/adsbot.html)',
-      ...(cookies ? { cookies } : {}),
+      ...(cookies ? { cookie: cookies } : {}),
     },
   };
 
@@ -81,7 +88,10 @@ const fetchData = async (
     res.setEncoding('utf-8');
 
     if (res.statusCode === 302) {
-      const parsedCookies = parseCookie(res.headers['set-cookie'] as string[]);
+      const parsedCookies = parseCookie(
+        res.headers['set-cookie'] as string[],
+        cookies,
+      );
 
       resolve(fetchData(parsedCookies, attempt + 1));
       return;
