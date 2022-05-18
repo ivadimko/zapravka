@@ -6,7 +6,6 @@ import {
   OkkoGasStation,
 } from '@/controllers/providers/okko/okko.typedefs';
 import { okkoMapper } from '@/controllers/providers/okko/okko.mapper';
-import { fetchOkkoData } from '@/data/okko/okko-fetcher';
 
 interface AllStationsApiResponse {
   data: {
@@ -55,9 +54,11 @@ export const fetchOkkoStations = async () => {
   let response: AllStationsApiResponse;
 
   try {
-    response = await withRetry<AllStationsApiResponse>(
-      () => fetchOkkoData(),
+    console.info(`OKKO: ${process.env.OKKO_ENDPOINT}`);
 
+    response = await withRetry<AllStationsApiResponse>(
+      () => fetch(process.env.OKKO_ENDPOINT as string)
+        .then((res) => res.json()),
     );
   } catch (error) {
     console.info(error);

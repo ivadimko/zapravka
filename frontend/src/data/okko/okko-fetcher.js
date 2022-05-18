@@ -16,7 +16,7 @@ const parseCookie = (cookieArray, oldCookie) => {
 };
 
 const fetch = async (
-  cookie = 'visid_incap_2141272=QXrP7fZMQA+AeDoMCVScrb/DhGIAAAAAQUIPAAAAAAD9Mfy80j6nI/qNn5NnJytD; incap_ses_324_2141272=us22ILeHwnpl6ngKmhR/BNwHhWIAAAAAlM2EnyhdMRM6FL789dUf5g==',
+  cookie = 'visid_incap_2141272=P7Jrk8XhSgaqdWGB0XfB8skfhWIAAAAAQUIPAAAAAAASxpG3fVnZ6yY2UEzPcfoi; incap_ses_324_2141272=QnWLRr9iPj1Q2IAKmhR/BMkfhWIAAAAASxEGO6oqt71C+kUFJReBiw==',
   attempt = 1,
 ) => new Promise((resolve, reject) => {
   if (attempt === 10) {
@@ -38,9 +38,9 @@ const fetch = async (
   const req = https.request({
     ...options,
   }, (res) => {
-    console.info(`statusCode: ${res.statusCode}`);
+    console.info(`time: ${new Date().toLocaleString()}, statusCode: ${res.statusCode}`);
 
-    console.info(res.headers);
+    // console.info(res.headers);
 
     res.setEncoding('utf-8');
 
