@@ -5,7 +5,7 @@ import { AnalyticsInitialScript } from '@/components/common/Analytics';
 
 export default function Document() {
   return (
-    <Html>
+    <Html lang="uk">
       <Head>
         {process.env.NODE_ENV === 'production' && (
           <AnalyticsInitialScript />

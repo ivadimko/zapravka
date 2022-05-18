@@ -1,8 +1,10 @@
 import { FC, useMemo, useState } from 'react';
 import Select, { SingleValue } from 'react-select';
+import cn from 'classnames';
 import { FuelMap } from '@/components/FuelMap';
 import { GasStation } from '@/controllers/station/station.typedefs';
 import { FuelStatus, FuelType } from '@/controllers/fuel/fuel.typedefs';
+import { UpdatedAt } from '@/components/Map/components/UpdatedAt';
 import styles from './Map.module.scss';
 
 const statusOptions = [
@@ -59,6 +61,7 @@ export const Map: FC<Props> = (props) => {
           instanceId="fuel-select"
           options={fuelOptions}
           defaultValue={fuel}
+          className={styles.select}
           onChange={(value) => {
             setFuel(value);
           }}
@@ -69,7 +72,7 @@ export const Map: FC<Props> = (props) => {
           instanceId="fuel-status-select"
           options={statusOptions}
           defaultValue={status}
-          className={styles.statusSelect}
+          className={cn(styles.select, styles.statusSelect)}
           onChange={(value) => {
             setStatus(value);
           }}
@@ -81,7 +84,7 @@ export const Map: FC<Props> = (props) => {
         updatedAt={updatedAt}
       />
 
-      <p className={styles.updatedAt}>{`Дані оновлено: ${updatedAt}`}</p>
+      <UpdatedAt updatedAt={updatedAt} />
     </div>
   );
 };

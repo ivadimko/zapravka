@@ -1,0 +1,15 @@
+.updatedAt {
+  margin-bottom: 0;
+  text-align: right;
+
+  position: absolute;
+  top: 38px;
+  left: 10px;
+  background-color: white;
+  padding: 2px 4px;
+  border-radius: 2px;
+  font-size: 10px;
+
+  pointer-events: none;
+  opacity: 0.8;
+}

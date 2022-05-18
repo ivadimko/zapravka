@@ -2,10 +2,11 @@ import { GoogleMap, Marker, useJsApiLoader } from '@react-google-maps/api';
 import {
   FC, useCallback, useEffect, useState,
 } from 'react';
-import { StationMarker } from '@/components/FuelMap/StationMarker';
-import { IconTarget } from '@/components/FuelMap/IconTarget';
 import { GasStation } from '@/controllers/station/station.typedefs';
+import { StationMarker } from './components/StationMarker';
+import { IconTarget } from './components/IconTarget';
 import styles from './FuelMap.module.scss';
+import MapStyles from './FuelMap.style.json';
 
 const containerStyle = {
   width: '100%',
@@ -90,6 +91,15 @@ export const FuelMap: FC<Props> = (props) => {
         zoom={12}
         onLoad={onLoad}
         onUnmount={onUnmount}
+        options={{
+          zoomControl: true,
+          mapTypeControl: false,
+          scaleControl: true,
+          streetViewControl: false,
+          rotateControl: true,
+          fullscreenControl: false,
+          styles: MapStyles,
+        }}
       >
         <button
           type="button"
