@@ -2695,13 +2695,6 @@
             "name": "A95_EVRO"
           },
           "widgets": []
-        },
-        {
-          "attributes": {
-            "code": "Gas",
-            "name": "Gas"
-          },
-          "widgets": []
         }
       ],
       "restaurants": [],
@@ -2738,16 +2731,12 @@
           "widgets": []
         }
       ],
-      "notification": "<p><strong><span style=\"text-decoration: underline;\">Графік роботи:</span> цілодобово.</strong></p>\n<p style=\"text-transform:uppercase\"><strong>За готівку і банківські картки доступно:*:</strong></p>\n<ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>ГАЗ</strong>: без обмежень з Fishka</li>\n</ol>\n<p style=\"text-transform:uppercase\"><strong>З паливною карткою і талонами доступно:</strong></p>\n<ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>PULLS 95</strong>: до 20 л</li>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>А-95</strong>: до 20 л</li>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>ГАЗ</strong>: без обмежень</li>\n</ol>\n<div><p>*при досягненні залишків пального на АЗК критичного рівня, відпуск не здійснюється.</p></div>",
+      "notification": "<p><strong><span style=\"text-decoration: underline;\">Графік роботи:</span> цілодобово.</strong></p>\n<p style=\"text-transform:uppercase\"><strong>За готівку і банківські картки не доступно жодного виду пального.</strong></p>\n<ol>\n</ol>\n<p style=\"text-transform:uppercase\"><strong>З паливною карткою і талонами доступно:</strong></p>\n<ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>PULLS 95</strong>: до 20 л</li>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>А-95</strong>: до 20 л</li>\n</ol>\n<div><p>*при досягненні залишків пального на АЗК критичного рівня, відпуск не здійснюється.</p></div>",
       "type_azk": 0
     },
     "widgets": [],
     "schedule": "цілодобово.",
     "status": {
-      "ГАЗ": [
-        "available_cash",
-        "available_fuel_cards"
-      ],
       "PULLS 95": [
         "available_fuel_cards"
       ],
@@ -11563,6 +11552,95 @@
   },
   {
     "attributes": {
+      "Cod_AZK": 40310600,
+      "Oblast": [],
+      "Naselenyy_punkt": "Ужгород",
+      "Typ_naselenogo_punktu": "м.",
+      "Adresa": "вул. Підградська, 29, АЗС №06",
+      "Typ_obektu": {
+        "attributes": {
+          "code": "azs",
+          "name": "АЗК"
+        },
+        "widgets": []
+      },
+      "fuel_type": [
+        {
+          "attributes": {
+            "code": "Pulls95",
+            "name": "Pulls95"
+          },
+          "widgets": []
+        },
+        {
+          "attributes": {
+            "code": "A95_EVRO",
+            "name": "A95_EVRO"
+          },
+          "widgets": []
+        },
+        {
+          "attributes": {
+            "code": "DP_EVRO",
+            "name": "DP_EVRO"
+          },
+          "widgets": []
+        }
+      ],
+      "restaurants": [],
+      "car_services": [
+        {
+          "attributes": {
+            "code": "SwappingWheel",
+            "name": "Підкачка шин"
+          },
+          "widgets": []
+        }
+      ],
+      "car_washes": [],
+      "other_services": [
+        {
+          "attributes": {
+            "code": "Bankomat",
+            "name": "Термінал EasyPay"
+          },
+          "widgets": []
+        }
+      ],
+      "coordinates": {
+        "lat": 48.620819,
+        "lng": 22.309198
+      },
+      "rozdilnyy_zbir": [],
+      "post_machines": [
+        {
+          "attributes": {
+            "code": "Meest",
+            "name": "Міні-відділення Meest-Express"
+          },
+          "widgets": []
+        }
+      ],
+      "notification": "<p><strong><span style=\"text-decoration: underline;\">Графік роботи:</span> цілодобово.</strong></p>\n<p style=\"text-transform:uppercase\"><strong>За готівку і банківські картки доступно:*:</strong></p>\n<ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>PULLS 95</strong>: до 15 л з Fishka або згідно з персональним лімітом</li>\n</ol>\n<p style=\"text-transform:uppercase\"><strong>З паливною карткою і талонами доступно:</strong></p>\n<ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>PULLS 95</strong>: до 20 л</li>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>А-95</strong>: до 20 л</li>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>ДП</strong>: для легкових авто - до 50 л; для великогабаритних - до 100 л</li>\n</ol>\n<div><p>*при досягненні залишків пального на АЗК критичного рівня, відпуск не здійснюється.</p></div>",
+      "type_azk": 0
+    },
+    "widgets": [],
+    "schedule": "цілодобово.",
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
+  },
+  {
+    "attributes": {
       "Cod_AZK": 40310700,
       "Oblast": [],
       "Naselenyy_punkt": "Ужгород",
@@ -12979,23 +13057,23 @@
           "widgets": []
         }
       ],
-      "notification": "<p><strong><span style=\"text-decoration: underline;\">Графік роботи:</span> цілодобово.</strong></p>\n<p style=\"text-transform:uppercase\"><strong>За готівку і банківські картки доступно:*:</strong></p>\n<ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>PULLS Diesel</strong>: до 15 л з Fishka або згідно з персональним лімітом</li>\n</ol>\n<p style=\"text-transform:uppercase\"><strong>З паливною карткою і талонами доступно:</strong></p>\n<ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>PULLS 95</strong>: до 20 л</li>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>А-95</strong>: до 20 л</li>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>ДП</strong>: для легкових авто - до 50 л; для великогабаритних - до 100 л</li>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>PULLS Diesel</strong>: для легкових авто - до 50 л; для великогабаритних - до 100 л</li>\n</ol>\n<div><p>*при досягненні залишків пального на АЗК критичного рівня, відпуск не здійснюється.</p></div>",
+      "notification": "<p><strong><span style=\"text-decoration: underline;\">Графік роботи:</span> цілодобово.</strong></p>\n<p style=\"text-transform:uppercase\"><strong>За готівку і банківські картки доступно:*:</strong></p>\n<ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>PULLS 95</strong>: до 15 л з Fishka або згідно з персональним лімітом</li>\n</ol>\n<p style=\"text-transform:uppercase\"><strong>З паливною карткою і талонами доступно:</strong></p>\n<ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>PULLS 95</strong>: до 20 л</li>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>А-95</strong>: до 20 л</li>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>ДП</strong>: для легкових авто - до 50 л; для великогабаритних - до 100 л</li>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>PULLS Diesel</strong>: для легкових авто - до 50 л; для великогабаритних - до 100 л</li>\n</ol>\n<div><p>*при досягненні залишків пального на АЗК критичного рівня, відпуск не здійснюється.</p></div>",
       "type_azk": 0
     },
     "widgets": [],
     "schedule": "цілодобово.",
     "status": {
-      "PULLS Diesel": [
-        "available_cash",
-        "available_fuel_cards"
-      ],
       "PULLS 95": [
+        "available_cash",
         "available_fuel_cards"
       ],
       "А-95": [
         "available_fuel_cards"
       ],
       "ДП": [
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
         "available_fuel_cards"
       ]
     }
@@ -22329,16 +22407,12 @@
       },
       "rozdilnyy_zbir": [],
       "post_machines": [],
-      "notification": "<p><strong><span style=\"text-decoration: underline;\">Графік роботи:</span> з 8:00 до 17:00.</strong></p> <p><strong>З 17:00 лише через сервіс ОККО-PAY.</strong></p>\n<p style=\"text-transform:uppercase\"><strong>За готівку і банківські картки не доступно жодного виду пального.</strong></p>\n<ol>\n</ol>\n<p style=\"text-transform:uppercase\"><strong>З паливною карткою і талонами доступно:</strong></p>\n<ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>А-95</strong>: до 20 л</li>\n</ol>\n<div><p>*при досягненні залишків пального на АЗК критичного рівня, відпуск не здійснюється.</p></div>",
-      "type_azk": 0
+      "notification": "<p><strong><span style=\"text-decoration: underline;\">Графік роботи:</span> з 8:00 до 17:00.</strong></p> <p><strong>З 17:00 лише через сервіс ОККО-PAY.</strong></p>\n<div><p>*при досягненні залишків пального на АЗК критичного рівня, відпуск не здійснюється.</p></div>",
+      "type_azk": 1
     },
     "widgets": [],
     "schedule": "з 8:00 до 17:00.",
-    "status": {
-      "А-95": [
-        "available_fuel_cards"
-      ]
-    }
+    "status": {}
   },
   {
     "attributes": {
@@ -26795,7 +26869,7 @@
       "rozdilnyy_zbir": [],
       "post_machines": [],
       "notification": "<p><strong><span style=\"text-decoration: underline;\">Графік роботи:</span> з 8:30 до 17:00.</strong></p>\n<p style=\"text-transform:uppercase\"><strong>За готівку і банківські картки не доступно жодного виду пального.</strong></p>\n<ol>\n</ol>\n<p style=\"text-transform:uppercase\"><strong>З паливною карткою і талонами доступно:</strong></p>\n<ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>ДП</strong>: для легкових авто - до 50 л; для великогабаритних - до 100 л</li>\n</ol>\n<div><p>*при досягненні залишків пального на АЗК критичного рівня, відпуск не здійснюється.</p></div>",
-      "type_azk": 0
+      "type_azk": 2
     },
     "widgets": [],
     "schedule": "з 8:30 до 17:00.",
@@ -26943,7 +27017,7 @@
       "rozdilnyy_zbir": [],
       "post_machines": [],
       "notification": "<p><strong><span style=\"text-decoration: underline;\">Графік роботи:</span> з 8:30 до 17:00.</strong></p>\n<p style=\"text-transform:uppercase\"><strong>За готівку і банківські картки доступно:*:</strong></p>\n<ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>PULLS Diesel</strong>: до 15 л з Fishka або згідно з персональним лімітом</li>\n</ol>\n<p style=\"text-transform:uppercase\"><strong>З паливною карткою і талонами доступно:</strong></p>\n<ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>А-95</strong>: до 20 л</li>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>А-92</strong>: до 20 л</li>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>ДП</strong>: для легкових авто - до 50 л; для великогабаритних - до 100 л</li>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>PULLS Diesel</strong>: для легкових авто - до 50 л; для великогабаритних - до 100 л</li>\n</ol>\n<div><p>*при досягненні залишків пального на АЗК критичного рівня, відпуск не здійснюється.</p></div>",
-      "type_azk": 0
+      "type_azk": 2
     },
     "widgets": [],
     "schedule": "з 8:30 до 17:00.",
@@ -27012,7 +27086,7 @@
       "rozdilnyy_zbir": [],
       "post_machines": [],
       "notification": "<p><strong><span style=\"text-decoration: underline;\">Графік роботи:</span> з 8:30 до 17:00.</strong></p>\n<p style=\"text-transform:uppercase\"><strong>За готівку і банківські картки доступно:*:</strong></p>\n<ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>PULLS Diesel</strong>: до 15 л з Fishka або згідно з персональним лімітом</li>\n</ol>\n<p style=\"text-transform:uppercase\"><strong>З паливною карткою і талонами доступно:</strong></p>\n<ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>ДП</strong>: для легкових авто - до 50 л; для великогабаритних - до 100 л</li>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>PULLS Diesel</strong>: для легкових авто - до 50 л; для великогабаритних - до 100 л</li>\n</ol>\n<div><p>*при досягненні залишків пального на АЗК критичного рівня, відпуск не здійснюється.</p></div>",
-      "type_azk": 0
+      "type_azk": 2
     },
     "widgets": [],
     "schedule": "з 8:30 до 17:00.",
@@ -27084,7 +27158,7 @@
       ],
       "post_machines": [],
       "notification": "<p><strong><span style=\"text-decoration: underline;\">Графік роботи:</span> з 9:30 до 15:00.</strong></p>\n<p style=\"text-transform:uppercase\"><strong>За готівку і банківські картки не доступно жодного виду пального.</strong></p>\n<ol>\n</ol>\n<p style=\"text-transform:uppercase\"><strong>З паливною карткою і талонами доступно:</strong></p>\n<ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>ДП</strong>: для легкових авто - до 50 л; для великогабаритних - до 100 л</li>\n</ol>\n<div><p>*при досягненні залишків пального на АЗК критичного рівня, відпуск не здійснюється.</p></div>",
-      "type_azk": 0
+      "type_azk": 2
     },
     "widgets": [],
     "schedule": "з 9:30 до 15:00.",
@@ -27136,7 +27210,7 @@
       "rozdilnyy_zbir": [],
       "post_machines": [],
       "notification": "<p><strong><span style=\"text-decoration: underline;\">Графік роботи:</span> з 8:30 до 17:00.</strong></p>\n<p style=\"text-transform:uppercase\"><strong>За готівку і банківські картки не доступно жодного виду пального.</strong></p>\n<ol>\n</ol>\n<p style=\"text-transform:uppercase\"><strong>З паливною карткою і талонами доступно:</strong></p>\n<ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>ДП</strong>: для легкових авто - до 50 л; для великогабаритних - до 100 л</li>\n</ol>\n<div><p>*при досягненні залишків пального на АЗК критичного рівня, відпуск не здійснюється.</p></div>",
-      "type_azk": 0
+      "type_azk": 2
     },
     "widgets": [],
     "schedule": "з 8:30 до 17:00.",
@@ -27203,7 +27277,7 @@
       "rozdilnyy_zbir": [],
       "post_machines": [],
       "notification": "<p><strong><span style=\"text-decoration: underline;\">Графік роботи:</span> з 8:30 до 17:00.</strong></p>\n<p style=\"text-transform:uppercase\"><strong>За готівку і банківські картки не доступно жодного виду пального.</strong></p>\n<ol>\n</ol>\n<p style=\"text-transform:uppercase\"><strong>З паливною карткою і талонами доступно:</strong></p>\n<ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>ДП</strong>: для легкових авто - до 50 л; для великогабаритних - до 100 л</li>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>PULLS Diesel</strong>: для легкових авто - до 50 л; для великогабаритних - до 100 л</li>\n</ol>\n<div><p>*при досягненні залишків пального на АЗК критичного рівня, відпуск не здійснюється.</p></div>",
-      "type_azk": 0
+      "type_azk": 2
     },
     "widgets": [],
     "schedule": "з 8:30 до 17:00.",
@@ -27266,7 +27340,7 @@
       "rozdilnyy_zbir": [],
       "post_machines": [],
       "notification": "<p><strong><span style=\"text-decoration: underline;\">Графік роботи:</span> з 8:30 до 17:00.</strong></p>\n<p style=\"text-transform:uppercase\"><strong>За готівку і банківські картки доступно:*:</strong></p>\n<ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>PULLS Diesel</strong>: до 15 л з Fishka або згідно з персональним лімітом</li>\n</ol>\n<p style=\"text-transform:uppercase\"><strong>З паливною карткою і талонами доступно:</strong></p>\n<ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>PULLS Diesel</strong>: для легкових авто - до 50 л; для великогабаритних - до 100 л</li>\n</ol>\n<div><p>*при досягненні залишків пального на АЗК критичного рівня, відпуск не здійснюється.</p></div>",
-      "type_azk": 0
+      "type_azk": 2
     },
     "widgets": [],
     "schedule": "з 8:30 до 17:00.",
@@ -27327,7 +27401,7 @@
       "rozdilnyy_zbir": [],
       "post_machines": [],
       "notification": "<p><strong><span style=\"text-decoration: underline;\">Графік роботи:</span> з 8:30 до 17:00.</strong></p>\n<p style=\"text-transform:uppercase\"><strong>За готівку і банківські картки не доступно жодного виду пального.</strong></p>\n<ol>\n</ol>\n<p style=\"text-transform:uppercase\"><strong>З паливною карткою і талонами доступно:</strong></p>\n<ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>ДП</strong>: для легкових авто - до 50 л; для великогабаритних - до 100 л</li>\n</ol>\n<div><p>*при досягненні залишків пального на АЗК критичного рівня, відпуск не здійснюється.</p></div>",
-      "type_azk": 0
+      "type_azk": 2
     },
     "widgets": [],
     "schedule": "з 8:30 до 17:00.",
@@ -27402,7 +27476,7 @@
         }
       ],
       "notification": "<p><strong><span style=\"text-decoration: underline;\">Графік роботи:</span> з 8:30 до 17:00.</strong></p>\n<p style=\"text-transform:uppercase\"><strong>За готівку і банківські картки не доступно жодного виду пального.</strong></p>\n<ol>\n</ol>\n<p style=\"text-transform:uppercase\"><strong>З паливною карткою і талонами доступно:</strong></p>\n<ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>А-95</strong>: до 20 л</li>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>ДП</strong>: для легкових авто - до 50 л; для великогабаритних - до 100 л</li>\n</ol>\n<div><p>*при досягненні залишків пального на АЗК критичного рівня, відпуск не здійснюється.</p></div>",
-      "type_azk": 0
+      "type_azk": 2
     },
     "widgets": [],
     "schedule": "з 8:30 до 17:00.",
@@ -28128,7 +28202,7 @@
       "rozdilnyy_zbir": [],
       "post_machines": [],
       "notification": "<p><strong><span style=\"text-decoration: underline;\">Графік роботи:</span> з 8:30 до 17:00.</strong></p>\n<p style=\"text-transform:uppercase\"><strong>За готівку і банківські картки не доступно жодного виду пального.</strong></p>\n<ol>\n</ol>\n<p style=\"text-transform:uppercase\"><strong>З паливною карткою і талонами доступно:</strong></p>\n<ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>ДП</strong>: для легкових авто - до 50 л; для великогабаритних - до 100 л</li>\n</ol>\n<div><p>*при досягненні залишків пального на АЗК критичного рівня, відпуск не здійснюється.</p></div>",
-      "type_azk": 0
+      "type_azk": 2
     },
     "widgets": [],
     "schedule": "з 8:30 до 17:00.",
@@ -28188,7 +28262,7 @@
       "rozdilnyy_zbir": [],
       "post_machines": [],
       "notification": "<p><strong><span style=\"text-decoration: underline;\">Графік роботи:</span> з 8:30 до 17:00.</strong></p>\n<p style=\"text-transform:uppercase\"><strong>За готівку і банківські картки не доступно жодного виду пального.</strong></p>\n<ol>\n</ol>\n<p style=\"text-transform:uppercase\"><strong>З паливною карткою і талонами доступно:</strong></p>\n<ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>ДП</strong>: для легкових авто - до 50 л; для великогабаритних - до 100 л</li>\n</ol>\n<div><p>*при досягненні залишків пального на АЗК критичного рівня, відпуск не здійснюється.</p></div>",
-      "type_azk": 0
+      "type_azk": 2
     },
     "widgets": [],
     "schedule": "з 8:30 до 17:00.",

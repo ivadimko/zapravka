@@ -47,15 +47,37 @@ const parseSchedule = (content: string) => (content.split(SCHEDULE).pop() || '')
 export const fetchOkkoStations = async () => {
   // eslint-disable-next-line global-require
   const fallback: Array<OkkoGasStation> = require('@/data/okko/station-status.json');
+
   if (process.env.NODE_ENV === 'development') {
     return fallback;
   }
 
-  return fallback;
+  let response: AllStationsApiResponse;
 
-  const response = await withRetry<AllStationsApiResponse>(
-    () => fetchOkkoData(),
-  );
+  try {
+    response = await withRetry<AllStationsApiResponse>(
+      () => fetchOkkoData(),
+
+    );
+  } catch (error) {
+    console.info(error);
+
+    console.info('use fallback');
+
+    response = {
+      data: {
+        layout: [
+          {
+            data: {
+              list: {
+                collection: fallback,
+              },
+            },
+          },
+        ],
+      },
+    };
+  }
 
   const stations = response.data.layout[0].data.list.collection;
 
