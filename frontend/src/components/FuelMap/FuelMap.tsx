@@ -74,9 +74,9 @@ export const FuelMap: FC<Props> = (props) => {
     }
   }, [map, userLocation]);
 
-  useEffect(() => {
-    goToLocation();
-  }, [goToLocation]);
+  // useEffect(() => {
+  //   goToLocation();
+  // }, [goToLocation]);
 
   useEffect(() => {
     setOpenedStation(-1);
