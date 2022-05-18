@@ -1,6 +1,6 @@
 const fs = require('fs/promises');
 const parser = require('node-html-parser');
-// const { fetchOkkoData } = require('./okko-fetcher');
+const { fetchOkkoData } = require('./okko-fetcher');
 
 const SCHEDULE = 'Графік роботи:';
 const AVAILABLE_CASH = 'За готівку і банківські картки доступно:';
@@ -23,7 +23,7 @@ const parseFuel = (options) => {
 const parseSchedule = (content) => (content.split(SCHEDULE).pop() || '').trim();
 
 (async () => {
-  const response = await fetch();
+  const response = await fetchOkkoData();
 
   const stations = response.data.layout[0].data.list.collection;
 
