@@ -1,5 +1,4 @@
 import { Node, parse } from 'node-html-parser';
-import https from 'https';
 import { withRetry } from '@/utils/withRetry';
 import { FuelStatus } from '@/controllers/fuel/fuel.typedefs';
 import {
@@ -7,6 +6,7 @@ import {
   OkkoGasStation,
 } from '@/controllers/providers/okko/okko.typedefs';
 import { okkoMapper } from '@/controllers/providers/okko/okko.mapper';
+import { fetchOkkoData } from '@/data/okko/okko-fetcher';
 
 interface AllStationsApiResponse {
   data: {
@@ -44,89 +44,17 @@ const parseFuel = (options: {
 
 const parseSchedule = (content: string) => (content.split(SCHEDULE).pop() || '').trim();
 
-const parseCookie = (cookieArray: string[], oldCookie?: string) => {
-  const cookieString = cookieArray.map((element) => {
-    const [cookie] = element.split(';');
-
-    return cookie;
-  })
-    .join('; ');
-
-  if (oldCookie) {
-    return [cookieString, oldCookie].join('; ');
-  }
-
-  return cookieString;
-};
-
-const fetchData = async (
-  cookies?: string,
-  attempt = 1,
-): Promise<AllStationsApiResponse> => new Promise((resolve, reject) => {
-  const options = {
-    hostname: 'www.okko.ua',
-    port: 443,
-    path: '/api/uk/fuel-map',
-    method: 'GET',
-    insecureHTTPParser: true,
-    headers: {
-      'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; AdsBot-Google-Mobile; +http://www.google.com/mobile/adsbot.html)',
-      ...(cookies ? { cookie: cookies } : {}),
-    },
-  };
-
-  const req = https.request({
-    ...options,
-    // @ts-ignore
-    'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; AdsBot-Google-Mobile; +http://www.google.com/mobile/adsbot.html)',
-  }, (res) => {
-    console.info(`RES ${attempt} STARTED`);
-    console.info(`statusCode: ${res.statusCode}`);
-
-    console.info(res.headers);
-
-    res.setEncoding('utf-8');
-
-    if (res.statusCode === 302) {
-      const parsedCookies = parseCookie(
-        res.headers['set-cookie'] as string[],
-        cookies,
-      );
-
-      resolve(fetchData(parsedCookies, attempt + 1));
-      return;
-    }
-
-    let body = '';
-
-    res.on('data', (chunk) => {
-      body += chunk;
-    });
-
-    res.on('end', () => {
-      console.info(`RES ${attempt} FINISHED`);
-      resolve(JSON.parse(body));
-    });
-  });
-
-  req.on('error', (error) => {
-    console.error(error);
-    reject(error);
-  });
-
-  req.end();
-});
-
 export const fetchOkkoStations = async () => {
+  // eslint-disable-next-line global-require
+  const fallback: Array<OkkoGasStation> = require('@/data/okko/station-status.json');
   if (process.env.NODE_ENV === 'development') {
-    // eslint-disable-next-line global-require
-    const stations: Array<OkkoGasStation> = require('@/data/okko/station-status.json');
-
-    return stations;
+    return fallback;
   }
+
+  return fallback;
 
   const response = await withRetry<AllStationsApiResponse>(
-    () => fetchData(),
+    () => fetchOkkoData(),
   );
 
   const stations = response.data.layout[0].data.list.collection;
