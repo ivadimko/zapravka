@@ -26,7 +26,7 @@ const parseSchedule = (content) => (content.split(SCHEDULE).pop() || '').trim();
   const response = await fetch('https://www.okko.ua/api/uk/fuel-map', {
     headers: {
       accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-      'accept-language': 'uk',
+      'accept-language': 'uk,en-US;q=0.9,en;q=0.8,la;q=0.7',
       'cache-control': 'no-cache',
       pragma: 'no-cache',
       'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="101", "Google Chrome";v="101"',
@@ -37,7 +37,7 @@ const parseSchedule = (content) => (content.split(SCHEDULE).pop() || '').trim();
       'sec-fetch-site': 'none',
       'sec-fetch-user': '?1',
       'upgrade-insecure-requests': '1',
-      cookie: 'visid_incap_2141272=hnr24SnWSpu+aI4qVFoMOprOhGIAAAAAQUIPAAAAAAC6MSNwgrJNIOMeAxnZynAE; incap_ses_1104_2141272=PLeeBQso+GxCEixBzjJSD5rOhGIAAAAAkopA3mCBS01MLn4yZ4MPpQ==',
+      cookie: 'visid_incap_2141272=ypKcsnmrSs2O3OixIzzYfazbhGIAAAAAQUIPAAAAAACfMXV9Ra512hc2p8Euk3eZ; incap_ses_324_2141272=ODv/ORIgLQcuK2kKmhR/BKzbhGIAAAAAN514nXWIAWETqaVVyYu/Lg==; incap_ses_1097_2141272=b1KWCJU4uxHQLw21ZVQ5Dz3ghGIAAAAA0grpNwGQNpzHiY02ZpV0IA==',
     },
     referrerPolicy: 'strict-origin-when-cross-origin',
     body: null,
