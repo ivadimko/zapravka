@@ -6,6 +6,7 @@ import {
   OkkoGasStation,
 } from '@/controllers/providers/okko/okko.typedefs';
 import { okkoMapper } from '@/controllers/providers/okko/okko.mapper';
+import { fetchOkkoData } from '@/data/okko/okko-fetcher';
 
 interface AllStationsApiResponse {
   data: {
@@ -46,91 +47,61 @@ const parseSchedule = (content: string) => (content.split(SCHEDULE).pop() || '')
 export const fetchOkkoStations = async () => {
   // eslint-disable-next-line global-require
   const fallback: Array<OkkoGasStation> = require('@/data/okko/station-status.json');
-
   if (process.env.NODE_ENV === 'development') {
     return fallback;
   }
 
-  // Temporary return fallback until okko API is fixed
   return fallback;
 
-  try {
-    const API_ENDPOINT = 'https://www.okko.ua/api/uk/fuel-map';
+  const response = await withRetry<AllStationsApiResponse>(
+    () => fetchOkkoData(),
+  );
 
-    const resposne = await withRetry<AllStationsApiResponse>(
-      () => fetch(API_ENDPOINT, {
-        headers: {
-          accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-          'accept-language': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6,la;q=0.5',
-          'cache-control': 'no-cache',
-          pragma: 'no-cache',
-          'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="101", "Google Chrome";v="101"',
-          'sec-ch-ua-mobile': '?0',
-          'sec-ch-ua-platform': '"macOS"',
-          'sec-fetch-dest': 'document',
-          'sec-fetch-mode': 'navigate',
-          'sec-fetch-site': 'none',
-          'sec-fetch-user': '?1',
-          'upgrade-insecure-requests': '1',
-          cookie: '',
-        },
-        referrerPolicy: 'strict-origin-when-cross-origin',
-        body: null,
-        method: 'GET',
-      })
-        .then((res) => res.json()),
-    );
+  const stations = response.data.layout[0].data.list.collection;
 
-    const stations = resposne.data.layout[0].data.list.collection;
+  const result = stations.map((station) => {
+    let schedule = '';
+    const status: OkkoGasStation['status'] = {
+      [OkkoFuelType.A92]: [],
+      [OkkoFuelType.A95]: [],
+      [OkkoFuelType.Pulls95]: [],
+      [OkkoFuelType.Diesel]: [],
+      [OkkoFuelType.PullsDiesel]: [],
+      [OkkoFuelType.Gas]: [],
+    };
 
-    const result = stations.map((station) => {
-      let schedule = '';
-      const status: OkkoGasStation['status'] = {
-        [OkkoFuelType.A92]: [],
-        [OkkoFuelType.A95]: [],
-        [OkkoFuelType.Pulls95]: [],
-        [OkkoFuelType.Diesel]: [],
-        [OkkoFuelType.PullsDiesel]: [],
-        [OkkoFuelType.Gas]: [],
-      };
+    const root = parse(station.attributes.notification.replaceAll('\n', ''));
 
-      const root = parse(station.attributes.notification.replaceAll('\n', ''));
+    root.childNodes.forEach((node) => {
+      const content = node.textContent;
 
-      root.childNodes.forEach((node) => {
-        const content = node.textContent;
-
-        if (content.includes(SCHEDULE)) {
-          schedule = parseSchedule(content);
-        } else if (content.includes(AVAILABLE_CASH)) {
-          parseFuel({
-            // @ts-ignore
-            node: node.nextSibling,
-            status,
-            type: FuelStatus.Available,
-          });
-        } else if (content.includes(AVAILABLE_FUEL_CARDS)) {
-          parseFuel({
-            // @ts-ignore
-            node: node.nextSibling,
-            status,
-            type: FuelStatus.AvailableFuelCards,
-          });
-        }
-      });
-
-      return {
-        ...station,
-        schedule,
-        status,
-      };
+      if (content.includes(SCHEDULE)) {
+        schedule = parseSchedule(content);
+      } else if (content.includes(AVAILABLE_CASH)) {
+        parseFuel({
+          // @ts-ignore
+          node: node.nextSibling,
+          status,
+          type: FuelStatus.Available,
+        });
+      } else if (content.includes(AVAILABLE_FUEL_CARDS)) {
+        parseFuel({
+          // @ts-ignore
+          node: node.nextSibling,
+          status,
+          type: FuelStatus.AvailableFuelCards,
+        });
+      }
     });
 
-    return result;
-  } catch (error) {
-    console.info(error);
+    return {
+      ...station,
+      schedule,
+      status,
+    };
+  });
 
-    return fallback;
-  }
+  return result;
 };
 
 export const processOkkoStations = async () => {
