@@ -54,6 +54,8 @@ export const fetchOkkoStations = async () => {
   let response: AllStationsApiResponse;
 
   try {
+    console.info(`OKKO: ${process.env.OKKO_ENDPOINT}`);
+
     response = await withRetry<AllStationsApiResponse>(
       () => fetch(process.env.OKKO_ENDPOINT as string)
         .then((res) => res.json()),
