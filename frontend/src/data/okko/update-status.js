@@ -37,7 +37,7 @@ const parseSchedule = (content) => (content.split(SCHEDULE).pop() || '').trim();
       'sec-fetch-site': 'none',
       'sec-fetch-user': '?1',
       'upgrade-insecure-requests': '1',
-      cookie: 'visid_incap_2141272=oAdB/9RjQhe9PP2EzYH3UHCqhGIAAAAAQUIPAAAAAAAlgKJ1BdfsQat//WyDCZMh; incap_ses_1510_2141272=oxglG2bymh8Joj0WT5n0FHCqhGIAAAAApa3d/aRijVUdmdToX+SeaA==; incap_ses_324_2141272=8Nr3DOVbTgEgDFoKmhR/BGWrhGIAAAAAOdvgxn9x93cLRbKu4/JExw==; _gcl_au=1.1.537078840.1652861806; _ga=GA1.2.385587420.1652861806; _gid=GA1.2.1401782244.1652861806; _dc_gtm_UA-29338053-1=1; homeBanerSlide=2',
+      cookie: 'visid_incap_2141272=oAdB/9RjQhe9PP2EzYH3UHCqhGIAAAAAQUIPAAAAAAAlgKJ1BdfsQat//WyDCZMh; incap_ses_1510_2141272=oxglG2bymh8Joj0WT5n0FHCqhGIAAAAApa3d/aRijVUdmdToX+SeaA==; incap_ses_324_2141272=8Nr3DOVbTgEgDFoKmhR/BGWrhGIAAAAAOdvgxn9x93cLRbKu4/JExw==; _gcl_au=1.1.537078840.1652861806; _ga=GA1.2.385587420.1652861806; _gid=GA1.2.1401782244.1652861806; homeBanerSlide=2',
     },
     referrerPolicy: 'strict-origin-when-cross-origin',
     body: null,
