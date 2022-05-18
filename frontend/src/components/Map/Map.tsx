@@ -4,7 +4,7 @@ import cn from 'classnames';
 import { FuelMap } from '@/components/FuelMap';
 import { GasStation } from '@/controllers/station/station.typedefs';
 import { FuelStatus, FuelType } from '@/controllers/fuel/fuel.typedefs';
-import { UpdatedAt } from '@/components/Map/components/UpdatedAt/UpdatedAt';
+import { UpdatedAt } from '@/components/Map/components/UpdatedAt';
 import styles from './Map.module.scss';
 
 const statusOptions = [
