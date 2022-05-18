@@ -23,9 +23,9 @@ const parseFuel = (options) => {
 const parseSchedule = (content) => (content.split(SCHEDULE).pop() || '').trim();
 
 (async () => {
-  const response = await fetch('https://www.okko.ua/api/uk/fuel-map', {
+  const response = await fetch('https://www.okko.ua/api/uk/fuel-map/', {
     headers: {
-      cookie: 'visid_incap_2141272=7tJTK0AoRjyJX2ZNwbu56u1rhGIAAAAAQUIPAAAAAACeDRmk1Qca1yiJc1gxIwNm; incap_ses_324_2141272=fmXrVMHQ2GMVik0KmhR/BO5rhGIAAAAAfDH6CyPVI6vNiHXiWtY3ag==',
+      cookie: 'visid_incap_2141272=huSoGAGfTca2pWV9Ykb2itaZhGIAAAAAQUIPAAAAAAAurIunEsme+k6UBixS0C1I; incap_ses_9117_2141272=zBNvXFFKVCdjdZ1EqxeGfteZhGIAAAAAWodnbv/F11o/KAZbZwscWg==',
     },
   })
     .then((res) => res.json());
