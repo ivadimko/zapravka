@@ -1,6 +1,6 @@
 const fs = require('fs/promises');
 const parser = require('node-html-parser');
-const fetch = require('node-fetch');
+const https = require('https');
 
 const SCHEDULE = 'Графік роботи:';
 const AVAILABLE_CASH = 'За готівку і банківські картки доступно:';
@@ -22,28 +22,66 @@ const parseFuel = (options) => {
 
 const parseSchedule = (content) => (content.split(SCHEDULE).pop() || '').trim();
 
-(async () => {
-  const response = await fetch('https://www.okko.ua/api/uk/fuel-map', {
-    headers: {
-      accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-      'accept-language': 'uk,en-US;q=0.9,en;q=0.8,la;q=0.7',
-      'cache-control': 'no-cache',
-      pragma: 'no-cache',
-      'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="101", "Google Chrome";v="101"',
-      'sec-ch-ua-mobile': '?0',
-      'sec-ch-ua-platform': '"macOS"',
-      'sec-fetch-dest': 'document',
-      'sec-fetch-mode': 'navigate',
-      'sec-fetch-site': 'none',
-      'sec-fetch-user': '?1',
-      'upgrade-insecure-requests': '1',
-      cookie: 'visid_incap_2141272=ypKcsnmrSs2O3OixIzzYfazbhGIAAAAAQUIPAAAAAACfMXV9Ra512hc2p8Euk3eZ; incap_ses_324_2141272=ODv/ORIgLQcuK2kKmhR/BKzbhGIAAAAAN514nXWIAWETqaVVyYu/Lg==; incap_ses_1097_2141272=b1KWCJU4uxHQLw21ZVQ5Dz3ghGIAAAAA0grpNwGQNpzHiY02ZpV0IA==',
-    },
-    referrerPolicy: 'strict-origin-when-cross-origin',
-    body: null,
+const parseCookie = (cookieArray) => cookieArray.map((element) => {
+  const [cookie] = element.split(';');
+
+  return cookie;
+})
+  .join('; ');
+
+const fetch = async (cookies, attempt = 1) => new Promise((resolve, reject) => {
+  const options = {
+    hostname: 'www.okko.ua',
+    port: 443,
+    path: '/api/uk/fuel-map',
     method: 'GET',
-  })
-    .then((res) => res.json());
+    insecureHTTPParser: true,
+    headers: {
+      'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; AdsBot-Google-Mobile; +http://www.google.com/mobile/adsbot.html)',
+      ...(cookies ? { cookies } : {}),
+    },
+  };
+
+  const req = https.request({
+    ...options,
+    'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; AdsBot-Google-Mobile; +http://www.google.com/mobile/adsbot.html)',
+  }, (res) => {
+    console.info(`RES ${attempt} STARTED`);
+    console.info(`statusCode: ${res.statusCode}`);
+
+    console.info(res.headers);
+
+    res.setEncoding('utf-8');
+
+    if (res.statusCode === 302) {
+      const parsedCookies = parseCookie(res.headers['set-cookie']);
+
+      resolve(fetch(parsedCookies, attempt + 1));
+      return;
+    }
+
+    let body = '';
+
+    res.on('data', (chunk) => {
+      body += chunk;
+    });
+
+    res.on('end', () => {
+      console.info(`RES ${attempt} FINISHED`);
+      resolve(JSON.parse(body));
+    });
+  });
+
+  req.on('error', (error) => {
+    console.error(error);
+    reject(error);
+  });
+
+  req.end();
+});
+
+(async () => {
+  const response = await fetch();
 
   const stations = response.data.layout[0].data.list.collection;
 

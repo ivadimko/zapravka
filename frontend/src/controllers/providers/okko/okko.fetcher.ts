@@ -1,4 +1,5 @@
 import { Node, parse } from 'node-html-parser';
+import https from 'https';
 import { withRetry } from '@/utils/withRetry';
 import { FuelStatus } from '@/controllers/fuel/fuel.typedefs';
 import {
@@ -43,94 +44,126 @@ const parseFuel = (options: {
 
 const parseSchedule = (content: string) => (content.split(SCHEDULE).pop() || '').trim();
 
-export const fetchOkkoStations = async () => {
-  // eslint-disable-next-line global-require
-  const fallback: Array<OkkoGasStation> = require('@/data/okko/station-status.json');
+const parseCookie = (cookieArray: string[]): string => cookieArray
+  .map((element) => {
+    const [cookie] = element.split(';');
 
-  if (process.env.NODE_ENV === 'development') {
-    return fallback;
-  }
+    return cookie;
+  })
+  .join('; ');
 
-  // Temporary return fallback until okko API is fixed
-  return fallback;
+const fetchData = async (
+  cookies?: string,
+  attempt = 1,
+): Promise<AllStationsApiResponse> => new Promise((resolve, reject) => {
+  const options = {
+    hostname: 'www.okko.ua',
+    port: 443,
+    path: '/api/uk/fuel-map',
+    method: 'GET',
+    insecureHTTPParser: true,
+    headers: {
+      'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; AdsBot-Google-Mobile; +http://www.google.com/mobile/adsbot.html)',
+      ...(cookies ? { cookies } : {}),
+    },
+  };
 
-  try {
-    const API_ENDPOINT = 'https://www.okko.ua/api/uk/fuel-map';
+  const req = https.request({
+    ...options,
+    // @ts-ignore
+    'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; AdsBot-Google-Mobile; +http://www.google.com/mobile/adsbot.html)',
+  }, (res) => {
+    console.info(`RES ${attempt} STARTED`);
+    console.info(`statusCode: ${res.statusCode}`);
 
-    const resposne = await withRetry<AllStationsApiResponse>(
-      () => fetch(API_ENDPOINT, {
-        headers: {
-          accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-          'accept-language': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6,la;q=0.5',
-          'cache-control': 'no-cache',
-          pragma: 'no-cache',
-          'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="101", "Google Chrome";v="101"',
-          'sec-ch-ua-mobile': '?0',
-          'sec-ch-ua-platform': '"macOS"',
-          'sec-fetch-dest': 'document',
-          'sec-fetch-mode': 'navigate',
-          'sec-fetch-site': 'none',
-          'sec-fetch-user': '?1',
-          'upgrade-insecure-requests': '1',
-          cookie: '',
-        },
-        referrerPolicy: 'strict-origin-when-cross-origin',
-        body: null,
-        method: 'GET',
-      })
-        .then((res) => res.json()),
-    );
+    console.info(res.headers);
 
-    const stations = resposne.data.layout[0].data.list.collection;
+    res.setEncoding('utf-8');
 
-    const result = stations.map((station) => {
-      let schedule = '';
-      const status: OkkoGasStation['status'] = {
-        [OkkoFuelType.A92]: [],
-        [OkkoFuelType.A95]: [],
-        [OkkoFuelType.Pulls95]: [],
-        [OkkoFuelType.Diesel]: [],
-        [OkkoFuelType.PullsDiesel]: [],
-        [OkkoFuelType.Gas]: [],
-      };
+    if (res.statusCode === 302) {
+      const parsedCookies = parseCookie(res.headers['set-cookie'] as string[]);
 
-      const root = parse(station.attributes.notification.replaceAll('\n', ''));
+      resolve(fetchData(parsedCookies, attempt + 1));
+      return;
+    }
 
-      root.childNodes.forEach((node) => {
-        const content = node.textContent;
+    let body = '';
 
-        if (content.includes(SCHEDULE)) {
-          schedule = parseSchedule(content);
-        } else if (content.includes(AVAILABLE_CASH)) {
-          parseFuel({
-            // @ts-ignore
-            node: node.nextSibling,
-            status,
-            type: FuelStatus.Available,
-          });
-        } else if (content.includes(AVAILABLE_FUEL_CARDS)) {
-          parseFuel({
-            // @ts-ignore
-            node: node.nextSibling,
-            status,
-            type: FuelStatus.AvailableFuelCards,
-          });
-        }
-      });
-
-      return {
-        ...station,
-        schedule,
-        status,
-      };
+    res.on('data', (chunk) => {
+      body += chunk;
     });
 
-    return result;
-  } catch (error) {
-    console.info(error);
+    res.on('end', () => {
+      console.info(`RES ${attempt} FINISHED`);
+      resolve(JSON.parse(body));
+    });
+  });
 
-    return fallback;
+  req.on('error', (error) => {
+    console.error(error);
+    reject(error);
+  });
+
+  req.end();
+});
+
+export const fetchOkkoStations = async () => {
+  if (process.env.NODE_ENV === 'development') {
+    // eslint-disable-next-line global-require
+    const stations: Array<OkkoGasStation> = require('@/data/okko/station-status.json');
+
+    return stations;
   }
+
+  const response = await withRetry<AllStationsApiResponse>(
+    () => fetchData(),
+  );
+
+  const stations = response.data.layout[0].data.list.collection;
+
+  const result = stations.map((station) => {
+    let schedule = '';
+    const status: OkkoGasStation['status'] = {
+      [OkkoFuelType.A92]: [],
+      [OkkoFuelType.A95]: [],
+      [OkkoFuelType.Pulls95]: [],
+      [OkkoFuelType.Diesel]: [],
+      [OkkoFuelType.PullsDiesel]: [],
+      [OkkoFuelType.Gas]: [],
+    };
+
+    const root = parse(station.attributes.notification.replaceAll('\n', ''));
+
+    root.childNodes.forEach((node) => {
+      const content = node.textContent;
+
+      if (content.includes(SCHEDULE)) {
+        schedule = parseSchedule(content);
+      } else if (content.includes(AVAILABLE_CASH)) {
+        parseFuel({
+          // @ts-ignore
+          node: node.nextSibling,
+          status,
+          type: FuelStatus.Available,
+        });
+      } else if (content.includes(AVAILABLE_FUEL_CARDS)) {
+        parseFuel({
+          // @ts-ignore
+          node: node.nextSibling,
+          status,
+          type: FuelStatus.AvailableFuelCards,
+        });
+      }
+    });
+
+    return {
+      ...station,
+      schedule,
+      status,
+    };
+  });
+
+  return result;
 };
 
 export const processOkkoStations = async () => {
