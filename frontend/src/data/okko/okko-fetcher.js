@@ -58,7 +58,11 @@ const fetch = async (
     });
 
     res.on('end', () => {
-      resolve(JSON.parse(body));
+      if (res.statusCode === 200) {
+        resolve(JSON.parse(body));
+      } else {
+        reject(new Error(res.statusCode));
+      }
     });
   });
 
