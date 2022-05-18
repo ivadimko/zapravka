@@ -6,6 +6,7 @@ import {
   GasStationDescriptionType,
   StationStatus,
 } from '@/controllers/station/station.typedefs';
+import { DirectionLink } from '@/components/FuelMap/components/DirectionLink';
 import styles from './StationMarker.module.scss';
 
 interface Props {
@@ -87,6 +88,8 @@ export const StationMarker: FC<Props> = (props) => {
             {station.scheduleString && (
               <p>{station.scheduleString}</p>
             )}
+
+            <DirectionLink coordinates={station.coordinates} />
 
             <p
               className={cn(
