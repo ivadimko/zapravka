@@ -4,11 +4,25 @@ const { fetchOkkoData } = require('./okko-fetcher');
 const server = http.createServer(async (req, res) => { // 2 - creating server
   switch (req.url) {
     case '/okko-stations': {
-      const stations = await fetchOkkoData();
-      res.writeHead(200, { 'Content-Type': 'application/json' });
+      console.info({
+        socket: req.socket.remoteAddress,
+        connection: req.connection.remoteAddress,
+        forwarded: req.headers['x-forwarded-for'],
+      });
 
-      res.write(JSON.stringify(stations));
+      const stations = await fetchOkkoData();
+
+      try {
+        res.write(JSON.stringify(stations));
+        res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8' });
+      } catch (error) {
+        res.writeHead(400);
+
+        res.write(error.message);
+      }
+
       res.end();
+
       break;
     }
 
