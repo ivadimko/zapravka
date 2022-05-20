@@ -66,8 +66,15 @@ export const fetchWogStations = async () => {
 
       const temp = await Promise.all(part.map(async (station) => {
         const stationData = await withRetry<SingleStationApiResponse>(
-          () => fetch(station.link)
-            .then((response) => response.json()),
+          () => {
+            console.info('WOG: START');
+
+            return fetch(station.link)
+              .then((response) => {
+                console.info('WOG: updated from endpoint');
+                return response.json();
+              });
+          },
         );
 
         const description = stationData.data.workDescription;

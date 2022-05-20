@@ -21,8 +21,15 @@ export const fetchSocarStations = async () => {
   const API_ENDPOINT = 'https://socar.ua/api/map/stations?region=&services=';
 
   const { data } = await withRetry<AllStationsApiResponse>(
-    () => fetch(API_ENDPOINT)
-      .then((res) => res.json()),
+    () => {
+      console.info('SOCAR: START');
+
+      return fetch(API_ENDPOINT)
+        .then((res) => {
+          console.info('SOCAR: updated from endpoint');
+          return res.json();
+        });
+    },
   );
 
   return data.map((station) => {

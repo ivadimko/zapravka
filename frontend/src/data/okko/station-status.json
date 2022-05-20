@@ -59,7 +59,17 @@
     },
     "widgets": [],
     "schedule": "з 9:00 до 18:00.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -115,7 +125,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ГАЗ": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -207,7 +222,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ГАЗ": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -278,7 +301,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -356,7 +383,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -412,7 +443,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -475,7 +511,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS Diesel": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -615,7 +655,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ГАЗ": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -663,7 +708,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -726,7 +775,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ГАЗ": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -827,7 +880,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -939,7 +996,20 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -1017,7 +1087,14 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -1095,7 +1172,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -1173,7 +1254,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -1272,7 +1361,20 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ],
+      "ГАЗ": [
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -1380,7 +1482,16 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -1458,7 +1569,17 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -1543,7 +1664,18 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -1650,7 +1782,20 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -1757,7 +1902,23 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "PULLS 95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -1856,7 +2017,24 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ГАЗ": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -1920,7 +2098,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -1984,7 +2166,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -2055,7 +2242,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -2110,7 +2302,14 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -2194,7 +2393,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -2265,7 +2472,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -2336,7 +2551,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -2408,7 +2631,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -2472,7 +2699,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -2536,7 +2768,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -2615,7 +2851,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -2708,7 +2949,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -2806,7 +3055,18 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ГАЗ": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -2877,7 +3137,14 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -2970,7 +3237,16 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -3033,7 +3309,16 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -3081,7 +3366,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -3152,7 +3441,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "PULLS 95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -3223,7 +3520,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -3272,12 +3577,22 @@
       },
       "rozdilnyy_zbir": [],
       "post_machines": [],
-      "notification": "<p><strong><span style=\"text-decoration: underline;\">Графік роботи:</span> цілодобово.</strong></p>\n<p style=\"text-transform:uppercase\"><strong>За готівку і банківські картки доступно:*:</strong></p>\n <ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>А-95</strong>: до 15 л з Fishka або згідно з персональним лімітом</li>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>ДП</strong>: до 15 л з Fishka або згідно з персональним лімітом</li>\n</ol>\n <p style=\"text-transform:uppercase\"><strong>З паливною карткою і талонами доступно:</strong></p>\n <ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>PULLS 95</strong>: до 20 л</li>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>А-95</strong>: до 20 л</li>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>ДП</strong>: для легкових авто - до 50 л; для великогабаритних - до 100 л</li>\n</ol>\n<div><p>*при досягненні залишків пального на АЗК критичного рівня, відпуск не здійснюється.</p></div>",
-      "type_azk": 0
+      "notification": "<p><strong><span style=\"text-decoration: underline;\">Графік роботи:</span> цілодобово.</strong></p>\n<p style=\"text-transform:uppercase\"><strong>За готівку і банківські картки не доступно жодного виду пального.</strong></p>\n <ol>\n</ol>\n <p style=\"text-transform:uppercase\"><strong>З паливною карткою і талонами доступно:</strong></p>\n <ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>PULLS 95</strong>: до 20 л</li>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>А-95</strong>: до 20 л</li>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>ДП</strong>: для легкових авто - до 50 л; для великогабаритних - до 100 л</li>\n</ol>\n<div><p>*при досягненні залишків пального на АЗК критичного рівня, відпуск не здійснюється.</p></div>",
+      "type_azk": 3
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -3355,7 +3670,14 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -3433,7 +3755,19 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -3511,7 +3845,18 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -3589,7 +3934,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -3653,7 +4006,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -3724,7 +4081,14 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -3808,7 +4172,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -3886,7 +4258,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -3964,7 +4344,18 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -4034,7 +4425,20 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -4082,7 +4486,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -4153,7 +4562,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -4193,7 +4610,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -4256,7 +4677,14 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -4357,7 +4785,17 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -4464,7 +4902,19 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -4586,7 +5036,19 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -4680,12 +5142,30 @@
           "widgets": []
         }
       ],
-      "notification": "<p><strong><span style=\"text-decoration: underline;\">Графік роботи:</span> цілодобово.</strong></p>\n<p style=\"text-transform:uppercase\"><strong>За готівку і банківські картки доступно:*:</strong></p>\n <ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>PULLS 95</strong>: до 15 л з Fishka або згідно з персональним лімітом</li>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>ДП</strong>: до 15 л з Fishka або згідно з персональним лімітом</li>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>ГАЗ</strong>: без обмежень з Fishka</li>\n</ol>\n <p style=\"text-transform:uppercase\"><strong>З паливною карткою і талонами доступно:</strong></p>\n <ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>PULLS 95</strong>: до 20 л</li>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>А-95</strong>: до 20 л</li>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>ДП</strong>: для легкових авто - до 50 л; для великогабаритних - до 100 л</li>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>ГАЗ</strong>: без обмежень</li>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>PULLS Diesel</strong>: для легкових авто - до 50 л; для великогабаритних - до 100 л</li>\n</ol>\n<div><p>*при досягненні залишків пального на АЗК критичного рівня, відпуск не здійснюється.</p></div>",
+      "notification": "<p><strong><span style=\"text-decoration: underline;\">Графік роботи:</span> цілодобово.</strong></p>\n<p style=\"text-transform:uppercase\"><strong>За готівку і банківські картки доступно:*:</strong></p>\n <ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>PULLS 95</strong>: до 15 л з Fishka або згідно з персональним лімітом</li>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>ГАЗ</strong>: без обмежень з Fishka</li>\n</ol>\n <p style=\"text-transform:uppercase\"><strong>З паливною карткою і талонами доступно:</strong></p>\n <ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>PULLS 95</strong>: до 20 л</li>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>А-95</strong>: до 20 л</li>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>ДП</strong>: для легкових авто - до 50 л; для великогабаритних - до 100 л</li>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>ГАЗ</strong>: без обмежень</li>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>PULLS Diesel</strong>: для легкових авто - до 50 л; для великогабаритних - до 100 л</li>\n</ol>\n<div><p>*при досягненні залишків пального на АЗК критичного рівня, відпуск не здійснюється.</p></div>",
       "type_azk": 0
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ГАЗ": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -4785,7 +5265,17 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -4871,7 +5361,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -4950,7 +5448,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -5035,7 +5538,18 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -5106,7 +5620,16 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -5170,7 +5693,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -5241,7 +5768,16 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -5304,7 +5840,14 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -5382,7 +5925,19 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -5468,7 +6023,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -5539,7 +6102,16 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -5610,7 +6182,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -5688,7 +6268,19 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -5773,7 +6365,18 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -5844,7 +6447,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -5906,7 +6517,18 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -5970,7 +6592,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -6049,7 +6675,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -6127,7 +6757,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "PULLS 95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -6218,7 +6856,20 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ГАЗ": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -6289,7 +6940,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -6353,7 +7009,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -6438,7 +7098,18 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -6536,7 +7207,24 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ГАЗ": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -6621,7 +7309,19 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ГАЗ": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -6706,7 +7406,16 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ГАЗ": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -6770,7 +7479,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -6862,7 +7575,20 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -6941,7 +7667,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -7076,7 +7806,18 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -7217,7 +7958,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -7470,7 +8215,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -7581,7 +8330,14 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -7643,7 +8399,17 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -7713,7 +8479,19 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "PULLS 95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -7768,7 +8546,14 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -7824,7 +8609,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -7894,7 +8683,20 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -7957,7 +8759,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -8027,7 +8837,20 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -8075,7 +8898,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -8145,7 +8972,18 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -8193,7 +9031,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -8249,7 +9091,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -8313,7 +9159,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -8368,7 +9218,16 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -8451,7 +9310,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -8563,7 +9426,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -8634,7 +9501,14 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -8712,7 +9586,20 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -8804,7 +9691,18 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -8908,7 +9806,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -8971,7 +9873,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -9027,7 +9934,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -9091,7 +10002,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -9154,7 +10070,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -9232,7 +10152,17 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -9295,7 +10225,14 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -9430,12 +10367,16 @@
           "widgets": []
         }
       ],
-      "notification": "<p><strong><span style=\"text-decoration: underline;\">Графік роботи:</span> цілодобово.</strong></p>\n<p style=\"text-transform:uppercase\"><strong>За готівку і банківські картки доступно:*:</strong></p>\n <ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>А-95</strong>: до 15 л з Fishka або згідно з персональним лімітом</li>\n</ol>\n <p style=\"text-transform:uppercase\"><strong>З паливною карткою і талонами доступно:</strong></p>\n <ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>А-95</strong>: до 20 л</li>\n</ol>\n<div><p>*при досягненні залишків пального на АЗК критичного рівня, відпуск не здійснюється.</p></div>",
-      "type_azk": 0
+      "notification": "<p><strong><span style=\"text-decoration: underline;\">Графік роботи:</span> цілодобово.</strong></p>\n<p style=\"text-transform:uppercase\"><strong>За готівку і банківські картки не доступно жодного виду пального.</strong></p>\n <ol>\n</ol>\n <p style=\"text-transform:uppercase\"><strong>З паливною карткою і талонами доступно:</strong></p>\n <ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>А-95</strong>: до 20 л</li>\n</ol>\n<div><p>*при досягненні залишків пального на АЗК критичного рівня, відпуск не здійснюється.</p></div>",
+      "type_azk": 3
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -9552,7 +10493,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "PULLS 95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -9622,7 +10571,18 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -9693,7 +10653,16 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -9771,7 +10740,17 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -9856,7 +10835,19 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -9927,7 +10918,14 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -9990,7 +10988,14 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -10053,7 +11058,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -10117,7 +11130,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -10210,7 +11227,14 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -10274,7 +11298,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -10360,7 +11388,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -10415,7 +11447,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -10455,7 +11495,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -10532,7 +11576,18 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -10596,7 +11651,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -10658,7 +11718,18 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -10743,7 +11814,17 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -10806,7 +11887,16 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ГАЗ": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -10869,7 +11959,16 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -10947,7 +12046,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ГАЗ": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -11032,7 +12139,17 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -11103,7 +12220,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -11174,7 +12296,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -11259,7 +12385,18 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -11330,7 +12467,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -11409,7 +12551,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -11508,7 +12655,16 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ГАЗ": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -11572,7 +12728,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -11620,7 +12780,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -11706,7 +12871,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -11770,7 +12939,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -11834,7 +13008,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -11913,7 +13091,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -12056,7 +13238,14 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -12128,7 +13317,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -12199,7 +13393,16 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ГАЗ": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -12263,7 +13466,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -12314,12 +13522,16 @@
       },
       "rozdilnyy_zbir": [],
       "post_machines": [],
-      "notification": "<p><strong><span style=\"text-decoration: underline;\">Графік роботи:</span> цілодобово.</strong></p>\n<p style=\"text-transform:uppercase\"><strong>За готівку і банківські картки доступно:*:</strong></p>\n <ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>А-95</strong>: до 15 л з Fishka або згідно з персональним лімітом</li>\n</ol>\n <p style=\"text-transform:uppercase\"><strong>З паливною карткою і талонами доступно:</strong></p>\n <ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>А-95</strong>: до 20 л</li>\n</ol>\n<div><p>*при досягненні залишків пального на АЗК критичного рівня, відпуск не здійснюється.</p></div>",
-      "type_azk": 0
+      "notification": "<p><strong><span style=\"text-decoration: underline;\">Графік роботи:</span> цілодобово.</strong></p>\n<p style=\"text-transform:uppercase\"><strong>За готівку і банківські картки не доступно жодного виду пального.</strong></p>\n <ol>\n</ol>\n <p style=\"text-transform:uppercase\"><strong>З паливною карткою і талонами доступно:</strong></p>\n <ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>А-95</strong>: до 20 л</li>\n</ol>\n<div><p>*при досягненні залишків пального на АЗК критичного рівня, відпуск не здійснюється.</p></div>",
+      "type_azk": 3
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -12390,7 +13602,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -12461,7 +13681,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -12525,7 +13750,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -12597,7 +13827,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -12675,7 +13910,16 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ГАЗ": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -12746,7 +13990,16 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -12824,7 +14077,16 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -12879,7 +14141,16 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -12965,7 +14236,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -13036,7 +14311,16 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -13107,7 +14391,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -13178,7 +14470,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -13249,7 +14549,16 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -13328,7 +14637,14 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -13399,7 +14715,14 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -13470,7 +14793,16 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -13526,7 +14858,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -13590,7 +14927,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -13668,7 +15010,20 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -13746,7 +15101,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ГАЗ": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -13824,7 +15187,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-92": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -13916,7 +15287,20 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ГАЗ": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -13987,7 +15371,16 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -14072,7 +15465,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -14166,7 +15564,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ГАЗ": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -14237,7 +15640,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS Diesel": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -14337,7 +15744,20 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -14415,7 +15835,17 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -14486,7 +15916,14 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -14578,7 +16015,19 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ГАЗ": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "PULLS 95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -14656,7 +16105,17 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -14734,7 +16193,17 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -14812,7 +16281,18 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -14931,7 +16411,14 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -15031,7 +16518,21 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -15109,7 +16610,18 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -15200,7 +16712,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ГАЗ": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -15370,7 +16890,25 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ГАЗ": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -15449,7 +16987,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -15513,7 +17055,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -15583,7 +17129,17 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -15683,7 +17239,23 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -15873,7 +17445,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "PULLS 95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -15944,7 +17524,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS Diesel": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -16022,7 +17610,18 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -16100,7 +17699,19 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -16170,7 +17781,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -16288,7 +17907,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ГАЗ": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -16357,7 +17981,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -16420,7 +18048,16 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -16475,7 +18112,14 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -16539,7 +18183,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ГАЗ": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -16587,7 +18236,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -16643,7 +18297,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -16765,12 +18423,16 @@
       },
       "rozdilnyy_zbir": [],
       "post_machines": [],
-      "notification": "<p><strong><span style=\"text-decoration: underline;\">Графік роботи:</span> цілодобово.</strong></p>\n<p style=\"text-transform:uppercase\"><strong>За готівку і банківські картки доступно:*:</strong></p>\n <ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>А-95</strong>: до 15 л з Fishka або згідно з персональним лімітом</li>\n</ol>\n <p style=\"text-transform:uppercase\"><strong>З паливною карткою і талонами доступно:</strong></p>\n <ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>А-95</strong>: до 20 л</li>\n</ol>\n<div><p>*при досягненні залишків пального на АЗК критичного рівня, відпуск не здійснюється.</p></div>",
-      "type_azk": 0
+      "notification": "<p><strong><span style=\"text-decoration: underline;\">Графік роботи:</span> цілодобово.</strong></p>\n<p style=\"text-transform:uppercase\"><strong>За готівку і банківські картки не доступно жодного виду пального.</strong></p>\n <ol>\n</ol>\n <p style=\"text-transform:uppercase\"><strong>З паливною карткою і талонами доступно:</strong></p>\n <ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>А-95</strong>: до 20 л</li>\n</ol>\n<div><p>*при досягненні залишків пального на АЗК критичного рівня, відпуск не здійснюється.</p></div>",
+      "type_azk": 3
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -16856,7 +18518,18 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -16904,7 +18577,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -16966,7 +18643,17 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -16982,15 +18669,7 @@
         },
         "widgets": []
       },
-      "fuel_type": [
-        {
-          "attributes": {
-            "code": "DP_EVRO",
-            "name": "DP_EVRO"
-          },
-          "widgets": []
-        }
-      ],
+      "fuel_type": [],
       "restaurants": [],
       "car_services": [
         {
@@ -17017,7 +18696,7 @@
       },
       "rozdilnyy_zbir": [],
       "post_machines": [],
-      "notification": "<p><strong><span style=\"text-decoration: underline;\">Графік роботи:</span> цілодобово.</strong></p>\n<p style=\"text-transform:uppercase\"><strong>За готівку і банківські картки доступно:*:</strong></p>\n <ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>ДП</strong>: до 15 л з Fishka або згідно з персональним лімітом</li>\n</ol>\n <p style=\"text-transform:uppercase\"><strong>З паливною карткою і талонами доступно:</strong></p>\n <ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>ДП</strong>: для легкових авто - до 50 л; для великогабаритних - до 100 л</li>\n</ol>\n<div><p>*при досягненні залишків пального на АЗК критичного рівня, відпуск не здійснюється.</p></div>",
+      "notification": "<p><strong><span style=\"text-decoration: underline;\">Графік роботи:</span> цілодобово.</strong></p><p style=\"text-transform:uppercase\"><strong>Продаж лише товарів магазину та кафе</strong></p>",
       "type_azk": 0
     },
     "widgets": [],
@@ -17131,7 +18810,20 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -17179,7 +18871,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -17242,7 +18939,16 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -17290,7 +18996,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -17393,7 +19104,14 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -17496,7 +19214,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -17573,7 +19299,16 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ГАЗ": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -17668,7 +19403,16 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -17724,7 +19468,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -17835,7 +19584,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -17898,7 +19655,14 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -17953,7 +19717,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -18068,13 +19840,6 @@
       "fuel_type": [
         {
           "attributes": {
-            "code": "A95_EVRO",
-            "name": "A95_EVRO"
-          },
-          "widgets": []
-        },
-        {
-          "attributes": {
             "code": "DP_EVRO",
             "name": "DP_EVRO"
           },
@@ -18091,12 +19856,17 @@
       },
       "rozdilnyy_zbir": [],
       "post_machines": [],
-      "notification": "<p><strong><span style=\"text-decoration: underline;\">Графік роботи:</span> цілодобово.</strong></p>\n<p style=\"text-transform:uppercase\"><strong>За готівку і банківські картки доступно:*:</strong></p>\n <ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>ДП</strong>: до 15 л з Fishka або згідно з персональним лімітом</li>\n</ol>\n <p style=\"text-transform:uppercase\"><strong>З паливною карткою і талонами доступно:</strong></p>\n <ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>А-95</strong>: до 20 л</li>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>ДП</strong>: для легкових авто - до 50 л; для великогабаритних - до 100 л</li>\n</ol>\n<div><p>*при досягненні залишків пального на АЗК критичного рівня, відпуск не здійснюється.</p></div>",
+      "notification": "<p><strong><span style=\"text-decoration: underline;\">Графік роботи:</span> цілодобово.</strong></p>\n<p style=\"text-transform:uppercase\"><strong>За готівку і банківські картки доступно:*:</strong></p>\n <ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>ДП</strong>: до 15 л з Fishka або згідно з персональним лімітом</li>\n</ol>\n <p style=\"text-transform:uppercase\"><strong>З паливною карткою і талонами доступно:</strong></p>\n <ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>ДП</strong>: для легкових авто - до 50 л; для великогабаритних - до 100 л</li>\n</ol>\n<div><p>*при досягненні залишків пального на АЗК критичного рівня, відпуск не здійснюється.</p></div>",
       "type_azk": 0
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -18184,7 +19954,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -18254,7 +20028,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -18317,7 +20099,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -18386,7 +20172,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -18456,7 +20247,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ГАЗ": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -18546,7 +20345,19 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ГАЗ": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "PULLS 95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -18694,7 +20505,14 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -18786,7 +20604,17 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_fuel_cards"
+      ],
+      "ГАЗ": [
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -18834,7 +20662,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -18897,7 +20729,16 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -18983,7 +20824,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ГАЗ": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -19061,7 +20910,18 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ГАЗ": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -19131,7 +20991,18 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ГАЗ": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -19195,7 +21066,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -19299,7 +21174,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -19392,7 +21271,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -19462,7 +21349,19 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ГАЗ": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-92": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -19553,7 +21452,16 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ГАЗ": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -19638,7 +21546,16 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ГАЗ": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -19723,7 +21640,17 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "ГАЗ": [
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -19779,7 +21706,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -19842,7 +21774,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -19961,7 +21898,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -20025,7 +21967,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -20088,7 +22035,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -20152,7 +22107,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -20224,7 +22183,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -20296,7 +22259,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -20344,7 +22311,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -20408,7 +22379,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -20472,7 +22447,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -20512,7 +22491,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -20583,7 +22566,14 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -20654,7 +22644,14 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -20788,7 +22785,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -20836,7 +22838,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -21011,7 +23017,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -21067,7 +23077,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -21130,7 +23144,14 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -21313,7 +23334,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -21397,7 +23422,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -21453,7 +23486,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -21531,7 +23568,14 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -21594,7 +23638,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -21665,7 +23713,14 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -21815,7 +23870,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -21871,7 +23930,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -21942,7 +24005,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -22021,7 +24088,14 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -22099,7 +24173,16 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ГАЗ": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -22170,7 +24253,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -22297,7 +24384,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -22353,7 +24444,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -22576,7 +24672,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -22647,7 +24747,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -22725,7 +24830,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ГАЗ": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -22797,7 +24910,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -22860,7 +24978,16 @@
     },
     "widgets": [],
     "schedule": "з 9:00 до 18:00.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ГАЗ": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -22923,7 +25050,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ГАЗ": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -22986,7 +25121,16 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -23049,7 +25193,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -23105,7 +25257,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -23168,7 +25324,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ГАЗ": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -23231,7 +25395,14 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -23309,7 +25480,17 @@
     },
     "widgets": [],
     "schedule": "з 8:30 до 17:00.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -23372,7 +25553,12 @@
     },
     "widgets": [],
     "schedule": "з 8:30 до 19:00.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -23435,7 +25621,15 @@
     },
     "widgets": [],
     "schedule": "з 8:30 до 17:00.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -23483,7 +25677,12 @@
     },
     "widgets": [],
     "schedule": "з 8:30 до 17:00.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -23554,7 +25753,15 @@
     },
     "widgets": [],
     "schedule": "з 9:30 до 15:00.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -23609,7 +25816,14 @@
     },
     "widgets": [],
     "schedule": "з 8:30 до 17:00.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -23672,7 +25886,16 @@
     },
     "widgets": [],
     "schedule": "з 8:30 до 17:00.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -23735,7 +25958,14 @@
     },
     "widgets": [],
     "schedule": "з 8:30 до 17:00.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -23791,7 +26021,11 @@
     },
     "widgets": [],
     "schedule": "з 8:30 до 17:00.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -23855,7 +26089,12 @@
     },
     "widgets": [],
     "schedule": "з 8:30 до 17:00.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -23950,7 +26189,14 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -23998,7 +26244,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -24061,7 +26311,14 @@
     },
     "widgets": [],
     "schedule": "з 8:30 до 19:00.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -24191,83 +26448,20 @@
       },
       "rozdilnyy_zbir": [],
       "post_machines": [],
-      "notification": "<p><strong><span style=\"text-decoration: underline;\">Графік роботи:</span> з 5:00 до 21:00.</strong></p>\n<p style=\"text-transform:uppercase\"><strong>За готівку і банківські картки доступно:*:</strong></p>\n <ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>PULLS 95</strong>: до 15 л з Fishka або згідно з персональним лімітом</li>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>А-95</strong>: до 15 л з Fishka або згідно з персональним лімітом</li>\n</ol>\n <p style=\"text-transform:uppercase\"><strong>З паливною карткою і талонами доступно:</strong></p>\n <ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>PULLS 95</strong>: до 20 л</li>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>А-95</strong>: до 20 л</li>\n</ol>\n<div><p>*при досягненні залишків пального на АЗК критичного рівня, відпуск не здійснюється.</p></div>",
+      "notification": "<p><strong><span style=\"text-decoration: underline;\">Графік роботи:</span> з 5:00 до 21:00.</strong></p>\n<p style=\"text-transform:uppercase\"><strong>За готівку і банківські картки доступно:*:</strong></p>\n <ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>А-95</strong>: до 15 л з Fishka або згідно з персональним лімітом</li>\n</ol>\n <p style=\"text-transform:uppercase\"><strong>З паливною карткою і талонами доступно:</strong></p>\n <ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>PULLS 95</strong>: до 20 л</li>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>А-95</strong>: до 20 л</li>\n</ol>\n<div><p>*при досягненні залишків пального на АЗК критичного рівня, відпуск не здійснюється.</p></div>",
       "type_azk": 0
     },
     "widgets": [],
     "schedule": "з 5:00 до 21:00.",
-    "status": {}
-  },
-  {
-    "attributes": {
-      "Cod_AZK": 60113100,
-      "Oblast": [],
-      "Naselenyy_punkt": "Полтава",
-      "Typ_naselenogo_punktu": "м.",
-      "Adresa": "вул. Сінна, 42 А, АЗС №31",
-      "Typ_obektu": {
-        "attributes": {
-          "code": "azs",
-          "name": "АЗК"
-        },
-        "widgets": []
-      },
-      "fuel_type": [
-        {
-          "attributes": {
-            "code": "A95_EVRO",
-            "name": "A95_EVRO"
-          },
-          "widgets": []
-        },
-        {
-          "attributes": {
-            "code": "DP_EVRO",
-            "name": "DP_EVRO"
-          },
-          "widgets": []
-        }
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
       ],
-      "restaurants": [],
-      "car_services": [
-        {
-          "attributes": {
-            "code": "SwappingWheel",
-            "name": "Підкачка шин"
-          },
-          "widgets": []
-        }
-      ],
-      "car_washes": [],
-      "other_services": [
-        {
-          "attributes": {
-            "code": "Bankomat",
-            "name": "Термінал EasyPay"
-          },
-          "widgets": []
-        }
-      ],
-      "coordinates": {
-        "lat": 49.583683,
-        "lng": 34.536987
-      },
-      "rozdilnyy_zbir": [],
-      "post_machines": [
-        {
-          "attributes": {
-            "code": "Meest",
-            "name": "Міні-відділення Meest-Express"
-          },
-          "widgets": []
-        }
-      ],
-      "notification": "<p><strong><span style=\"text-decoration: underline;\">Графік роботи:</span> цілодобово.</strong></p>\n<p style=\"text-transform:uppercase\"><strong>За готівку і банківські картки доступно:*:</strong></p>\n <ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>ДП</strong>: до 15 л з Fishka або згідно з персональним лімітом</li>\n</ol>\n <p style=\"text-transform:uppercase\"><strong>З паливною карткою і талонами доступно:</strong></p>\n <ol>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>А-95</strong>: до 20 л</li>\n<li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>ДП</strong>: для легкових авто - до 50 л; для великогабаритних - до 100 л</li>\n</ol>\n<div><p>*при досягненні залишків пального на АЗК критичного рівня, відпуск не здійснюється.</p></div>",
-      "type_azk": 0
-    },
-    "widgets": [],
-    "schedule": "цілодобово.",
-    "status": {}
+      "PULLS 95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -24323,7 +26517,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -24406,7 +26605,15 @@
     },
     "widgets": [],
     "schedule": "з 8:00 до 19:00.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "PULLS 95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -24470,7 +26677,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -24518,7 +26729,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -24588,7 +26803,18 @@
     },
     "widgets": [],
     "schedule": "з 8:30 до 17:00.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -24658,7 +26884,17 @@
     },
     "widgets": [],
     "schedule": "з 8:30 до 17:00.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -24734,7 +26970,16 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -24810,7 +27055,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -24895,7 +27144,18 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -24980,7 +27240,24 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -25113,7 +27390,20 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -25220,7 +27510,22 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -25305,7 +27610,21 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "PULLS 95": [
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -25368,7 +27687,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -25437,7 +27761,23 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -25493,7 +27833,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ГАЗ": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -25570,7 +27915,19 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -25674,7 +28031,12 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -25737,7 +28099,16 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -25894,7 +28265,19 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "ДП": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ГАЗ": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "PULLS Diesel": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -25950,7 +28333,11 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -25997,7 +28384,14 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -26060,7 +28454,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "ДП": [
+        "available_fuel_cards"
+      ]
+    }
   },
   {
     "attributes": {
@@ -26123,6 +28525,15 @@
     },
     "widgets": [],
     "schedule": "цілодобово.",
-    "status": {}
+    "status": {
+      "PULLS 95": [
+        "available_cash",
+        "available_fuel_cards"
+      ],
+      "А-95": [
+        "available_cash",
+        "available_fuel_cards"
+      ]
+    }
   }
 ]

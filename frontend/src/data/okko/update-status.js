@@ -40,13 +40,13 @@ const parseSchedule = (content) => (content.split(SCHEDULE).pop() || '').trim();
         schedule = parseSchedule(content);
       } else if (content.includes(AVAILABLE_CASH)) {
         parseFuel({
-          node: node.nextSibling,
+          node: node.nextElementSibling,
           status,
           type: 'available_cash',
         });
       } else if (content.includes(AVAILABLE_FUEL_CARDS)) {
         parseFuel({
-          node: node.nextSibling,
+          node: node.nextElementSibling,
           status,
           type: 'available_fuel_cards',
         });

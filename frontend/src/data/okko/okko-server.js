@@ -13,15 +13,16 @@ const server = http.createServer(async (req, res) => { // 2 - creating server
       const stations = await fetchOkkoData();
 
       try {
-        res.write(JSON.stringify(stations));
         res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8' });
+
+        res.write(JSON.stringify(stations));
       } catch (error) {
         res.writeHead(400);
 
         res.write(error.message);
+      } finally {
+        res.end();
       }
-
-      res.end();
 
       break;
     }

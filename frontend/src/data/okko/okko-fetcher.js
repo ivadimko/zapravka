@@ -42,8 +42,6 @@ const fetch = async (
 
     // console.info(res.headers);
 
-    res.setEncoding('utf-8');
-
     if (res.statusCode === 302) {
       const parsedCookies = parseCookie(res.headers['set-cookie']);
 
@@ -51,15 +49,17 @@ const fetch = async (
       return;
     }
 
-    let body = '';
+    const body = [];
 
     res.on('data', (chunk) => {
-      body += chunk;
+      body.push(chunk);
     });
 
     res.on('end', () => {
       if (res.statusCode === 200) {
-        resolve(JSON.parse(body));
+        const result = Buffer.concat(body);
+
+        resolve(JSON.parse(result.toString('utf-8')));
       } else {
         reject(new Error(res.statusCode));
       }

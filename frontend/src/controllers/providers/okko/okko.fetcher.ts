@@ -57,8 +57,16 @@ export const fetchOkkoStations = async () => {
     console.info(`OKKO: ${process.env.OKKO_ENDPOINT}`);
 
     response = await withRetry<AllStationsApiResponse>(
-      () => fetch(process.env.OKKO_ENDPOINT as string)
-        .then((res) => res.json()),
+      () => {
+        console.info('OKKO: START');
+
+        return fetch(process.env.OKKO_ENDPOINT as string)
+          .then((res) => {
+            console.info('OKKO: updated from endpoint');
+
+            return res.json();
+          });
+      },
     );
   } catch (error) {
     console.info(error);
@@ -103,14 +111,14 @@ export const fetchOkkoStations = async () => {
       } else if (content.includes(AVAILABLE_CASH)) {
         parseFuel({
           // @ts-ignore
-          node: node.nextSibling,
+          node: node.nextElementSibling,
           status,
           type: FuelStatus.Available,
         });
       } else if (content.includes(AVAILABLE_FUEL_CARDS)) {
         parseFuel({
           // @ts-ignore
-          node: node.nextSibling,
+          node: node.nextElementSibling,
           status,
           type: FuelStatus.AvailableFuelCards,
         });
