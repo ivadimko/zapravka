@@ -1,6 +1,7 @@
-import { FC, useMemo, useState } from 'react';
+import {
+  FC, useCallback, useEffect, useMemo, useState,
+} from 'react';
 import Select, { SingleValue } from 'react-select';
-import cn from 'classnames';
 import { FuelMap } from '@/components/FuelMap';
 import { GasStation } from '@/controllers/station/station.typedefs';
 import { FuelStatus, FuelType } from '@/controllers/fuel/fuel.typedefs';
@@ -25,6 +26,9 @@ interface Props {
   data: Array<GasStation>
   updatedAt: string
 }
+
+const FUEL_TYPE_KEY = 'fuel_type';
+const FUEL_STATUS_KEY = 'fuel_status';
 
 export const Map: FC<Props> = (props) => {
   const { data, updatedAt } = props;
@@ -53,6 +57,41 @@ export const Map: FC<Props> = (props) => {
     );
   }, [data, fuel, status]);
 
+  const updateFuelType = useCallback(
+    (value: SingleValue<{ label: string, value: FuelType }>) => {
+      setFuel(value);
+
+      localStorage.setItem(FUEL_TYPE_KEY, JSON.stringify(value));
+    },
+    [],
+  );
+
+  const updateFuelStatus = useCallback(
+    (value: SingleValue<{ label: string, value: FuelStatus }>) => {
+      setStatus(value);
+
+      localStorage.setItem(FUEL_STATUS_KEY, JSON.stringify(value));
+    },
+    [],
+  );
+
+  useEffect(() => {
+    const fuelStatus = localStorage.getItem(FUEL_STATUS_KEY);
+    const fuelType = localStorage.getItem(FUEL_TYPE_KEY);
+
+    try {
+      if (fuelType) {
+        setFuel(JSON.parse(fuelType));
+      }
+
+      if (fuelStatus) {
+        setStatus(JSON.parse(fuelStatus));
+      }
+    } catch {
+      // do nothing
+    }
+  }, []);
+
   return (
     <div className={styles.container}>
       <div className={styles.row}>
@@ -60,10 +99,11 @@ export const Map: FC<Props> = (props) => {
           id="fuel-select"
           instanceId="fuel-select"
           options={fuelOptions}
-          defaultValue={fuel}
+          value={fuel}
+          isSearchable={false}
           className={styles.select}
           onChange={(value) => {
-            setFuel(value);
+            updateFuelType(value);
           }}
         />
 
@@ -71,10 +111,11 @@ export const Map: FC<Props> = (props) => {
           id="fuel-status-select"
           instanceId="fuel-status-select"
           options={statusOptions}
-          defaultValue={status}
-          className={cn(styles.select, styles.statusSelect)}
+          value={status}
+          isSearchable={false}
+          className={styles.select}
           onChange={(value) => {
-            setStatus(value);
+            updateFuelStatus(value);
           }}
         />
       </div>
