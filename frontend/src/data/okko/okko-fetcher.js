@@ -16,7 +16,7 @@ const parseCookie = (cookieArray, oldCookie) => {
 };
 
 const fetch = async (
-  cookie = 'visid_incap_2141272=mGNQBRa+QtCIKg0CtYpJRwgdhWIAAAAAQUIPAAAAAADgmuZkQ8yX346+lKsjXnPt; incap_ses_324_2141272=Zo8RHyv3K2/F2O4KmhR/BO0ah2IAAAAAZcKKXr3enn3tdnP1B23v7w==',
+  cookie = 'visid_incap_2141272=P7Jrk8XhSgaqdWGB0XfB8skfhWIAAAAAQUIPAAAAAAASxpG3fVnZ6yY2UEzPcfoi; _gcl_au=1.1.129468590.1652895000; _ga=GA1.2.1348116497.1652895000; incap_ses_324_2141272=TT72NSTm3Hb+MUALmhR/BCegiGIAAAAA9tEsbsiSkB8+NgP1SOknxg==',
   attempt = 1,
 ) => new Promise((resolve, reject) => {
   if (attempt === 10) {
