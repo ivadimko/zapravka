@@ -18,7 +18,11 @@ const DEFAULT_CENTER = {
   lat: 50.4501,
   lng: 30.5234,
 };
+
 const MAP_CENTER_KEY = 'map_center';
+
+const DEFAULT_ZOOM = 12;
+const MAP_ZOOM_KEY = 'map_zoom';
 
 const USER_ALLOWED_GEOLOCATION_KEY = 'user_allowed_geolocation';
 
@@ -64,6 +68,15 @@ export const FuelMap: FC<Props> = (props) => {
     [],
   );
 
+  const updateStoredMapZoom = useMemo(
+    () => debounce(
+      (zoom: number) => {
+        localStorage.setItem(MAP_ZOOM_KEY, String(zoom));
+      },
+    ),
+    [],
+  );
+
   const goToLocation = useCallback(() => {
     if (userLocation && map) {
       map.setCenter(userLocation);
@@ -92,11 +105,14 @@ export const FuelMap: FC<Props> = (props) => {
 
   useEffect(() => {
     const savedMapPosition = localStorage.getItem(MAP_CENTER_KEY);
+    const savedMapZoom = localStorage.getItem(MAP_ZOOM_KEY);
+
     if (savedMapPosition && map) {
       try {
         const center = JSON.parse(savedMapPosition);
 
         map.setCenter(center);
+        map.setZoom(Number(savedMapZoom) || DEFAULT_ZOOM);
       } catch {
         // do nothing
       }
@@ -131,6 +147,9 @@ export const FuelMap: FC<Props> = (props) => {
         onLoad={onLoad}
         onCenterChanged={() => {
           updateStoredMapCenter(map?.getCenter());
+        }}
+        onZoomChanged={() => {
+          updateStoredMapZoom(map?.getZoom());
         }}
         onUnmount={onUnmount}
         options={{
