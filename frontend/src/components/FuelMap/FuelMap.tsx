@@ -1,8 +1,9 @@
 import { GoogleMap, Marker, useJsApiLoader } from '@react-google-maps/api';
 import {
-  FC, useCallback, useEffect, useState,
+  FC, useCallback, useEffect, useMemo, useState,
 } from 'react';
 import { GasStation } from '@/controllers/station/station.typedefs';
+import { debounce } from '@/utils/debounce';
 import { StationMarker } from './components/StationMarker';
 import { IconTarget } from './components/IconTarget';
 import styles from './FuelMap.module.scss';
@@ -13,10 +14,13 @@ const containerStyle = {
   height: '100%',
 };
 
-const center = {
+const DEFAULT_CENTER = {
   lat: 50.4501,
   lng: 30.5234,
 };
+const MAP_CENTER_KEY = 'map_center';
+
+const USER_ALLOWED_GEOLOCATION_KEY = 'user_allowed_geolocation';
 
 interface Props {
   stations: Array<GasStation>;
@@ -51,6 +55,15 @@ export const FuelMap: FC<Props> = (props) => {
     setMap(null);
   }, []);
 
+  const updateStoredMapCenter = useMemo(
+    () => debounce(
+      (coordinates: { lat: number, lng: number }) => {
+        localStorage.setItem(MAP_CENTER_KEY, JSON.stringify(coordinates));
+      },
+    ),
+    [],
+  );
+
   const goToLocation = useCallback(() => {
     if (userLocation && map) {
       map.setCenter(userLocation);
@@ -60,6 +73,8 @@ export const FuelMap: FC<Props> = (props) => {
 
     if (navigator.geolocation && map) {
       navigator.geolocation.getCurrentPosition((position) => {
+        localStorage.setItem(USER_ALLOWED_GEOLOCATION_KEY, 'true');
+
         const initialLocation = new google.maps.LatLng(
           position.coords.latitude,
           position.coords.longitude,
@@ -75,9 +90,33 @@ export const FuelMap: FC<Props> = (props) => {
     }
   }, [map, userLocation]);
 
-  // useEffect(() => {
-  //   goToLocation();
-  // }, [goToLocation]);
+  useEffect(() => {
+    const savedMapPosition = localStorage.getItem(MAP_CENTER_KEY);
+    if (savedMapPosition && map) {
+      try {
+        const center = JSON.parse(savedMapPosition);
+
+        map.setCenter(center);
+      } catch {
+        // do nothing
+      }
+    }
+  }, [map]);
+
+  useEffect(() => {
+    const isGeolocationAllowed = localStorage.getItem(
+      USER_ALLOWED_GEOLOCATION_KEY,
+    );
+
+    if (isGeolocationAllowed === 'true' && map) {
+      navigator.geolocation.getCurrentPosition((position) => {
+        setUserLocation({
+          lat: position.coords.latitude,
+          lng: position.coords.longitude,
+        });
+      });
+    }
+  }, [map]);
 
   useEffect(() => {
     setOpenedStation(-1);
@@ -87,9 +126,12 @@ export const FuelMap: FC<Props> = (props) => {
     ? (
       <GoogleMap
         mapContainerStyle={containerStyle}
-        center={center}
+        center={DEFAULT_CENTER}
         zoom={12}
         onLoad={onLoad}
+        onCenterChanged={() => {
+          updateStoredMapCenter(map?.getCenter());
+        }}
         onUnmount={onUnmount}
         options={{
           zoomControl: true,
