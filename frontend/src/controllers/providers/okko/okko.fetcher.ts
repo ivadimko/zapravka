@@ -21,7 +21,7 @@ interface AllStationsApiResponse {
 
 const SCHEDULE = 'Графік роботи:';
 const AVAILABLE_CASH = 'За готівку і банківські картки доступно';
-const AVAILABLE_FUEL_CARDS = 'З паливною карткою і талонами доступно:';
+const AVAILABLE_FUEL_CARDS = 'З паливною карткою і талонами доступно';
 
 const parseFuel = (options: {
   node: Node,
