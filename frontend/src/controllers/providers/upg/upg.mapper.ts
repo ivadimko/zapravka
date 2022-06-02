@@ -11,8 +11,9 @@ import { UpgFuelMapping } from '@/controllers/providers/upg/upg.constants';
 import {
   makeExternalUtm,
 } from '@/controllers/analytics/analytics.utils/makeExternalUtm';
+import { PartialRecord } from '@/utils/PartialRecord';
 
-const PrepaidFuels = {
+const PrepaidFuels: PartialRecord<UPGFuelType, boolean> = {
   [UPGFuelType.A92Prepaid]: true,
   [UPGFuelType.A95Prepaid]: true,
   [UPGFuelType.DieselPrepaid]: true,
