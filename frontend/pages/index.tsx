@@ -9,6 +9,7 @@ import {
 } from '@/controllers/providers/socar/socar.fetcher';
 import { processOkkoStations } from '@/controllers/providers/okko/okko.fetcher';
 import MapImage from '@/components/Map/MapImage.png';
+import { processUPGStations } from '@/controllers/providers/upg/upg.fetcher';
 
 interface Props {
   data: Array<GasStation>
@@ -68,10 +69,12 @@ export const getStaticProps: GetStaticProps = async () => {
     wogStations,
     socarStations,
     okkoStations,
+    upgStations,
   ] = await Promise.all([
     processWogStations(),
     processSocarStations(),
     processOkkoStations(),
+    processUPGStations(),
   ]);
 
   return {
@@ -80,6 +83,7 @@ export const getStaticProps: GetStaticProps = async () => {
         ...wogStations,
         ...socarStations,
         ...okkoStations,
+        ...upgStations,
       ],
       revalidated: Date.now(),
     },
