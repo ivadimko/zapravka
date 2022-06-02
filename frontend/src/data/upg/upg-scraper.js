@@ -11,20 +11,16 @@ async function main() {
 
   const page = await context.newPage();
 
-  await page.goto('https://www.okko.ua/api/uk/fuel-map?gclid=123xyz');
+  await page.goto('https://upg.ua/merezha_azs?gclid=123xyz');
 
-  await page.waitForSelector('pre', {
-    timeout: 2000,
-  });
-
-  const content = await page.locator('pre').textContent();
+  const content = await page.evaluate('objmap');
   await browser.close();
 
-  console.info('OKKO CONTENT LOADED', `${content.slice(0, 20)}...`);
+  console.info('UPG CONTENT LOADED', `${content.countData}...`);
 
-  return JSON.parse(content);
+  return content;
 }
 
 module.exports = {
-  scrapeOkko: main,
+  scrapeUpg: main,
 };
