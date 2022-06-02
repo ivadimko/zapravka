@@ -1,7 +1,7 @@
 const http = require('http'); // 1 - Import Node.js core module
 const fs = require('fs/promises');
 const path = require('path');
-const { fetchOkkoData } = require('./okko-fetcher');
+const { scrapeOkko } = require('./okko-scraper');
 
 const server = http.createServer(async (req, res) => { // 2 - creating server
   switch (req.url) {
@@ -17,7 +17,7 @@ const server = http.createServer(async (req, res) => { // 2 - creating server
       const fallback = await fs.readFile(filePath);
 
       try {
-        const stations = await fetchOkkoData();
+        const stations = await scrapeOkko();
 
         await fs.writeFile(filePath, JSON.stringify(stations, null, 2));
 
@@ -44,11 +44,5 @@ const server = http.createServer(async (req, res) => { // 2 - creating server
 });
 
 server.listen(4565, () => {
-  console.info('Server is listening, starting interval');
-
-  setInterval(async () => {
-    console.info('re-fectch');
-
-    await fetchOkkoData();
-  }, 1000 * 60);
+  console.info('Server is listening');
 });
