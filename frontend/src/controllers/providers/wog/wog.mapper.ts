@@ -1,20 +1,37 @@
 import {
+  WogFuelStatus,
   WogFuelType,
   WogGasStation,
   WogSchedule,
 } from '@/controllers/providers/wog/wog.typedefs';
 import {
-  GasStation, GasStationDescriptionType,
+  GasStation,
+  GasStationDescriptionType,
   GasStationSchedule,
 } from '@/controllers/station/station.typedefs';
-import {
-  WogFuelMapping,
-  WogFuelStatusMapping,
-} from '@/controllers/providers/wog/wog.constants';
-import { FuelType } from '@/controllers/fuel/fuel.typedefs';
+import { WogFuelMapping } from '@/controllers/providers/wog/wog.constants';
+import { FuelStatus, FuelType } from '@/controllers/fuel/fuel.typedefs';
 import {
   makeExternalUtm,
 } from '@/controllers/analytics/analytics.utils/makeExternalUtm';
+
+const resolveFuelStatus = (wogStatus: string): FuelStatus => {
+  const normalizedStatus = wogStatus.toLowerCase();
+
+  if (normalizedStatus.startsWith(WogFuelStatus.Available)) {
+    return FuelStatus.Available;
+  }
+
+  if (normalizedStatus.startsWith(WogFuelStatus.AvailableFuelCards)) {
+    return FuelStatus.AvailableFuelCards;
+  }
+
+  if (normalizedStatus.startsWith(WogFuelStatus.OnlyCriticalVehicles)) {
+    return FuelStatus.OnlyCriticalVehicles;
+  }
+
+  return FuelStatus.Empty;
+};
 
 const mapFuelStatus = (
   statuses: WogGasStation['status'],
@@ -31,7 +48,7 @@ const mapFuelStatus = (
     const [fuel, status] = entry;
 
     const mappedFuel = WogFuelMapping[fuel as WogFuelType];
-    const mappedStatus = WogFuelStatusMapping[status];
+    const mappedStatus = resolveFuelStatus(status);
 
     if (!result[mappedFuel]) {
       result[mappedFuel] = {};
