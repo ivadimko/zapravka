@@ -1,8 +1,5 @@
-import { FuelStatus, FuelType } from '@/controllers/fuel/fuel.typedefs';
-import {
-  WogFuelStatus,
-  WogFuelType,
-} from '@/controllers/providers/wog/wog.typedefs';
+import { FuelType } from '@/controllers/fuel/fuel.typedefs';
+import { WogFuelType } from '@/controllers/providers/wog/wog.typedefs';
 
 export const WogFuelMapping = {
   [WogFuelType.A92]: FuelType.Petrol92,
@@ -14,11 +11,4 @@ export const WogFuelMapping = {
   [WogFuelType.MustangDiesel]: FuelType.Diesel,
   [WogFuelType.MustangDieselPlus]: FuelType.Diesel,
   [WogFuelType.Gas]: FuelType.Gas,
-};
-
-export const WogFuelStatusMapping = {
-  [WogFuelStatus.Empty]: FuelStatus.Empty,
-  [WogFuelStatus.OnlyCriticalVehicles]: FuelStatus.OnlyCriticalVehicles,
-  [WogFuelStatus.Available]: FuelStatus.Available,
-  [WogFuelStatus.AvailableFuelCards]: FuelStatus.AvailableFuelCards,
 };

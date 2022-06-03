@@ -11,10 +11,10 @@ export enum WogFuelType {
 }
 
 export enum WogFuelStatus {
-  Empty = 'Пальне відсутнє.',
-  OnlyCriticalVehicles = 'тільки спецтранспорт.',
-  Available = 'Готівка, банк.картки 20л. Гаманець ПРАЙД до 100л. Талони до 40л. Паливна картка (ліміт картки).',
-  AvailableFuelCards = 'Гаманець ПРАЙД до 100л. Талони до 40л. Паливна картка (ліміт картки).',
+  Empty = 'пальне відсутнє',
+  OnlyCriticalVehicles = 'тільки спецтранспорт',
+  Available = 'готівка',
+  AvailableFuelCards = 'талони',
 }
 
 export interface WogService {
@@ -51,5 +51,5 @@ export interface WogGasStation extends WogGasStationShort {
   fuels: Array<WogFuel>
   services: Array<WogService>
   schedule: Array<WogSchedule>
-  status: Record<WogFuelType, WogFuelStatus>
+  status: Record<WogFuelType, string>
 }

@@ -1,6 +1,6 @@
 import { withRetry } from '@/utils/withRetry';
 import {
-  WogFuel, WogFuelStatus, WogFuelType,
+  WogFuel, WogFuelType,
   WogGasStation, WogGasStationShort,
   WogService,
 } from '@/controllers/providers/wog/wog.typedefs';
@@ -79,7 +79,7 @@ export const fetchWogStations = async () => {
 
         const description = stationData.data.workDescription;
 
-        stationData.data.status = {} as Record<WogFuelType, WogFuelStatus>;
+        stationData.data.status = {} as Record<WogFuelType, string>;
 
         const rows = description.split('\n');
 
@@ -87,9 +87,7 @@ export const fetchWogStations = async () => {
           const [fuel, status] = row.split(' - ');
 
           if (fuel && status) {
-            stationData.data.status[
-              fuel as WogFuelType
-            ] = status as WogFuelStatus;
+            stationData.data.status[fuel as WogFuelType] = status;
           }
         });
 
