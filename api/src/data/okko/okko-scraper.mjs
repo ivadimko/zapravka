@@ -1,7 +1,7 @@
-import playwright from 'playwright';
+import { chromium } from 'playwright-chromium';
 
 export const scrapeOkko = async () => {
-  const browser = await playwright.chromium.launch({
+  const browser = await chromium.launch({
     headless: true, // set this to true
   });
 
