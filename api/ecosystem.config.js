@@ -10,6 +10,7 @@ module.exports = {
       instances: 1,
       watch: false,
       autorestart: true,
+      node_args: '-r dotenv/config',
     },
   ],
 };
