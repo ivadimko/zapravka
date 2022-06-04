@@ -23,7 +23,7 @@ export class SocarScraper {
 
     try {
       const API_ENDPOINT =
-        'https://socar.ua/api/map/stations?region=&services=';
+        'https://socar.ua/api/map/stations?region=&services=&gclid=123xyz';
 
       const result = await fetch(API_ENDPOINT).then((res) => {
         return res.json();
