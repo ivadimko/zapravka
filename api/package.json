@@ -22,12 +22,12 @@
   "dependencies": {
     "@nestjs/apollo": "^10.0.14",
     "@nestjs/common": "^8.1.1",
+    "@nestjs/config": "^2.1.0",
     "@nestjs/core": "^8.1.1",
     "@nestjs/graphql": "^10.0.15",
     "@nestjs/platform-express": "^8.1.1",
     "@nestjs/schedule": "^2.0.1",
     "apollo-server-express": "^3.8.2",
-    "dotenv": "^16.0.1",
     "graphql": "^16.5.0",
     "node-html-parser": "^5.3.3",
     "playwright-chromium": "^1.22.2",
