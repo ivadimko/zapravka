@@ -1,33 +1,18 @@
 import http from 'http';
 import fs from 'fs/promises';
 import path from 'path';
-import { scrapeOkko } from './data/okko/okko-scraper.mjs';
-import { scrapeUpg } from './data/upg/upg-scraper.mjs';
 
 const processResponse = async ({
   res,
-  fetchData,
-  fallbackFilePath,
+  filePath,
 }) => {
-  const fallback = await fs.readFile(fallbackFilePath);
+  const file = await fs.readFile(filePath);
 
-  try {
-    const stations = await fetchData();
+  res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8' });
 
-    await fs.writeFile(fallbackFilePath, JSON.stringify(stations, null, 2));
+  res.write(file);
 
-    res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8' });
-
-    res.write(JSON.stringify(stations));
-  } catch (error) {
-    console.warn(error);
-
-    res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8' });
-
-    res.write(fallback);
-  } finally {
-    res.end();
-  }
+  res.end();
 };
 
 const server = http.createServer(async (req, res) => {
@@ -41,8 +26,7 @@ const server = http.createServer(async (req, res) => {
     case '/okko-stations': {
       await processResponse({
         res,
-        fallbackFilePath: path.resolve('src/data/okko/okko-stations.json'),
-        fetchData: scrapeOkko,
+        filePath: path.resolve('src/data/okko/okko-stations.json'),
       });
 
       break;
@@ -51,8 +35,7 @@ const server = http.createServer(async (req, res) => {
     case '/upg-stations': {
       await processResponse({
         res,
-        fallbackFilePath: path.resolve('src/data/upg/upg-stations.json'),
-        fetchData: scrapeUpg,
+        filePath: path.resolve('src/data/upg/upg-stations.json'),
       });
 
       break;
