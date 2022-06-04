@@ -1,0 +1,15 @@
+overwrite: true
+generates:
+  frontend/src/controllers/graphql/generated.ts:
+    schema:
+      - "api/src/schema.gql"
+    documents:
+      - "frontend/src/controllers/**/*.queries/**.gql"
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo"
+      - "named-operations-object"
+    config:
+      gqlImport: '@apollo/client#gql'
+      pureMagicComment: true

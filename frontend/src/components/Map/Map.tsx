@@ -3,9 +3,9 @@ import {
 } from 'react';
 import Select, { SingleValue } from 'react-select';
 import { FuelMap } from '@/components/FuelMap';
-import { GasStation } from '@/controllers/station/station.typedefs';
 import { FuelStatus, FuelType } from '@/controllers/fuel/fuel.typedefs';
 import { UpdatedAt } from '@/components/Map/components/UpdatedAt';
+import { StationFragment } from '@/controllers/graphql/generated';
 import styles from './Map.module.scss';
 
 const statusOptions = [
@@ -23,7 +23,7 @@ const fuelOptions = [
 ];
 
 interface Props {
-  data: Array<GasStation>
+  data: Array<StationFragment>
   updatedAt: string
 }
 

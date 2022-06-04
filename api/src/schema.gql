@@ -33,6 +33,7 @@ type StationFuelStatus {
 }
 
 type Station {
+  schedule: GasStationSchedule
   id: String!
   provider: StationProvider!
   name: String!
@@ -40,7 +41,6 @@ type Station {
   workDescription: String!
   descriptionType: GasStationDescriptionType!
   status: StationFuelStatus!
-  schedule: GasStationSchedule!
   scheduleString: String!
   icon: String!
   reference: StationReference!

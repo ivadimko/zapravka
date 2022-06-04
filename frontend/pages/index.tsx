@@ -2,17 +2,16 @@ import type { GetStaticProps, NextPage } from 'next';
 import { useMemo } from 'react';
 import { NextSeo } from 'next-seo';
 import { Map } from '@/components/Map';
-import { processWogStations } from '@/controllers/providers/wog/wog.fetcher';
-import { GasStation } from '@/controllers/station/station.typedefs';
-import {
-  processSocarStations,
-} from '@/controllers/providers/socar/socar.fetcher';
-import { processOkkoStations } from '@/controllers/providers/okko/okko.fetcher';
 import MapImage from '@/components/Map/MapImage.png';
-import { processUPGStations } from '@/controllers/providers/upg/upg.fetcher';
+import { initializeApollo } from '@/controllers/graphql/graphql.client';
+import {
+  StationFragment,
+  StationsDocument,
+  StationsQuery,
+} from '@/controllers/graphql/generated';
 
 interface Props {
-  data: Array<GasStation>
+  data: Array<StationFragment>
   revalidated: number
 }
 
@@ -34,7 +33,7 @@ const Home: NextPage<Props> = (props) => {
   }), [revalidated]);
 
   const title = `Пальне в наявності на ${updatedAt.short}`;
-  const description = 'Де заправитись? Інтерактивна мапа наявності пального на АЗК в Україні. Статус заправок WOG, OKKO, SOCAR.';
+  const description = 'Де заправитись? Інтерактивна мапа наявності пального на АЗК в Україні. Статус заправок WOG, OKKO, SOCAR, UPG.';
 
   return (
     <>
@@ -65,26 +64,15 @@ const Home: NextPage<Props> = (props) => {
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-  const [
-    wogStations,
-    socarStations,
-    okkoStations,
-    upgStations,
-  ] = await Promise.all([
-    processWogStations(),
-    processSocarStations(),
-    processOkkoStations(),
-    processUPGStations(),
-  ]);
+  const apolloClient = initializeApollo();
+
+  const { data } = await apolloClient.query<StationsQuery>({
+    query: StationsDocument,
+  });
 
   return {
     props: {
-      data: [
-        ...wogStations,
-        ...socarStations,
-        ...okkoStations,
-        ...upgStations,
-      ],
+      data: data.stations,
       revalidated: Date.now(),
     },
   };
