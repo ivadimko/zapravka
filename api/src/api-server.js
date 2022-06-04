@@ -64,6 +64,6 @@ const server = http.createServer(async (req, res) => {
   }
 });
 
-server.listen(4565, () => {
+server.listen(process.env.PORT || 4565, () => {
   console.info('Server is listening');
 });
