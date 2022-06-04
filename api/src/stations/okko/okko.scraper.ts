@@ -24,7 +24,7 @@ export class OkkoScraper {
     let fallback: string | undefined = undefined;
 
     try {
-      fallback = (await fs.readFile(fallback)).toString();
+      fallback = (await fs.readFile(this.filePath)).toString();
     } catch (error) {
       this.logger.warn('File missing', this.filePath);
     }
