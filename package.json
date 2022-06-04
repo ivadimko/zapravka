@@ -1,7 +1,7 @@
 {
   "scripts": {
     "dev:frontend": "cd frontend && npm run dev",
-    "dev:api": "cd api && npm run dev",
+    "dev:api": "cd api-old && npm run dev",
     "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:api\"",
     "graphql:generate": "graphql-codegen"
   },

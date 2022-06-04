@@ -23,7 +23,7 @@ interface SingleStationApiResponse {
 export const fetchWogStations = async () => {
   if (process.env.NODE_ENV === 'development') {
     // eslint-disable-next-line global-require
-    const stations: Array<SingleStationApiResponse> = require('../../../../../api/src/data/wog/station-status.json');
+    const stations: Array<SingleStationApiResponse> = require('../../../../../api-old/src/data/wog/station-status.json');
 
     return stations.map((station) => station.data);
   }

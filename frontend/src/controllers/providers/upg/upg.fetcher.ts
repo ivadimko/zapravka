@@ -9,7 +9,7 @@ interface AllStationsApiResponse {
 export const fetchUpgStations = async () => {
   if (process.env.NODE_ENV === 'development') {
     // eslint-disable-next-line global-require
-    const stations: AllStationsApiResponse = require('../../../../../api/src/data/upg/upg-stations.json');
+    const stations: AllStationsApiResponse = require('../../../../../api-old/src/data/upg/upg-stations.json');
 
     return stations.data;
   }
