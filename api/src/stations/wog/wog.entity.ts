@@ -26,12 +26,6 @@ export class WogEntity {
     };
   }
 
-  private contentStrings = {
-    SCHEDULE: 'Графік роботи:',
-    AVAILABLE_CASH: 'За готівку і банківські картки доступно',
-    AVAILABLE_FUEL_CARDS: 'З паливною карткою і талонами доступно',
-  };
-
   parseFuel = (wogStatus: string) => {
     const normalizedStatus = wogStatus.toLowerCase();
 
@@ -49,9 +43,6 @@ export class WogEntity {
 
     return FuelStatus.Empty;
   };
-
-  parseSchedule = (content: string) =>
-    (content.split(this.contentStrings.SCHEDULE).pop() || '').trim();
 
   getStationParams(station: WogGasStationRaw) {
     const description = station.workDescription;

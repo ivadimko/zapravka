@@ -1,0 +1,63 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type GasStationSchedule {
+  opensAt: String!
+  closesAt: String!
+}
+
+type Coordinates {
+  lng: Float!
+  lat: Float!
+}
+
+type StationReference {
+  title: String!
+  link: String!
+}
+
+type FuelStatusesMap {
+  empty: Boolean
+  only_critical_vehicles: Boolean
+  available_cash: Boolean
+  available_fuel_cards: Boolean
+}
+
+type StationFuelStatus {
+  petrol_92: FuelStatusesMap!
+  petrol: FuelStatusesMap!
+  diesel: FuelStatusesMap!
+  gas: FuelStatusesMap!
+  ad_blue: FuelStatusesMap!
+}
+
+type Station {
+  id: String!
+  provider: StationProvider!
+  name: String!
+  coordinates: Coordinates!
+  workDescription: String!
+  descriptionType: GasStationDescriptionType!
+  status: StationFuelStatus!
+  schedule: GasStationSchedule!
+  scheduleString: String!
+  icon: String!
+  reference: StationReference!
+}
+
+enum StationProvider {
+  Okko
+  Wog
+  Socar
+  UPG
+}
+
+enum GasStationDescriptionType {
+  Raw
+  HTML
+}
+
+type Query {
+  stations: [Station!]!
+}
