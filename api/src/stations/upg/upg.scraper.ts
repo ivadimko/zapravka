@@ -1,24 +1,17 @@
 import { chromium } from 'playwright-chromium';
-import { OkkoGasStationRaw } from '@/stations/okko/okko.typedefs';
 import * as path from 'path';
 import * as fs from 'fs/promises';
 import { Logger } from '@nestjs/common';
+import { UPGGasStation } from '@/stations/upg/upg.typedefs';
 
 interface AllStationsApiResponse {
-  data: {
-    layout: Array<{
-      data: {
-        list: {
-          collection: Array<OkkoGasStationRaw>;
-        };
-      };
-    }>;
-  };
+  countData: number;
+  data: Array<UPGGasStation>;
 }
 
-export class OkkoScraper {
-  private readonly filePath = path.resolve(__dirname, 'okko.raw.json');
-  private readonly logger = new Logger(OkkoScraper.name);
+export class UPGScraper {
+  private readonly filePath = path.resolve(__dirname, 'upg.raw.json');
+  private readonly logger = new Logger(UPGScraper.name);
 
   async scrape(): Promise<AllStationsApiResponse> {
     let fallback: string | undefined = undefined;
@@ -41,20 +34,16 @@ export class OkkoScraper {
 
       const page = await context.newPage();
 
-      await page.goto('https://www.okko.ua/api/uk/fuel-map?gclid=123xyz');
+      await page.goto('https://upg.ua/merezha_azs?gclid=123xyz');
 
-      await page.waitForSelector('pre', {
-        timeout: 2000,
-      });
-
-      const content = await page.locator('pre').textContent();
+      const content: AllStationsApiResponse = await page.evaluate('objmap');
       await browser.close();
 
-      console.info('OKKO CONTENT LOADED', `${content.slice(0, 20)}...`);
+      console.info('UPG CONTENT LOADED', `${content.countData}...`);
 
-      await fs.writeFile(this.filePath, content);
+      await fs.writeFile(this.filePath, JSON.stringify(content));
 
-      return JSON.parse(content);
+      return content;
     } catch (error) {
       if (fallback) {
         this.logger.warn(error.message);

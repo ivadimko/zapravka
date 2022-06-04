@@ -3,13 +3,14 @@ import { Station } from '@/stations/models/station.model';
 import {
   GasStationDescriptionType,
   GasStationSchedule,
+  StationProvider,
 } from '@/stations/stations.typedefs';
 import { Node, parse } from 'node-html-parser';
 import { FuelStatus, FuelType } from '@/fuels/fuels.typedefs';
 import {
   OkkoFuelType,
-  OkkoGasStationRaw,
   OkkoGasStation,
+  OkkoGasStationRaw,
 } from '@/stations/okko/okko.typedefs';
 import { OkkoFuelMapping } from '@/stations/okko/okko.constants';
 
@@ -154,9 +155,10 @@ export class OkkoEntity {
     return result;
   }
 
-  map() {
+  map(): Station {
     return {
       id: `okko_${this.station.attributes.Cod_AZK}`,
+      provider: StationProvider.Okko,
       name: this.mapName(),
       coordinates: {
         lat: this.station.attributes.coordinates.lat,

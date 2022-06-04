@@ -1,15 +1,15 @@
 import { Injectable, Logger } from '@nestjs/common';
 import * as path from 'path';
-import { Cron } from '@nestjs/schedule';
 import * as fs from 'fs/promises';
-import { OkkoScraper } from '@/stations/okko/okko.scraper';
-import { OkkoEntity } from '@/stations/okko/okko.entity';
+import { Cron } from '@nestjs/schedule';
+import { UPGScraper } from '@/stations/upg/upg.scraper';
+import { UPGEntity } from '@/stations/upg/upg.entity';
 
 @Injectable()
-export class OkkoService {
-  private readonly logger = new Logger(OkkoService.name);
-  private readonly filePath = path.resolve(__dirname, 'okko.data.json');
-  private readonly scraper = new OkkoScraper();
+export class UpgService {
+  private readonly logger = new Logger(UpgService.name);
+  private readonly filePath = path.resolve(__dirname, 'upg.data.json');
+  private readonly scraper = new UPGScraper();
 
   async findAll(attempt = 1) {
     try {
@@ -33,13 +33,11 @@ export class OkkoService {
   async scrape() {
     const result = await this.scraper.scrape();
 
-    const stations = result.data.layout[0].data.list.collection.map(
-      (station) => {
-        const okkoEntity = new OkkoEntity(station);
+    const stations = result.data.map((station) => {
+      const upgEntity = new UPGEntity(station);
 
-        return okkoEntity.map();
-      },
-    );
+      return upgEntity.map();
+    });
 
     await fs.writeFile(this.filePath, JSON.stringify(stations));
   }

@@ -45,3 +45,14 @@ export enum StationStatus {
 registerEnumType(StationStatus, {
   name: 'StationStatus',
 });
+
+export enum StationProvider {
+  Okko = 'OKKO',
+  Wog = 'WOG',
+  Socar = 'SOCAR',
+  UPG = 'UPG',
+}
+
+registerEnumType(StationProvider, {
+  name: 'StationProvider',
+});
