@@ -1,6 +1,6 @@
-const playwright = require('playwright');
+import playwright from 'playwright';
 
-async function main() {
+export const scrapeUpg = async () => {
   const browser = await playwright.chromium.launch({
     headless: true, // set this to true
   });
@@ -19,8 +19,4 @@ async function main() {
   console.info('UPG CONTENT LOADED', `${content.countData}...`);
 
   return content;
-}
-
-module.exports = {
-  scrapeUpg: main,
 };

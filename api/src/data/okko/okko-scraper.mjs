@@ -1,6 +1,6 @@
-const playwright = require('playwright');
+import playwright from 'playwright';
 
-async function main() {
+export const scrapeOkko = async () => {
   const browser = await playwright.chromium.launch({
     headless: true, // set this to true
   });
@@ -23,8 +23,4 @@ async function main() {
   console.info('OKKO CONTENT LOADED', `${content.slice(0, 20)}...`);
 
   return JSON.parse(content);
-}
-
-module.exports = {
-  scrapeOkko: main,
 };

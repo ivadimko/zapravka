@@ -15,7 +15,7 @@
       "ShortName": "",
       "Address": "м. Вінниця, вул. Арабея Генерала, 3-А",
       "Region": "Вінницька",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -42,7 +42,7 @@
         {
           "id": 1,
           "Title": "upg DP",
-          "Price": "0.00"
+          "Price": "56.00"
         },
         {
           "id": 2,
@@ -62,7 +62,7 @@
         {
           "id": 9,
           "Title": "upg 95",
-          "Price": "0.00"
+          "Price": "49.00"
         }
       ]
     },
@@ -76,7 +76,7 @@
       "ShortName": "",
       "Address": "Вінницька обл., Жмеринський р-н, Рівська с/р, а/д Житомир-Могилів-Подільський, 160 км + 355 м",
       "Region": "Вінницька",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -107,7 +107,7 @@
         {
           "id": 1,
           "Title": "upg DP",
-          "Price": "0.00"
+          "Price": "56.00"
         },
         {
           "id": 2,
@@ -117,7 +117,7 @@
         {
           "id": 4,
           "Title": "Газ",
-          "Price": "0.00"
+          "Price": "37.00"
         },
         {
           "id": 5,
@@ -127,7 +127,7 @@
         {
           "id": 9,
           "Title": "upg 95",
-          "Price": "0.00"
+          "Price": "49.00"
         }
       ]
     },
@@ -141,7 +141,7 @@
       "ShortName": "",
       "Address": "Вінницька обл., м. Вінниця, вул. Немирівське шосе, 8-А",
       "Region": "Вінницька",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -200,7 +200,7 @@
         {
           "id": 9,
           "Title": "upg 95",
-          "Price": "0.00"
+          "Price": "49.00"
         }
       ]
     },
@@ -214,7 +214,7 @@
       "ShortName": "",
       "Address": "Волинська обл., Любомльський р-н, с. Старовойтове, вул. Прикордонників, 7А",
       "Region": "Волинська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 6,
@@ -254,7 +254,7 @@
       "ShortName": "",
       "Address": "Волинська обл., м. Ковель, вул. Сагайдачного, 5Г",
       "Region": "Волинська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [],
       "FuelsAsArray": [
         {
@@ -284,7 +284,7 @@
       "ShortName": "",
       "Address": "Волинська обл., Любомльський район, с. Старовойтове, вул. Прикордонників, 5Б",
       "Region": "Волинська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -353,7 +353,7 @@
       "ShortName": "",
       "Address": "Волинська обл., Луцький р-н, с. Зміїнець, вул. Левадна, 2Б",
       "Region": "Волинська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -422,7 +422,7 @@
       "ShortName": "",
       "Address": "Волинська обл., м. Ковель, вул. Варшавська, 1Б",
       "Region": "Волинська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -471,7 +471,7 @@
         {
           "id": 4,
           "Title": "Газ",
-          "Price": "37.00"
+          "Price": "0.00"
         },
         {
           "id": 5,
@@ -481,7 +481,7 @@
         {
           "id": 9,
           "Title": "upg 95",
-          "Price": "0.00"
+          "Price": "49.00"
         }
       ]
     },
@@ -495,7 +495,7 @@
       "ShortName": "",
       "Address": "Волинська обл., Луцький р-н, с. Рованці, вул. Європейська, 1-А",
       "Region": "Волинська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -564,7 +564,7 @@
       "ShortName": "",
       "Address": "Дніпропетровська обл., м. Кам'янське, Єлизаветівське шосе, 27",
       "Region": "Дніпропетровська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -583,7 +583,7 @@
         {
           "id": 1,
           "Title": "upg DP",
-          "Price": "0.00"
+          "Price": "56.00"
         },
         {
           "id": 2,
@@ -593,7 +593,7 @@
         {
           "id": 4,
           "Title": "Газ",
-          "Price": "0.00"
+          "Price": "37.00"
         },
         {
           "id": 5,
@@ -603,7 +603,7 @@
         {
           "id": 9,
           "Title": "upg 95",
-          "Price": "0.00"
+          "Price": "49.00"
         }
       ]
     },
@@ -617,7 +617,7 @@
       "ShortName": "",
       "Address": "Дніпропетровська обл., м. Дніпро, Полтавське шосе, 617",
       "Region": "Дніпропетровська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -656,7 +656,7 @@
         {
           "id": 1,
           "Title": "upg DP",
-          "Price": "0.00"
+          "Price": "56.00"
         },
         {
           "id": 2,
@@ -666,7 +666,7 @@
         {
           "id": 4,
           "Title": "Газ",
-          "Price": "0.00"
+          "Price": "37.00"
         },
         {
           "id": 5,
@@ -676,7 +676,7 @@
         {
           "id": 9,
           "Title": "upg 95",
-          "Price": "0.00"
+          "Price": "49.00"
         }
       ]
     },
@@ -690,7 +690,7 @@
       "ShortName": "",
       "Address": "Житомирська обл., Чуднівський р-н, с. Дубище, вул. Миру, 6В  ",
       "Region": "Житомирська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -734,7 +734,7 @@
       "ShortName": "",
       "Address": "Житомирська обл., Брусилівський р-н, с. Йосипівка, вул. Житомирська, 197",
       "Region": "Житомирська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -763,7 +763,7 @@
         {
           "id": 4,
           "Title": "Газ",
-          "Price": "0.00"
+          "Price": "37.00"
         },
         {
           "id": 9,
@@ -782,7 +782,7 @@
       "ShortName": "",
       "Address": "Житомирська обл., м. Олевськ, вул. Київська, 7А",
       "Region": "Житомирська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -807,7 +807,7 @@
         {
           "id": 9,
           "Title": "upg 95",
-          "Price": "49.00"
+          "Price": "0.00"
         }
       ]
     },
@@ -821,7 +821,7 @@
       "ShortName": "",
       "Address": "Житомирська обл., м. Коростень, вул. Гастелло, 3",
       "Region": "Житомирська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -840,7 +840,7 @@
         {
           "id": 1,
           "Title": "upg DP",
-          "Price": "56.00"
+          "Price": "0.00"
         },
         {
           "id": 2,
@@ -850,7 +850,7 @@
         {
           "id": 4,
           "Title": "Газ",
-          "Price": "0.00"
+          "Price": "37.00"
         },
         {
           "id": 9,
@@ -869,7 +869,7 @@
       "ShortName": "",
       "Address": "Житомирська обл., м. Коростень, вул. Жовтнева, 11А",
       "Region": "Житомирська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -919,7 +919,7 @@
         {
           "id": 9,
           "Title": "upg 95",
-          "Price": "49.00"
+          "Price": "0.00"
         }
       ]
     },
@@ -933,7 +933,80 @@
       "ShortName": "",
       "Address": "Житомирська обл., Коростенський р-н, Кожухівська с/р, а/д М-07 Київ-Ковель-Ягодин, км154-540 ліворуч",
       "Region": "Житомирська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
+      "ServicesAsArray": [
+        {
+          "id": 1,
+          "Title": "Магазин"
+        },
+        {
+          "id": 2,
+          "Title": "WC"
+        },
+        {
+          "id": 3,
+          "Title": "Wi-Fi"
+        },
+        {
+          "id": 4,
+          "Title": "Їжа"
+        },
+        {
+          "id": 5,
+          "Title": "Кава"
+        },
+        {
+          "id": 6,
+          "Title": "Термінал EasyPay"
+        },
+        {
+          "id": 8,
+          "Title": "Підкачка шин"
+        },
+        {
+          "id": 10,
+          "Title": "VIVO-cafe"
+        }
+      ],
+      "FuelsAsArray": [
+        {
+          "id": 1,
+          "Title": "upg DP",
+          "Price": "0.00"
+        },
+        {
+          "id": 2,
+          "Title": "95 (передоплата)",
+          "Price": "0.00"
+        },
+        {
+          "id": 4,
+          "Title": "Газ",
+          "Price": "37.00"
+        },
+        {
+          "id": 5,
+          "Title": "ДП (передоплата)",
+          "Price": "0.00"
+        },
+        {
+          "id": 9,
+          "Title": "upg 95",
+          "Price": "49.00"
+        }
+      ]
+    },
+    {
+      "id": 111,
+      "Active": true,
+      "VersionId": 808,
+      "Latitude": "50.18057800",
+      "Longitude": "28.65524500",
+      "FullName": "АЗС №92 05:00 - 21:30",
+      "ShortName": "",
+      "Address": "Житомирська обл., с. Сінгури, вул. Житомирська (вздовж а/д М-21 Житомир-Могилів-Подільський, км. 10)",
+      "Region": "Житомирська",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -992,21 +1065,651 @@
         {
           "id": 9,
           "Title": "upg 95",
+          "Price": "0.00"
+        }
+      ]
+    },
+    {
+      "id": 144,
+      "Active": true,
+      "VersionId": 884,
+      "Latitude": "50.27340400",
+      "Longitude": "28.66440000",
+      "FullName": "АЗС №115 05:00 - 21:30",
+      "ShortName": "",
+      "Address": "Житомирська обл., м. Житомир, проспект Незалежності, 29",
+      "Region": "Житомирська",
+      "LastPriceUpdateDate": "2022-06-04",
+      "ServicesAsArray": [
+        {
+          "id": 1,
+          "Title": "Магазин"
+        },
+        {
+          "id": 2,
+          "Title": "WC"
+        },
+        {
+          "id": 3,
+          "Title": "Wi-Fi"
+        },
+        {
+          "id": 4,
+          "Title": "Їжа"
+        },
+        {
+          "id": 5,
+          "Title": "Кава"
+        },
+        {
+          "id": 6,
+          "Title": "Термінал EasyPay"
+        },
+        {
+          "id": 8,
+          "Title": "Підкачка шин"
+        },
+        {
+          "id": 10,
+          "Title": "VIVO-cafe"
+        }
+      ],
+      "FuelsAsArray": [
+        {
+          "id": 1,
+          "Title": "upg DP",
+          "Price": "0.00"
+        },
+        {
+          "id": 2,
+          "Title": "95 (передоплата)",
+          "Price": "0.00"
+        },
+        {
+          "id": 4,
+          "Title": "Газ",
+          "Price": "0.00"
+        },
+        {
+          "id": 5,
+          "Title": "ДП (передоплата)",
+          "Price": "0.00"
+        },
+        {
+          "id": 9,
+          "Title": "upg 95",
           "Price": "49.00"
         }
       ]
     },
     {
-      "id": 111,
+      "id": 56,
       "Active": true,
-      "VersionId": 808,
-      "Latitude": "50.18057800",
-      "Longitude": "28.65524500",
-      "FullName": "АЗС №92 05:00 - 21:30",
+      "VersionId": 722,
+      "Latitude": "48.57790000",
+      "Longitude": "22.29922000",
+      "FullName": "АЗС №54 00:00 - 24:00",
       "ShortName": "",
-      "Address": "Житомирська обл., с. Сінгури, вул. Житомирська (вздовж а/д М-21 Житомир-Могилів-Подільський, км. 10)",
-      "Region": "Житомирська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "Address": "Закарпатська обл., Ужгородський р-н, с. Кінчеш, автошлях Кінчеш-Розівка, 9 км",
+      "Region": "Закарпатська",
+      "LastPriceUpdateDate": "2022-06-04",
+      "ServicesAsArray": [
+        {
+          "id": 1,
+          "Title": "Магазин"
+        },
+        {
+          "id": 2,
+          "Title": "WC"
+        },
+        {
+          "id": 6,
+          "Title": "Термінал EasyPay"
+        }
+      ],
+      "FuelsAsArray": [
+        {
+          "id": 3,
+          "Title": "92 (передоплата)",
+          "Price": "0.00"
+        },
+        {
+          "id": 5,
+          "Title": "ДП (передоплата)",
+          "Price": "0.00"
+        },
+        {
+          "id": 9,
+          "Title": "upg 95",
+          "Price": "0.00"
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "Active": true,
+      "VersionId": 726,
+      "Latitude": "48.02237000",
+      "Longitude": "23.54452000",
+      "FullName": "АЗС №55 00:00 - 24:00",
+      "ShortName": "",
+      "Address": "Закарпатська обл, м. Тячів, вул. Армійська, 125А",
+      "Region": "Закарпатська",
+      "LastPriceUpdateDate": "2022-06-04",
+      "ServicesAsArray": [
+        {
+          "id": 1,
+          "Title": "Магазин"
+        },
+        {
+          "id": 2,
+          "Title": "WC"
+        },
+        {
+          "id": 6,
+          "Title": "Термінал EasyPay"
+        }
+      ],
+      "FuelsAsArray": [
+        {
+          "id": 2,
+          "Title": "95 (передоплата)",
+          "Price": "0.00"
+        },
+        {
+          "id": 4,
+          "Title": "Газ",
+          "Price": "37.00"
+        },
+        {
+          "id": 5,
+          "Title": "ДП (передоплата)",
+          "Price": "0.00"
+        },
+        {
+          "id": 9,
+          "Title": "upg 95",
+          "Price": "0.00"
+        }
+      ]
+    },
+    {
+      "id": 97,
+      "Active": true,
+      "VersionId": 784,
+      "Latitude": "48.20485000",
+      "Longitude": "23.31642000",
+      "FullName": "АЗС №87 00:00 - 24:00",
+      "ShortName": "",
+      "Address": "Закарпатська обл., Хустський р-н, с. Іза, вул. Центральна, б/н",
+      "Region": "Закарпатська",
+      "LastPriceUpdateDate": "2022-06-04",
+      "ServicesAsArray": [
+        {
+          "id": 1,
+          "Title": "Магазин"
+        }
+      ],
+      "FuelsAsArray": [
+        {
+          "id": 2,
+          "Title": "95 (передоплата)",
+          "Price": "0.00"
+        },
+        {
+          "id": 5,
+          "Title": "ДП (передоплата)",
+          "Price": "0.00"
+        },
+        {
+          "id": 9,
+          "Title": "upg 95",
+          "Price": "0.00"
+        }
+      ]
+    },
+    {
+      "id": 120,
+      "Active": true,
+      "VersionId": 826,
+      "Latitude": "48.55135300",
+      "Longitude": "22.99051900",
+      "FullName": "АЗС №98 00:00 - 24:00",
+      "ShortName": "",
+      "Address": "Закарпатська обл., м. Свалява, вул. Борканюка, 42 ",
+      "Region": "Закарпатська",
+      "LastPriceUpdateDate": "2022-06-04",
+      "ServicesAsArray": [
+        {
+          "id": 1,
+          "Title": "Магазин"
+        }
+      ],
+      "FuelsAsArray": [
+        {
+          "id": 2,
+          "Title": "95 (передоплата)",
+          "Price": "0.00"
+        },
+        {
+          "id": 5,
+          "Title": "ДП (передоплата)",
+          "Price": "0.00"
+        },
+        {
+          "id": 9,
+          "Title": "upg 95",
+          "Price": "49.00"
+        }
+      ]
+    },
+    {
+      "id": 130,
+      "Active": true,
+      "VersionId": 846,
+      "Latitude": "48.45829000",
+      "Longitude": "22.70718000",
+      "FullName": "АЗС №102 00:00 - 24:00",
+      "ShortName": "",
+      "Address": "Закарпатська обл., м. Мукачево, вул. Лавківська, 1Ж",
+      "Region": "Закарпатська",
+      "LastPriceUpdateDate": "2022-06-04",
+      "ServicesAsArray": [
+        {
+          "id": 1,
+          "Title": "Магазин"
+        },
+        {
+          "id": 2,
+          "Title": "WC"
+        },
+        {
+          "id": 3,
+          "Title": "Wi-Fi"
+        },
+        {
+          "id": 4,
+          "Title": "Їжа"
+        },
+        {
+          "id": 5,
+          "Title": "Кава"
+        },
+        {
+          "id": 6,
+          "Title": "Термінал EasyPay"
+        },
+        {
+          "id": 10,
+          "Title": "VIVO-cafe"
+        }
+      ],
+      "FuelsAsArray": [
+        {
+          "id": 2,
+          "Title": "95 (передоплата)",
+          "Price": "0.00"
+        },
+        {
+          "id": 4,
+          "Title": "Газ",
+          "Price": "37.00"
+        },
+        {
+          "id": 5,
+          "Title": "ДП (передоплата)",
+          "Price": "0.00"
+        },
+        {
+          "id": 9,
+          "Title": "upg 95",
+          "Price": "0.00"
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "Active": false,
+      "VersionId": 670,
+      "Latitude": "48.27287000",
+      "Longitude": "22.46157000",
+      "FullName": "АЗС №76",
+      "ShortName": "",
+      "Address": "Закарпатська обл., Берегівський р-н, с. Косонь, вул. Кошут Лайош, 151Б",
+      "Region": "Закарпатська",
+      "LastPriceUpdateDate": "2022-06-04",
+      "ServicesAsArray": [
+        {
+          "id": 1,
+          "Title": "Магазин"
+        },
+        {
+          "id": 2,
+          "Title": "WC"
+        }
+      ],
+      "FuelsAsArray": [
+        {
+          "id": 2,
+          "Title": "95 (передоплата)",
+          "Price": "0.00"
+        },
+        {
+          "id": 3,
+          "Title": "92 (передоплата)",
+          "Price": "0.00"
+        },
+        {
+          "id": 4,
+          "Title": "Газ",
+          "Price": "0.00"
+        },
+        {
+          "id": 5,
+          "Title": "ДП (передоплата)",
+          "Price": "0.00"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "Active": true,
+      "VersionId": 688,
+      "Latitude": "47.85370000",
+      "Longitude": "35.23080000",
+      "FullName": "АЗС №43 05:00 - 21:00",
+      "ShortName": "",
+      "Address": "Запорізька обл., м. Запоріжжя, вул. Авраменка, 23",
+      "Region": "Запорізька",
+      "LastPriceUpdateDate": "2022-06-04",
+      "ServicesAsArray": [
+        {
+          "id": 1,
+          "Title": "Магазин"
+        },
+        {
+          "id": 2,
+          "Title": "WC"
+        }
+      ],
+      "FuelsAsArray": [
+        {
+          "id": 1,
+          "Title": "upg DP",
+          "Price": "0.00"
+        },
+        {
+          "id": 2,
+          "Title": "95 (передоплата)",
+          "Price": "0.00"
+        },
+        {
+          "id": 4,
+          "Title": "Газ",
+          "Price": "37.00"
+        },
+        {
+          "id": 9,
+          "Title": "upg 95",
+          "Price": "0.00"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "Active": true,
+      "VersionId": 690,
+      "Latitude": "47.85047000",
+      "Longitude": "35.14637000",
+      "FullName": "АЗС №44 05:00 - 21:00",
+      "ShortName": "",
+      "Address": "Запорізька обл., м. Запоріжжя, вул. Адмірала Нахімова, 3",
+      "Region": "Запорізька",
+      "LastPriceUpdateDate": "2022-06-04",
+      "ServicesAsArray": [
+        {
+          "id": 1,
+          "Title": "Магазин"
+        }
+      ],
+      "FuelsAsArray": [
+        {
+          "id": 1,
+          "Title": "upg DP",
+          "Price": "0.00"
+        },
+        {
+          "id": 2,
+          "Title": "95 (передоплата)",
+          "Price": "0.00"
+        },
+        {
+          "id": 9,
+          "Title": "upg 95",
+          "Price": "0.00"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "Active": false,
+      "VersionId": 686,
+      "Latitude": "47.49067000",
+      "Longitude": "36.17702000",
+      "FullName": "АЗС №42",
+      "ShortName": "",
+      "Address": "Запорізька обл., м. Пологи, вул. К. Маркса, 530В",
+      "Region": "Запорізька",
+      "LastPriceUpdateDate": "2022-06-04",
+      "ServicesAsArray": [
+        {
+          "id": 1,
+          "Title": "Магазин"
+        },
+        {
+          "id": 2,
+          "Title": "WC"
+        }
+      ],
+      "FuelsAsArray": [
+        {
+          "id": 2,
+          "Title": "95 (передоплата)",
+          "Price": "0.00"
+        },
+        {
+          "id": 3,
+          "Title": "92 (передоплата)",
+          "Price": "0.00"
+        },
+        {
+          "id": 4,
+          "Title": "Газ",
+          "Price": "0.00"
+        },
+        {
+          "id": 5,
+          "Title": "ДП (передоплата)",
+          "Price": "0.00"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "Active": false,
+      "VersionId": 718,
+      "Latitude": "46.73527000",
+      "Longitude": "36.32850000",
+      "FullName": "АЗС №45",
+      "ShortName": "",
+      "Address": "Запорізька обл., м. Приморськ, Мелітопольське шосе, 7",
+      "Region": "Запорізька",
+      "LastPriceUpdateDate": "2022-06-04",
+      "ServicesAsArray": [
+        {
+          "id": 1,
+          "Title": "Магазин"
+        },
+        {
+          "id": 2,
+          "Title": "WC"
+        }
+      ],
+      "FuelsAsArray": [
+        {
+          "id": 2,
+          "Title": "95 (передоплата)",
+          "Price": "0.00"
+        },
+        {
+          "id": 3,
+          "Title": "92 (передоплата)",
+          "Price": "0.00"
+        },
+        {
+          "id": 4,
+          "Title": "Газ",
+          "Price": "0.00"
+        },
+        {
+          "id": 5,
+          "Title": "ДП (передоплата)",
+          "Price": "0.00"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "Active": false,
+      "VersionId": 720,
+      "Latitude": "47.38522000",
+      "Longitude": "35.01497000",
+      "FullName": "АЗС №46",
+      "ShortName": "",
+      "Address": "Запорізька обл., м. Дніпрорудне, вул. Нижня, 62",
+      "Region": "Запорізька",
+      "LastPriceUpdateDate": "2022-06-04",
+      "ServicesAsArray": [
+        {
+          "id": 1,
+          "Title": "Магазин"
+        },
+        {
+          "id": 2,
+          "Title": "WC"
+        }
+      ],
+      "FuelsAsArray": [
+        {
+          "id": 2,
+          "Title": "95 (передоплата)",
+          "Price": "0.00"
+        },
+        {
+          "id": 3,
+          "Title": "92 (передоплата)",
+          "Price": "0.00"
+        },
+        {
+          "id": 4,
+          "Title": "Газ",
+          "Price": "0.00"
+        },
+        {
+          "id": 5,
+          "Title": "ДП (передоплата)",
+          "Price": "0.00"
+        },
+        {
+          "id": 8,
+          "Title": "upg 100",
+          "Price": "0.00"
+        }
+      ]
+    },
+    {
+      "id": 155,
+      "Active": true,
+      "VersionId": 990,
+      "Latitude": "48.48965600",
+      "Longitude": "24.59504200",
+      "FullName": "АЗС №129 05:00 - 23:00",
+      "ShortName": "",
+      "Address": "Івано-Франківська обл., м. Яремче, вул. Свободи",
+      "Region": "Івано-Франківська",
+      "LastPriceUpdateDate": "2022-06-04",
+      "ServicesAsArray": [
+        {
+          "id": 1,
+          "Title": "Магазин"
+        },
+        {
+          "id": 2,
+          "Title": "WC"
+        },
+        {
+          "id": 3,
+          "Title": "Wi-Fi"
+        },
+        {
+          "id": 4,
+          "Title": "Їжа"
+        },
+        {
+          "id": 5,
+          "Title": "Кава"
+        },
+        {
+          "id": 6,
+          "Title": "Термінал EasyPay"
+        },
+        {
+          "id": 7,
+          "Title": "СТО"
+        },
+        {
+          "id": 8,
+          "Title": "Підкачка шин"
+        },
+        {
+          "id": 10,
+          "Title": "VIVO-cafe"
+        }
+      ],
+      "FuelsAsArray": [
+        {
+          "id": 1,
+          "Title": "upg DP",
+          "Price": "0.00"
+        },
+        {
+          "id": 2,
+          "Title": "95 (передоплата)",
+          "Price": "0.00"
+        },
+        {
+          "id": 4,
+          "Title": "Газ",
+          "Price": "37.00"
+        },
+        {
+          "id": 9,
+          "Title": "upg 95",
+          "Price": "0.00"
+        }
+      ]
+    },
+    {
+      "id": 156,
+      "Active": true,
+      "VersionId": 978,
+      "Latitude": "48.84618600",
+      "Longitude": "24.70587600",
+      "FullName": "АЗС №130 05:00 - 23:00",
+      "ShortName": "",
+      "Address": "Івано-Франківська обл., Тисменецький р-н, с. Черніїв, ур. Біля водоканалу",
+      "Region": "Івано-Франківська",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -1070,709 +1773,6 @@
       ]
     },
     {
-      "id": 144,
-      "Active": true,
-      "VersionId": 884,
-      "Latitude": "50.27340400",
-      "Longitude": "28.66440000",
-      "FullName": "АЗС №115 05:00 - 21:30",
-      "ShortName": "",
-      "Address": "Житомирська обл., м. Житомир, проспект Незалежності, 29",
-      "Region": "Житомирська",
-      "LastPriceUpdateDate": "2022-06-03",
-      "ServicesAsArray": [
-        {
-          "id": 1,
-          "Title": "Магазин"
-        },
-        {
-          "id": 2,
-          "Title": "WC"
-        },
-        {
-          "id": 3,
-          "Title": "Wi-Fi"
-        },
-        {
-          "id": 4,
-          "Title": "Їжа"
-        },
-        {
-          "id": 5,
-          "Title": "Кава"
-        },
-        {
-          "id": 6,
-          "Title": "Термінал EasyPay"
-        },
-        {
-          "id": 8,
-          "Title": "Підкачка шин"
-        },
-        {
-          "id": 10,
-          "Title": "VIVO-cafe"
-        }
-      ],
-      "FuelsAsArray": [
-        {
-          "id": 1,
-          "Title": "upg DP",
-          "Price": "0.00"
-        },
-        {
-          "id": 2,
-          "Title": "95 (передоплата)",
-          "Price": "0.00"
-        },
-        {
-          "id": 4,
-          "Title": "Газ",
-          "Price": "0.00"
-        },
-        {
-          "id": 5,
-          "Title": "ДП (передоплата)",
-          "Price": "0.00"
-        },
-        {
-          "id": 9,
-          "Title": "upg 95",
-          "Price": "0.00"
-        }
-      ]
-    },
-    {
-      "id": 56,
-      "Active": true,
-      "VersionId": 722,
-      "Latitude": "48.57790000",
-      "Longitude": "22.29922000",
-      "FullName": "АЗС №54 00:00 - 24:00",
-      "ShortName": "",
-      "Address": "Закарпатська обл., Ужгородський р-н, с. Кінчеш, автошлях Кінчеш-Розівка, 9 км",
-      "Region": "Закарпатська",
-      "LastPriceUpdateDate": "2022-06-03",
-      "ServicesAsArray": [
-        {
-          "id": 1,
-          "Title": "Магазин"
-        },
-        {
-          "id": 2,
-          "Title": "WC"
-        },
-        {
-          "id": 6,
-          "Title": "Термінал EasyPay"
-        }
-      ],
-      "FuelsAsArray": [
-        {
-          "id": 3,
-          "Title": "92 (передоплата)",
-          "Price": "0.00"
-        },
-        {
-          "id": 5,
-          "Title": "ДП (передоплата)",
-          "Price": "0.00"
-        },
-        {
-          "id": 9,
-          "Title": "upg 95",
-          "Price": "0.00"
-        }
-      ]
-    },
-    {
-      "id": 57,
-      "Active": true,
-      "VersionId": 726,
-      "Latitude": "48.02237000",
-      "Longitude": "23.54452000",
-      "FullName": "АЗС №55 00:00 - 24:00",
-      "ShortName": "",
-      "Address": "Закарпатська обл, м. Тячів, вул. Армійська, 125А",
-      "Region": "Закарпатська",
-      "LastPriceUpdateDate": "2022-06-03",
-      "ServicesAsArray": [
-        {
-          "id": 1,
-          "Title": "Магазин"
-        },
-        {
-          "id": 2,
-          "Title": "WC"
-        },
-        {
-          "id": 6,
-          "Title": "Термінал EasyPay"
-        }
-      ],
-      "FuelsAsArray": [
-        {
-          "id": 2,
-          "Title": "95 (передоплата)",
-          "Price": "0.00"
-        },
-        {
-          "id": 4,
-          "Title": "Газ",
-          "Price": "0.00"
-        },
-        {
-          "id": 5,
-          "Title": "ДП (передоплата)",
-          "Price": "0.00"
-        },
-        {
-          "id": 9,
-          "Title": "upg 95",
-          "Price": "0.00"
-        }
-      ]
-    },
-    {
-      "id": 97,
-      "Active": true,
-      "VersionId": 784,
-      "Latitude": "48.20485000",
-      "Longitude": "23.31642000",
-      "FullName": "АЗС №87 00:00 - 24:00",
-      "ShortName": "",
-      "Address": "Закарпатська обл., Хустський р-н, с. Іза, вул. Центральна, б/н",
-      "Region": "Закарпатська",
-      "LastPriceUpdateDate": "2022-06-03",
-      "ServicesAsArray": [
-        {
-          "id": 1,
-          "Title": "Магазин"
-        }
-      ],
-      "FuelsAsArray": [
-        {
-          "id": 2,
-          "Title": "95 (передоплата)",
-          "Price": "0.00"
-        },
-        {
-          "id": 5,
-          "Title": "ДП (передоплата)",
-          "Price": "0.00"
-        },
-        {
-          "id": 9,
-          "Title": "upg 95",
-          "Price": "0.00"
-        }
-      ]
-    },
-    {
-      "id": 120,
-      "Active": true,
-      "VersionId": 826,
-      "Latitude": "48.55135300",
-      "Longitude": "22.99051900",
-      "FullName": "АЗС №98 00:00 - 24:00",
-      "ShortName": "",
-      "Address": "Закарпатська обл., м. Свалява, вул. Борканюка, 42 ",
-      "Region": "Закарпатська",
-      "LastPriceUpdateDate": "2022-06-03",
-      "ServicesAsArray": [
-        {
-          "id": 1,
-          "Title": "Магазин"
-        }
-      ],
-      "FuelsAsArray": [
-        {
-          "id": 2,
-          "Title": "95 (передоплата)",
-          "Price": "0.00"
-        },
-        {
-          "id": 5,
-          "Title": "ДП (передоплата)",
-          "Price": "0.00"
-        },
-        {
-          "id": 9,
-          "Title": "upg 95",
-          "Price": "0.00"
-        }
-      ]
-    },
-    {
-      "id": 130,
-      "Active": true,
-      "VersionId": 846,
-      "Latitude": "48.45829000",
-      "Longitude": "22.70718000",
-      "FullName": "АЗС №102 00:00 - 24:00",
-      "ShortName": "",
-      "Address": "Закарпатська обл., м. Мукачево, вул. Лавківська, 1Ж",
-      "Region": "Закарпатська",
-      "LastPriceUpdateDate": "2022-06-03",
-      "ServicesAsArray": [
-        {
-          "id": 1,
-          "Title": "Магазин"
-        },
-        {
-          "id": 2,
-          "Title": "WC"
-        },
-        {
-          "id": 3,
-          "Title": "Wi-Fi"
-        },
-        {
-          "id": 4,
-          "Title": "Їжа"
-        },
-        {
-          "id": 5,
-          "Title": "Кава"
-        },
-        {
-          "id": 6,
-          "Title": "Термінал EasyPay"
-        },
-        {
-          "id": 10,
-          "Title": "VIVO-cafe"
-        }
-      ],
-      "FuelsAsArray": [
-        {
-          "id": 2,
-          "Title": "95 (передоплата)",
-          "Price": "0.00"
-        },
-        {
-          "id": 4,
-          "Title": "Газ",
-          "Price": "0.00"
-        },
-        {
-          "id": 5,
-          "Title": "ДП (передоплата)",
-          "Price": "0.00"
-        },
-        {
-          "id": 9,
-          "Title": "upg 95",
-          "Price": "0.00"
-        }
-      ]
-    },
-    {
-      "id": 82,
-      "Active": false,
-      "VersionId": 670,
-      "Latitude": "48.27287000",
-      "Longitude": "22.46157000",
-      "FullName": "АЗС №76",
-      "ShortName": "",
-      "Address": "Закарпатська обл., Берегівський р-н, с. Косонь, вул. Кошут Лайош, 151Б",
-      "Region": "Закарпатська",
-      "LastPriceUpdateDate": "2022-06-03",
-      "ServicesAsArray": [
-        {
-          "id": 1,
-          "Title": "Магазин"
-        },
-        {
-          "id": 2,
-          "Title": "WC"
-        }
-      ],
-      "FuelsAsArray": [
-        {
-          "id": 2,
-          "Title": "95 (передоплата)",
-          "Price": "0.00"
-        },
-        {
-          "id": 3,
-          "Title": "92 (передоплата)",
-          "Price": "0.00"
-        },
-        {
-          "id": 4,
-          "Title": "Газ",
-          "Price": "0.00"
-        },
-        {
-          "id": 5,
-          "Title": "ДП (передоплата)",
-          "Price": "0.00"
-        }
-      ]
-    },
-    {
-      "id": 46,
-      "Active": true,
-      "VersionId": 688,
-      "Latitude": "47.85370000",
-      "Longitude": "35.23080000",
-      "FullName": "АЗС №43 05:00 - 21:00",
-      "ShortName": "",
-      "Address": "Запорізька обл., м. Запоріжжя, вул. Авраменка, 23",
-      "Region": "Запорізька",
-      "LastPriceUpdateDate": "2022-06-03",
-      "ServicesAsArray": [
-        {
-          "id": 1,
-          "Title": "Магазин"
-        },
-        {
-          "id": 2,
-          "Title": "WC"
-        }
-      ],
-      "FuelsAsArray": [
-        {
-          "id": 1,
-          "Title": "upg DP",
-          "Price": "0.00"
-        },
-        {
-          "id": 2,
-          "Title": "95 (передоплата)",
-          "Price": "0.00"
-        },
-        {
-          "id": 4,
-          "Title": "Газ",
-          "Price": "0.00"
-        },
-        {
-          "id": 9,
-          "Title": "upg 95",
-          "Price": "0.00"
-        }
-      ]
-    },
-    {
-      "id": 47,
-      "Active": true,
-      "VersionId": 690,
-      "Latitude": "47.85047000",
-      "Longitude": "35.14637000",
-      "FullName": "АЗС №44 05:00 - 21:00",
-      "ShortName": "",
-      "Address": "Запорізька обл., м. Запоріжжя, вул. Адмірала Нахімова, 3",
-      "Region": "Запорізька",
-      "LastPriceUpdateDate": "2022-06-03",
-      "ServicesAsArray": [
-        {
-          "id": 1,
-          "Title": "Магазин"
-        }
-      ],
-      "FuelsAsArray": [
-        {
-          "id": 1,
-          "Title": "upg DP",
-          "Price": "0.00"
-        },
-        {
-          "id": 2,
-          "Title": "95 (передоплата)",
-          "Price": "0.00"
-        },
-        {
-          "id": 9,
-          "Title": "upg 95",
-          "Price": "0.00"
-        }
-      ]
-    },
-    {
-      "id": 45,
-      "Active": false,
-      "VersionId": 686,
-      "Latitude": "47.49067000",
-      "Longitude": "36.17702000",
-      "FullName": "АЗС №42",
-      "ShortName": "",
-      "Address": "Запорізька обл., м. Пологи, вул. К. Маркса, 530В",
-      "Region": "Запорізька",
-      "LastPriceUpdateDate": "2022-06-03",
-      "ServicesAsArray": [
-        {
-          "id": 1,
-          "Title": "Магазин"
-        },
-        {
-          "id": 2,
-          "Title": "WC"
-        }
-      ],
-      "FuelsAsArray": [
-        {
-          "id": 2,
-          "Title": "95 (передоплата)",
-          "Price": "0.00"
-        },
-        {
-          "id": 3,
-          "Title": "92 (передоплата)",
-          "Price": "0.00"
-        },
-        {
-          "id": 4,
-          "Title": "Газ",
-          "Price": "0.00"
-        },
-        {
-          "id": 5,
-          "Title": "ДП (передоплата)",
-          "Price": "0.00"
-        }
-      ]
-    },
-    {
-      "id": 48,
-      "Active": false,
-      "VersionId": 718,
-      "Latitude": "46.73527000",
-      "Longitude": "36.32850000",
-      "FullName": "АЗС №45",
-      "ShortName": "",
-      "Address": "Запорізька обл., м. Приморськ, Мелітопольське шосе, 7",
-      "Region": "Запорізька",
-      "LastPriceUpdateDate": "2022-06-03",
-      "ServicesAsArray": [
-        {
-          "id": 1,
-          "Title": "Магазин"
-        },
-        {
-          "id": 2,
-          "Title": "WC"
-        }
-      ],
-      "FuelsAsArray": [
-        {
-          "id": 2,
-          "Title": "95 (передоплата)",
-          "Price": "0.00"
-        },
-        {
-          "id": 3,
-          "Title": "92 (передоплата)",
-          "Price": "0.00"
-        },
-        {
-          "id": 4,
-          "Title": "Газ",
-          "Price": "0.00"
-        },
-        {
-          "id": 5,
-          "Title": "ДП (передоплата)",
-          "Price": "0.00"
-        }
-      ]
-    },
-    {
-      "id": 49,
-      "Active": false,
-      "VersionId": 720,
-      "Latitude": "47.38522000",
-      "Longitude": "35.01497000",
-      "FullName": "АЗС №46",
-      "ShortName": "",
-      "Address": "Запорізька обл., м. Дніпрорудне, вул. Нижня, 62",
-      "Region": "Запорізька",
-      "LastPriceUpdateDate": "2022-06-03",
-      "ServicesAsArray": [
-        {
-          "id": 1,
-          "Title": "Магазин"
-        },
-        {
-          "id": 2,
-          "Title": "WC"
-        }
-      ],
-      "FuelsAsArray": [
-        {
-          "id": 2,
-          "Title": "95 (передоплата)",
-          "Price": "0.00"
-        },
-        {
-          "id": 3,
-          "Title": "92 (передоплата)",
-          "Price": "0.00"
-        },
-        {
-          "id": 4,
-          "Title": "Газ",
-          "Price": "0.00"
-        },
-        {
-          "id": 5,
-          "Title": "ДП (передоплата)",
-          "Price": "0.00"
-        },
-        {
-          "id": 8,
-          "Title": "upg 100",
-          "Price": "0.00"
-        }
-      ]
-    },
-    {
-      "id": 155,
-      "Active": true,
-      "VersionId": 990,
-      "Latitude": "48.48965600",
-      "Longitude": "24.59504200",
-      "FullName": "АЗС №129 05:00 - 23:00",
-      "ShortName": "",
-      "Address": "Івано-Франківська обл., м. Яремче, вул. Свободи",
-      "Region": "Івано-Франківська",
-      "LastPriceUpdateDate": "2022-06-03",
-      "ServicesAsArray": [
-        {
-          "id": 1,
-          "Title": "Магазин"
-        },
-        {
-          "id": 2,
-          "Title": "WC"
-        },
-        {
-          "id": 3,
-          "Title": "Wi-Fi"
-        },
-        {
-          "id": 4,
-          "Title": "Їжа"
-        },
-        {
-          "id": 5,
-          "Title": "Кава"
-        },
-        {
-          "id": 6,
-          "Title": "Термінал EasyPay"
-        },
-        {
-          "id": 7,
-          "Title": "СТО"
-        },
-        {
-          "id": 8,
-          "Title": "Підкачка шин"
-        },
-        {
-          "id": 10,
-          "Title": "VIVO-cafe"
-        }
-      ],
-      "FuelsAsArray": [
-        {
-          "id": 1,
-          "Title": "upg DP",
-          "Price": "0.00"
-        },
-        {
-          "id": 2,
-          "Title": "95 (передоплата)",
-          "Price": "0.00"
-        },
-        {
-          "id": 4,
-          "Title": "Газ",
-          "Price": "0.00"
-        },
-        {
-          "id": 9,
-          "Title": "upg 95",
-          "Price": "0.00"
-        }
-      ]
-    },
-    {
-      "id": 156,
-      "Active": true,
-      "VersionId": 978,
-      "Latitude": "48.84618600",
-      "Longitude": "24.70587600",
-      "FullName": "АЗС №130 05:00 - 23:00",
-      "ShortName": "",
-      "Address": "Івано-Франківська обл., Тисменецький р-н, с. Черніїв, ур. Біля водоканалу",
-      "Region": "Івано-Франківська",
-      "LastPriceUpdateDate": "2022-06-03",
-      "ServicesAsArray": [
-        {
-          "id": 1,
-          "Title": "Магазин"
-        },
-        {
-          "id": 2,
-          "Title": "WC"
-        },
-        {
-          "id": 3,
-          "Title": "Wi-Fi"
-        },
-        {
-          "id": 4,
-          "Title": "Їжа"
-        },
-        {
-          "id": 5,
-          "Title": "Кава"
-        },
-        {
-          "id": 6,
-          "Title": "Термінал EasyPay"
-        },
-        {
-          "id": 8,
-          "Title": "Підкачка шин"
-        },
-        {
-          "id": 10,
-          "Title": "VIVO-cafe"
-        }
-      ],
-      "FuelsAsArray": [
-        {
-          "id": 1,
-          "Title": "upg DP",
-          "Price": "0.00"
-        },
-        {
-          "id": 2,
-          "Title": "95 (передоплата)",
-          "Price": "0.00"
-        },
-        {
-          "id": 4,
-          "Title": "Газ",
-          "Price": "0.00"
-        },
-        {
-          "id": 5,
-          "Title": "ДП (передоплата)",
-          "Price": "0.00"
-        },
-        {
-          "id": 9,
-          "Title": "upg 95",
-          "Price": "0.00"
-        }
-      ]
-    },
-    {
       "id": 19,
       "Active": true,
       "VersionId": 714,
@@ -1782,7 +1782,7 @@
       "ShortName": "",
       "Address": "Київська обл., Переяслав-Хмельницький р-н, с/рада Студениківська, автошлях Київ-Харків, 91 км",
       "Region": "Київська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -1826,7 +1826,7 @@
       "ShortName": "",
       "Address": "Київська обл., Васильківський р-н, с/рада Кодаківська, автошлях Київ-Одеса, 50 км + 700 м",
       "Region": "Київська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -1875,7 +1875,7 @@
       "ShortName": "",
       "Address": "Київська обл., Києво-Святошинський р-н, с. Ходосівка, вул. Обухівське шосе, 1",
       "Region": "Київська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -1927,7 +1927,7 @@
       "ShortName": "",
       "Address": "Київська обл., м. Буча, вул. Шевченка, 4А",
       "Region": "Київська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -1995,7 +1995,7 @@
       "ShortName": "",
       "Address": "Київська обл., Києво-Святошинський р-н, а/д Т 10-27 Київське півкільце, 12+363-12+552 км (праворуч)",
       "Region": "Київська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -2054,7 +2054,7 @@
         {
           "id": 9,
           "Title": "upg 95",
-          "Price": "0.00"
+          "Price": "49.00"
         }
       ]
     },
@@ -2068,7 +2068,7 @@
       "ShortName": "",
       "Address": "Київська обл, Бориспільський р-н, с. Щасливе, Харківське шосе, 13",
       "Region": "Київська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -2141,7 +2141,7 @@
       "ShortName": "",
       "Address": "Київська обл., Бориспільський р-н, с. Чубинське, вул. Київська, 1В",
       "Region": "Київська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -2185,7 +2185,7 @@
         {
           "id": 4,
           "Title": "Газ",
-          "Price": "0.00"
+          "Price": "37.00"
         },
         {
           "id": 5,
@@ -2209,7 +2209,7 @@
       "ShortName": "",
       "Address": "Київська обл., Києво-Святошинський р-н, с. Гатне, вул. Інститутська, 14",
       "Region": "Київська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -2258,7 +2258,7 @@
         {
           "id": 4,
           "Title": "Газ",
-          "Price": "37.00"
+          "Price": "0.00"
         },
         {
           "id": 5,
@@ -2282,7 +2282,7 @@
       "ShortName": "",
       "Address": "м. Київ, Дарницький р-н, вул. Затишна, 3",
       "Region": "Київська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -2355,7 +2355,7 @@
       "ShortName": "",
       "Address": "Київська обл., Києво-Святошинський р-н, смт Чабани, вул. Одеське шосе, 15",
       "Region": "Київська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -2428,7 +2428,7 @@
       "ShortName": "",
       "Address": "Київська обл., Києво-Святошинський р-н, м. Боярка, вул. Магістральна, 32",
       "Region": "Київська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -2487,7 +2487,7 @@
         {
           "id": 9,
           "Title": "upg 95",
-          "Price": "0.00"
+          "Price": "49.00"
         }
       ]
     },
@@ -2501,7 +2501,7 @@
       "ShortName": "",
       "Address": "м. Київ, вул. Канальна, 7",
       "Region": "Київська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -2536,7 +2536,7 @@
         {
           "id": 1,
           "Title": "upg DP",
-          "Price": "56.00"
+          "Price": "0.00"
         },
         {
           "id": 2,
@@ -2556,7 +2556,7 @@
         {
           "id": 9,
           "Title": "upg 95",
-          "Price": "49.00"
+          "Price": "0.00"
         }
       ]
     },
@@ -2570,7 +2570,7 @@
       "ShortName": "",
       "Address": "м. Київ, проспект Правди, 47",
       "Region": "Київська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -2643,7 +2643,7 @@
       "ShortName": "",
       "Address": "Київська обл., Бориспільський р-н, с. Іванків, вул. Харківська, 1С",
       "Region": "Київська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -2697,7 +2697,7 @@
         {
           "id": 9,
           "Title": "upg 95",
-          "Price": "0.00"
+          "Price": "49.00"
         }
       ]
     },
@@ -2711,7 +2711,7 @@
       "ShortName": "",
       "Address": "м. Київ, проспект Визволителів, 13",
       "Region": "Київська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -2750,7 +2750,7 @@
         {
           "id": 1,
           "Title": "upg DP",
-          "Price": "56.00"
+          "Price": "0.00"
         },
         {
           "id": 2,
@@ -2760,7 +2760,7 @@
         {
           "id": 4,
           "Title": "Газ",
-          "Price": "37.00"
+          "Price": "0.00"
         },
         {
           "id": 5,
@@ -2770,7 +2770,7 @@
         {
           "id": 9,
           "Title": "upg 95",
-          "Price": "49.00"
+          "Price": "0.00"
         }
       ]
     },
@@ -2784,7 +2784,7 @@
       "ShortName": "",
       "Address": "Київська обл., Києво-Святошинський р-н,територія Дмитрівської С/Р,траса М06, Київ-Львів-Чоп27км+700м",
       "Region": "Київська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -2857,7 +2857,7 @@
       "ShortName": "",
       "Address": "Кіровоградська обл., Голованівський р-н, автошлях Ульянівка-Миколаїв, 17 км + 650 м (праворуч)",
       "Region": "Кіровоградська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -2877,7 +2877,7 @@
         {
           "id": 4,
           "Title": "Газ",
-          "Price": "0.00"
+          "Price": "37.00"
         },
         {
           "id": 5,
@@ -2887,7 +2887,7 @@
         {
           "id": 9,
           "Title": "upg 95",
-          "Price": "0.00"
+          "Price": "49.00"
         }
       ]
     },
@@ -2901,7 +2901,7 @@
       "ShortName": "",
       "Address": "Кіровоградська обл., Голованівський р-н, автошлях Ульянівка-Миколаїв, 17 км + 735 м (ліворуч)",
       "Region": "Кіровоградська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -2926,7 +2926,7 @@
         {
           "id": 4,
           "Title": "Газ",
-          "Price": "0.00"
+          "Price": "37.00"
         },
         {
           "id": 5,
@@ -2945,7 +2945,7 @@
       "ShortName": "",
       "Address": "Кіровоградська обл., м. Свідловодськ, вул. Єгорова, 2А",
       "Region": "Кіровоградська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -2970,7 +2970,7 @@
         {
           "id": 4,
           "Title": "Газ",
-          "Price": "0.00"
+          "Price": "37.00"
         },
         {
           "id": 9,
@@ -2989,7 +2989,7 @@
       "ShortName": "",
       "Address": "Кіровоградська обл., м. Свідловодськ, вул. Миру, 127",
       "Region": "Кіровоградська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -3009,7 +3009,7 @@
         {
           "id": 4,
           "Title": "Газ",
-          "Price": "0.00"
+          "Price": "37.00"
         },
         {
           "id": 5,
@@ -3033,7 +3033,7 @@
       "ShortName": "",
       "Address": "Кіровоградська обл., смт Павлиш, вул. Сухомлинського, 23А",
       "Region": "Кіровоградська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -3058,7 +3058,7 @@
         {
           "id": 4,
           "Title": "Газ",
-          "Price": "0.00"
+          "Price": "37.00"
         },
         {
           "id": 9,
@@ -3077,7 +3077,7 @@
       "ShortName": "",
       "Address": "м. Львів, вул. Шевченка, 200",
       "Region": "Львівська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -3101,7 +3101,7 @@
         {
           "id": 4,
           "Title": "Газ",
-          "Price": "37.00"
+          "Price": "0.00"
         },
         {
           "id": 5,
@@ -3111,7 +3111,7 @@
         {
           "id": 9,
           "Title": "upg 95",
-          "Price": "0.00"
+          "Price": "49.00"
         }
       ]
     },
@@ -3125,7 +3125,7 @@
       "ShortName": "",
       "Address": "Львівська обл., м. Броди, а/д Київ - Чоп 441 км + 500 м (праворуч)",
       "Region": "Львівська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -3154,7 +3154,7 @@
         {
           "id": 4,
           "Title": "Газ",
-          "Price": "37.00"
+          "Price": "0.00"
         },
         {
           "id": 9,
@@ -3173,7 +3173,7 @@
       "ShortName": "",
       "Address": "Львівська обл., м. Броди, а/д Київ - Чоп 441 км + 470 м (ліворуч)",
       "Region": "Львівська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -3202,7 +3202,7 @@
         {
           "id": 4,
           "Title": "Газ",
-          "Price": "37.00"
+          "Price": "0.00"
         },
         {
           "id": 5,
@@ -3221,7 +3221,7 @@
       "ShortName": "",
       "Address": "Львівська обл., Пустомитівський р-н,  с. Підберізці, вул. Галицька, 1",
       "Region": "Львівська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -3250,7 +3250,7 @@
         {
           "id": 4,
           "Title": "Газ",
-          "Price": "0.00"
+          "Price": "37.00"
         },
         {
           "id": 5,
@@ -3274,7 +3274,7 @@
       "ShortName": "",
       "Address": "Львівська обл., Пустомитівський р-н, с. Солонка, вул. Стрийська, 3",
       "Region": "Львівська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -3342,7 +3342,7 @@
       "ShortName": "",
       "Address": "Львівська обл., Пустомитівський р-н, с. Пасіки-Зубрицькі, вул. Дорожна, 85",
       "Region": "Львівська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -3387,7 +3387,7 @@
         {
           "id": 4,
           "Title": "Газ",
-          "Price": "37.00"
+          "Price": "0.00"
         },
         {
           "id": 5,
@@ -3411,7 +3411,7 @@
       "ShortName": "",
       "Address": "Львівська обл., Пустомитівський р-н, с. Пасіки-Зубрицькі, вул. Кільцева, 6",
       "Region": "Львівська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -3460,7 +3460,7 @@
         {
           "id": 4,
           "Title": "Газ",
-          "Price": "0.00"
+          "Price": "37.00"
         },
         {
           "id": 5,
@@ -3470,7 +3470,7 @@
         {
           "id": 9,
           "Title": "upg 95",
-          "Price": "0.00"
+          "Price": "49.00"
         }
       ]
     },
@@ -3484,7 +3484,7 @@
       "ShortName": "",
       "Address": "Одеська обл., Овідіопольский р-н, смт Авангард, вул. Ангарська, 4",
       "Region": "Одеська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -3533,7 +3533,7 @@
       "ShortName": "",
       "Address": "м. Одеса, вул. Люстдорфська дорога, 5",
       "Region": "Одеська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -3572,7 +3572,7 @@
       "ShortName": "",
       "Address": "Одеська обл., Біляївський р-н, Нерубайська с/р, Масив 27, зем. діл. 306-а, вздовж а/д М05 Київ-Одеса",
       "Region": "Одеська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -3641,7 +3641,7 @@
       "ShortName": "",
       "Address": "Одеська обл., м. Одеса,  вул. Головатого отамана, 157-А",
       "Region": "Одеська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -3710,7 +3710,7 @@
       "ShortName": "",
       "Address": "Одеська обл., м. Одеса, Малиновський р-н, масив №1, ділянка №13",
       "Region": "Одеська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -3749,7 +3749,7 @@
         {
           "id": 1,
           "Title": "upg DP",
-          "Price": "56.00"
+          "Price": "0.00"
         },
         {
           "id": 2,
@@ -3783,7 +3783,7 @@
       "ShortName": "",
       "Address": "Полтавська обл., м. Кременчук, вул. Київська, в районі автосалону «АИС»",
       "Region": "Полтавська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -3832,7 +3832,7 @@
         {
           "id": 4,
           "Title": "Газ",
-          "Price": "0.00"
+          "Price": "37.00"
         },
         {
           "id": 5,
@@ -3856,7 +3856,7 @@
       "ShortName": "",
       "Address": "Рівненська  обл., Рокитнівський р-н, с/рада Кисорицька, автодорога Київ-Ковель, 254 км",
       "Region": "Рівненська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -3881,7 +3881,7 @@
         {
           "id": 4,
           "Title": "Газ",
-          "Price": "37.00"
+          "Price": "0.00"
         },
         {
           "id": 9,
@@ -3900,7 +3900,7 @@
       "ShortName": "",
       "Address": "Рівненська обл., Рівненський р-н, с/рада Шпанівська, комплекс будівель і споруд №8, буд. 8",
       "Region": "Рівненська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -3959,7 +3959,7 @@
         {
           "id": 9,
           "Title": "upg 95",
-          "Price": "0.00"
+          "Price": "49.00"
         }
       ]
     },
@@ -3973,7 +3973,7 @@
       "ShortName": "",
       "Address": "Рівненська обл., Рівненський р-н, с. Корнин, вул. Об'їзна, 4",
       "Region": "Рівненська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -4042,7 +4042,7 @@
       "ShortName": "",
       "Address": "Сумська обл., м. Глухів, вул. Путивльська, 62А",
       "Region": "Сумська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -4090,7 +4090,7 @@
       "ShortName": "",
       "Address": "Тернопільська обл., Тернгопільський р-н, с. Великі Гаї, вул. Об'їзна, 33",
       "Region": "Тернопільська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -4139,7 +4139,7 @@
         {
           "id": 4,
           "Title": "Газ",
-          "Price": "37.00"
+          "Price": "0.00"
         },
         {
           "id": 5,
@@ -4163,7 +4163,7 @@
       "ShortName": "",
       "Address": "Харківська обл., м. Харків, вул. Академіка Павлова, 18-Б",
       "Region": "Харківська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -4236,7 +4236,7 @@
       "ShortName": "",
       "Address": "Хмельницька обл., м. Кам'янець-Подільський, Хмельницьке шосе, 11В",
       "Region": "Хмельницька",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -4285,7 +4285,7 @@
         {
           "id": 4,
           "Title": "Газ",
-          "Price": "37.00"
+          "Price": "0.00"
         },
         {
           "id": 5,
@@ -4309,7 +4309,7 @@
       "ShortName": "",
       "Address": "Черкаська обл., м. Умань, вул. Заводська, 1А",
       "Region": "Черкаська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -4342,7 +4342,7 @@
         {
           "id": 9,
           "Title": "upg 95",
-          "Price": "0.00"
+          "Price": "49.00"
         }
       ]
     },
@@ -4356,80 +4356,7 @@
       "ShortName": "",
       "Address": "м. Черкаси, вул. 30-річчя Перемоги, 13/7",
       "Region": "Черкаська",
-      "LastPriceUpdateDate": "2022-06-03",
-      "ServicesAsArray": [
-        {
-          "id": 1,
-          "Title": "Магазин"
-        },
-        {
-          "id": 2,
-          "Title": "WC"
-        },
-        {
-          "id": 3,
-          "Title": "Wi-Fi"
-        },
-        {
-          "id": 4,
-          "Title": "Їжа"
-        },
-        {
-          "id": 5,
-          "Title": "Кава"
-        },
-        {
-          "id": 6,
-          "Title": "Термінал EasyPay"
-        },
-        {
-          "id": 8,
-          "Title": "Підкачка шин"
-        },
-        {
-          "id": 10,
-          "Title": "VIVO-cafe"
-        }
-      ],
-      "FuelsAsArray": [
-        {
-          "id": 1,
-          "Title": "upg DP",
-          "Price": "0.00"
-        },
-        {
-          "id": 2,
-          "Title": "95 (передоплата)",
-          "Price": "0.00"
-        },
-        {
-          "id": 4,
-          "Title": "Газ",
-          "Price": "0.00"
-        },
-        {
-          "id": 5,
-          "Title": "ДП (передоплата)",
-          "Price": "0.00"
-        },
-        {
-          "id": 9,
-          "Title": "upg 95",
-          "Price": "0.00"
-        }
-      ]
-    },
-    {
-      "id": 151,
-      "Active": true,
-      "VersionId": 974,
-      "Latitude": "48.55082500",
-      "Longitude": "30.23045300",
-      "FullName": "АЗС №125 05:00 - 22:00",
-      "ShortName": "",
-      "Address": "Черкаська обл., Ладижинська сільська рада, с. Ладижинка, вул.Київська, 35",
-      "Region": "Черкаська",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -4493,6 +4420,79 @@
       ]
     },
     {
+      "id": 151,
+      "Active": true,
+      "VersionId": 974,
+      "Latitude": "48.55082500",
+      "Longitude": "30.23045300",
+      "FullName": "АЗС №125 05:00 - 22:00",
+      "ShortName": "",
+      "Address": "Черкаська обл., Ладижинська сільська рада, с. Ладижинка, вул.Київська, 35",
+      "Region": "Черкаська",
+      "LastPriceUpdateDate": "2022-06-04",
+      "ServicesAsArray": [
+        {
+          "id": 1,
+          "Title": "Магазин"
+        },
+        {
+          "id": 2,
+          "Title": "WC"
+        },
+        {
+          "id": 3,
+          "Title": "Wi-Fi"
+        },
+        {
+          "id": 4,
+          "Title": "Їжа"
+        },
+        {
+          "id": 5,
+          "Title": "Кава"
+        },
+        {
+          "id": 6,
+          "Title": "Термінал EasyPay"
+        },
+        {
+          "id": 8,
+          "Title": "Підкачка шин"
+        },
+        {
+          "id": 10,
+          "Title": "VIVO-cafe"
+        }
+      ],
+      "FuelsAsArray": [
+        {
+          "id": 1,
+          "Title": "upg DP",
+          "Price": "0.00"
+        },
+        {
+          "id": 2,
+          "Title": "95 (передоплата)",
+          "Price": "0.00"
+        },
+        {
+          "id": 4,
+          "Title": "Газ",
+          "Price": "37.00"
+        },
+        {
+          "id": 5,
+          "Title": "ДП (передоплата)",
+          "Price": "0.00"
+        },
+        {
+          "id": 9,
+          "Title": "upg 95",
+          "Price": "49.00"
+        }
+      ]
+    },
+    {
       "id": 126,
       "Active": true,
       "VersionId": 838,
@@ -4502,7 +4502,7 @@
       "ShortName": "",
       "Address": "Чернівецька обл., Глибоцький р-н, с. Тереблече, вул. Головна, 139В",
       "Region": "Чернівецька",
-      "LastPriceUpdateDate": "2022-06-03",
+      "LastPriceUpdateDate": "2022-06-04",
       "ServicesAsArray": [
         {
           "id": 1,
@@ -4556,7 +4556,7 @@
         {
           "id": 9,
           "Title": "upg 95",
-          "Price": "0.00"
+          "Price": "49.00"
         }
       ]
     }

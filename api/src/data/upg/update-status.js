@@ -1,5 +1,5 @@
 const fs = require('fs/promises');
-const { scrapeUpg } = require('./upg-scraper');
+const { scrapeUpg } = require('./upg-scraper.mjs');
 const descriptions = require('./descriptions.json');
 
 const generateUPGDescriptions = async () => {
