@@ -1,12 +1,14 @@
 import { Injectable } from '@nestjs/common';
 import { Station } from '@/stations/models/station.model';
+import { OkkoService } from '@/stations/okko/okko.service';
 
 @Injectable()
 export class StationsService {
-  findAll(): Station[] {
-    return [
-      { id: 1, name: 'biba' },
-      { id: 2, name: 'boba' },
-    ];
+  constructor(private readonly okkoService: OkkoService) {}
+
+  async findAll(): Promise<Station[]> {
+    const stations = await Promise.all([this.okkoService.findAll()]);
+
+    return stations.flat();
   }
 }
