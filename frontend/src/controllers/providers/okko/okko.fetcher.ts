@@ -46,7 +46,7 @@ const parseSchedule = (content: string) => (content.split(SCHEDULE).pop() || '')
 export const fetchOkkoStations = async () => {
   if (process.env.NODE_ENV === 'development') {
     // eslint-disable-next-line global-require
-    const stations: Array<OkkoGasStation> = require('../../../../../api/src/data/okko/station-status.json');
+    const stations: Array<OkkoGasStation> = require('../../../../../api-old/src/data/okko/station-status.json');
 
     return stations;
   }

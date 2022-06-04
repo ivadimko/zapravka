@@ -13,7 +13,7 @@ interface AllStationsApiResponse {
 export const fetchSocarStations = async () => {
   if (process.env.NODE_ENV === 'development') {
     // eslint-disable-next-line global-require
-    const stations: AllStationsApiResponse['data'] = require('../../../../../api/src/data/socar/station-status.json');
+    const stations: AllStationsApiResponse['data'] = require('../../../../../api-old/src/data/socar/station-status.json');
 
     return stations;
   }
