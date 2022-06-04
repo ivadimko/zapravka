@@ -44,51 +44,29 @@ const parseFuel = (options: {
 const parseSchedule = (content: string) => (content.split(SCHEDULE).pop() || '').trim();
 
 export const fetchOkkoStations = async () => {
-  // eslint-disable-next-line global-require
-  const fallback: Array<OkkoGasStation> = require('@/data/okko/station-status.json');
-
   if (process.env.NODE_ENV === 'development') {
-    return fallback;
-  }
+    // eslint-disable-next-line global-require
+    const stations: Array<OkkoGasStation> = require('../../../../../api/src/data/okko/station-status.json');
 
-  let response: AllStationsApiResponse;
+    return stations;
+  }
 
   const API_ENDPOINT = `${process.env.API_ENDPOINT}/okko-stations`;
 
-  try {
-    console.info(`OKKO: ${API_ENDPOINT}`);
+  console.info(`OKKO: ${API_ENDPOINT}`);
 
-    response = await withRetry<AllStationsApiResponse>(
-      () => {
-        console.info('OKKO: START');
+  const response = await withRetry<AllStationsApiResponse>(
+    () => {
+      console.info('OKKO: START');
 
-        return fetch(API_ENDPOINT)
-          .then((res) => {
-            console.info('OKKO: updated from endpoint');
+      return fetch(API_ENDPOINT)
+        .then((res) => {
+          console.info('OKKO: updated from endpoint');
 
-            return res.json();
-          });
-      },
-    );
-  } catch (error) {
-    console.info(error);
-
-    console.info('use fallback');
-
-    response = {
-      data: {
-        layout: [
-          {
-            data: {
-              list: {
-                collection: fallback,
-              },
-            },
-          },
-        ],
-      },
-    };
-  }
+          return res.json();
+        });
+    },
+  );
 
   const stations = response.data.layout[0].data.list.collection;
 

@@ -1,8 +1,8 @@
-const http = require('http'); // 1 - Import Node.js core module
-const fs = require('fs/promises');
-const path = require('path');
-const { scrapeOkko } = require('./okko/okko-scraper');
-const { scrapeUpg } = require('./upg/upg-scraper');
+import http from 'http';
+import fs from 'fs/promises';
+import path from 'path';
+import { scrapeOkko } from './data/okko/okko-scraper.mjs';
+import { scrapeUpg } from './data/upg/upg-scraper.mjs';
 
 const processResponse = async ({
   res,
@@ -41,7 +41,7 @@ const server = http.createServer(async (req, res) => {
     case '/okko-stations': {
       await processResponse({
         res,
-        fallbackFilePath: path.resolve(__dirname, 'okko', 'okko-stations.json'),
+        fallbackFilePath: path.resolve('src/data/okko/okko-stations.json'),
         fetchData: scrapeOkko,
       });
 
@@ -51,7 +51,7 @@ const server = http.createServer(async (req, res) => {
     case '/upg-stations': {
       await processResponse({
         res,
-        fallbackFilePath: path.resolve(__dirname, 'upg', 'upg-stations.json'),
+        fallbackFilePath: path.resolve('src/data/upg/upg-stations.json'),
         fetchData: scrapeUpg,
       });
 
