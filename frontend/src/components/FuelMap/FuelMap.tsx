@@ -2,8 +2,8 @@ import { GoogleMap, Marker, useJsApiLoader } from '@react-google-maps/api';
 import {
   FC, useCallback, useEffect, useMemo, useState,
 } from 'react';
-import { GasStation } from '@/controllers/station/station.typedefs';
 import { debounce } from '@/utils/debounce';
+import { StationFragment } from '@/controllers/graphql/generated';
 import { StationMarker } from './components/StationMarker';
 import { IconTarget } from './components/IconTarget';
 import styles from './FuelMap.module.scss';
@@ -27,7 +27,7 @@ const MAP_ZOOM_KEY = 'map_zoom';
 const USER_ALLOWED_GEOLOCATION_KEY = 'user_allowed_geolocation';
 
 interface Props {
-  stations: Array<GasStation>;
+  stations: Array<StationFragment>;
   updatedAt: string;
 }
 

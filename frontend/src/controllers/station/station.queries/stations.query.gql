@@ -1,0 +1,63 @@
+fragment FuelStatus on FuelStatusesMap {
+  available_cash
+  available_fuel_cards
+  only_critical_vehicles
+  empty
+}
+
+fragment Coordinates on Coordinates {
+  lat
+  lng
+}
+
+fragment GasStationSchedule on GasStationSchedule {
+  opensAt
+  closesAt
+}
+
+fragment StationReference on StationReference {
+  link
+  title
+}
+
+fragment Station on Station {
+  id
+  provider
+  name
+  coordinates {
+    ...Coordinates
+  }
+  workDescription
+  descriptionType
+  status {
+    diesel {
+      ...FuelStatus
+    }
+    gas {
+      ...FuelStatus
+    }
+    ad_blue {
+      ...FuelStatus
+    }
+    petrol {
+     ...FuelStatus
+    }
+    petrol_92 {
+      ...FuelStatus
+    }
+  }
+  schedule {
+    ...GasStationSchedule
+  }
+  scheduleString
+  icon
+  reference {
+    ...StationReference
+  }
+}
+
+query stations {
+  stations {
+    ...Station
+  }
+}

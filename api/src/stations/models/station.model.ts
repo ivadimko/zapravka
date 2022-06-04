@@ -1,4 +1,4 @@
-import { ObjectType } from '@nestjs/graphql';
+import { Field, ObjectType } from '@nestjs/graphql';
 import { StationFuelStatus } from '@/fuels/fuels.typedefs';
 import {
   Coordinates,
@@ -17,6 +17,8 @@ export class Station {
   workDescription: string;
   descriptionType: GasStationDescriptionType;
   status: StationFuelStatus;
+
+  @Field(() => GasStationSchedule, { nullable: true })
   schedule: GasStationSchedule | null;
   scheduleString: string;
   icon: string;

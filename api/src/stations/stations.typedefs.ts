@@ -36,16 +36,6 @@ registerEnumType(GasStationDescriptionType, {
   name: 'GasStationDescriptionType',
 });
 
-export enum StationStatus {
-  Opened = 'OPENED',
-  Closed = 'CLOSED',
-  Unknown = 'UNKNOWN',
-}
-
-registerEnumType(StationStatus, {
-  name: 'StationStatus',
-});
-
 export enum StationProvider {
   Okko = 'OKKO',
   Wog = 'WOG',

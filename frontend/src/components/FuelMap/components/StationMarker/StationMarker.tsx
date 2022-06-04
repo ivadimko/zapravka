@@ -2,15 +2,20 @@ import { InfoWindow, Marker } from '@react-google-maps/api';
 import { FC, useMemo, useState } from 'react';
 import cn from 'classnames';
 import {
-  GasStation,
-  GasStationDescriptionType,
   StationStatus,
 } from '@/controllers/station/station.typedefs';
 import { DirectionLink } from '@/components/FuelMap/components/DirectionLink';
+import {
+  GasStationDescriptionType,
+  StationFragment,
+} from '@/controllers/graphql/generated';
+import {
+  makeExternalUtm,
+} from '@/controllers/analytics/analytics.utils/makeExternalUtm';
 import styles from './StationMarker.module.scss';
 
 interface Props {
-  station: GasStation
+  station: StationFragment
   opened: boolean
   open: () => void
   close: () => void
@@ -110,7 +115,7 @@ export const StationMarker: FC<Props> = (props) => {
                 {' '}
                 <a
                   className={styles.link}
-                  href={station.reference.link}
+                  href={makeExternalUtm(station.reference.link)}
                   target="_blank"
                   rel="noreferrer"
                 >
