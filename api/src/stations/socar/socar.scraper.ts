@@ -31,7 +31,7 @@ export class SocarScraper {
 
       const content = JSON.stringify(result);
 
-      console.info('SOCAR CONTENT LOADED', `${content.slice(0, 20)}...`);
+      this.logger.log('SOCAR CONTENT LOADED', `${content.slice(0, 20)}...`);
 
       await fs.writeFile(this.filePath, content);
 

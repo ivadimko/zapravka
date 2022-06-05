@@ -39,7 +39,7 @@ export class UPGScraper {
       const content: AllStationsApiResponse = await page.evaluate('objmap');
       await browser.close();
 
-      console.info('UPG CONTENT LOADED', `${content.countData}...`);
+      this.logger.log('UPG CONTENT LOADED', `${content.countData}...`);
 
       await fs.writeFile(this.filePath, JSON.stringify(content));
 
