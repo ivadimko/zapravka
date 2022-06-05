@@ -50,7 +50,7 @@ export class OkkoScraper {
       const content = await page.locator('pre').textContent();
       await browser.close();
 
-      console.info('OKKO CONTENT LOADED', `${content.slice(0, 20)}...`);
+      this.logger.log('OKKO CONTENT LOADED', `${content.slice(0, 20)}...`);
 
       await fs.writeFile(this.filePath, content);
 

@@ -9,10 +9,11 @@ import {
 
 export class WogScraper {
   private readonly filePath = path.resolve(__dirname, 'wog.raw.json');
+
   private readonly logger = new Logger(WogScraper.name);
 
   async scrape(): Promise<WogGasStationRaw[]> {
-    let fallback: string | undefined = undefined;
+    let fallback: string | undefined;
 
     try {
       fallback = (await fs.readFile(this.filePath)).toString();
@@ -51,8 +52,7 @@ export class WogScraper {
         ) => {
           await promise;
 
-          // eslint-disable-next-line no-console
-          console.info(
+          this.logger.log(
             `procesing part ${i + 1}/${parts.length}, ${part.length} items`,
           );
 
@@ -73,7 +73,7 @@ export class WogScraper {
 
       const content = JSON.stringify(result);
 
-      console.info('WOG CONTENT LOADED', `${content.slice(0, 20)}...`);
+      this.logger.log('WOG CONTENT LOADED', `${content.slice(0, 20)}...`);
 
       await fs.writeFile(this.filePath, content);
 
