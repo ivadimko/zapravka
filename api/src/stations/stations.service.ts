@@ -19,10 +19,10 @@ export class StationsService {
   async findAll(): Promise<Station[]> {
     const stations = await Promise.all([
       this.aviasService.findAll(),
-      // this.wogService.findAll(),
-      // this.socarService.findAll(),
-      // this.upgService.findAll(),
-      // this.okkoService.findAll(),
+      this.wogService.findAll(),
+      this.socarService.findAll(),
+      this.upgService.findAll(),
+      this.okkoService.findAll(),
     ]);
 
     return stations.flat();
