@@ -54,6 +54,7 @@ export type Station = {
   workDescription: Scalars['String'];
   descriptionType: GasStationDescriptionType;
   status: StationFuelStatus;
+  tel: Scalars['String'];
   scheduleString: Scalars['String'];
   icon: Scalars['String'];
   reference: StationReference;
@@ -72,7 +73,8 @@ export enum StationProvider {
   Okko = 'Okko',
   Wog = 'Wog',
   Socar = 'Socar',
-  Upg = 'UPG'
+  Upg = 'UPG',
+  Avias = 'Avias'
 }
 
 export type StationReference = {
@@ -103,7 +105,7 @@ export type StationReferenceFragment = (
 
 export type StationFragment = (
   { __typename?: 'Station' }
-  & Pick<Station, 'id' | 'provider' | 'name' | 'workDescription' | 'descriptionType' | 'scheduleString' | 'icon'>
+  & Pick<Station, 'id' | 'provider' | 'name' | 'tel' | 'workDescription' | 'descriptionType' | 'scheduleString' | 'icon'>
   & { coordinates: (
     { __typename?: 'Coordinates' }
     & CoordinatesFragment
@@ -176,6 +178,7 @@ export const StationFragmentDoc = /*#__PURE__*/ gql`
   id
   provider
   name
+  tel
   coordinates {
     ...Coordinates
   }

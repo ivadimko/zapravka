@@ -106,7 +106,7 @@ export class AviasEntity {
       id: `avias_${this.station.station_id}`,
       provider: StationProvider.Avias,
       name: this.mapName(),
-      tel: '+380800501788',
+      tel: '0800501788',
       coordinates: {
         lat: Number(this.station.lat),
         lng: Number(this.station.lon),

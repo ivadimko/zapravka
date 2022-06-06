@@ -96,6 +96,14 @@ export const StationMarker: FC<Props> = (props) => {
 
             <DirectionLink coordinates={station.coordinates} />
 
+            <p>
+              Гаряча лінія:
+              {' '}
+              <a className={styles.link} href={`tel:${station.tel}`}>
+                {station.tel}
+              </a>
+            </p>
+
             <p
               className={cn(
                 styles.description,

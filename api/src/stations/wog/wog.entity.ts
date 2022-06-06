@@ -123,7 +123,7 @@ export class WogEntity {
       id: `wog_${this.station.id}`,
       provider: StationProvider.Wog,
       name: this.mapName(),
-      tel: '+380800500064',
+      tel: '0800300525',
       coordinates: {
         lat: this.station.coordinates.latitude,
         lng: this.station.coordinates.longitude,
