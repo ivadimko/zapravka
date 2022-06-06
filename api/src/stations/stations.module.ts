@@ -5,6 +5,7 @@ import { OkkoService } from './okko/okko.service';
 import { UpgService } from './upg/upg.service';
 import { SocarService } from './socar/socar.service';
 import { WogService } from './wog/wog.service';
+import { AviasService } from './avias/avias.service';
 
 @Module({
   providers: [
@@ -14,6 +15,7 @@ import { WogService } from './wog/wog.service';
     UpgService,
     SocarService,
     WogService,
+    AviasService,
   ],
 })
 export class StationsModule {}

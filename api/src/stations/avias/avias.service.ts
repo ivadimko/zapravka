@@ -2,14 +2,14 @@ import { Injectable, Logger } from '@nestjs/common';
 import * as path from 'path';
 import * as fs from 'fs/promises';
 import { Cron } from '@nestjs/schedule';
-import { WogScraper } from '@/stations/wog/wog.scraper';
-import { WogEntity } from '@/stations/wog/wog.entity';
+import { AviasScraper } from '@/stations/avias/avias.scraper';
+import { AviasEntity } from '@/stations/avias/avias.entity';
 
 @Injectable()
-export class WogService {
-  private readonly logger = new Logger(WogService.name);
-  private readonly filePath = path.resolve(__dirname, 'wog.data.json');
-  private readonly scraper = new WogScraper();
+export class AviasService {
+  private readonly logger = new Logger(AviasService.name);
+  private readonly filePath = path.resolve(__dirname, 'avias.data.json');
+  private readonly scraper = new AviasScraper();
 
   async findAll(attempt = 1) {
     try {
@@ -33,8 +33,8 @@ export class WogService {
   async scrape() {
     const result = await this.scraper.scrape();
 
-    const stations = result.map((station) => {
-      const entity = new WogEntity(station);
+    const stations = result.data.map((station) => {
+      const entity = new AviasEntity(station, result.fuels);
 
       return entity.map();
     });

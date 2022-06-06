@@ -4,6 +4,7 @@ import { OkkoService } from '@/stations/okko/okko.service';
 import { UpgService } from '@/stations/upg/upg.service';
 import { SocarService } from '@/stations/socar/socar.service';
 import { WogService } from '@/stations/wog/wog.service';
+import { AviasService } from '@/stations/avias/avias.service';
 
 @Injectable()
 export class StationsService {
@@ -12,10 +13,12 @@ export class StationsService {
     private readonly upgService: UpgService,
     private readonly socarService: SocarService,
     private readonly wogService: WogService,
+    private readonly aviasService: AviasService,
   ) {}
 
   async findAll(): Promise<Station[]> {
     const stations = await Promise.all([
+      this.aviasService.findAll(),
       this.wogService.findAll(),
       this.socarService.findAll(),
       this.upgService.findAll(),

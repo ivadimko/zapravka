@@ -41,6 +41,7 @@ type Station {
   workDescription: String!
   descriptionType: GasStationDescriptionType!
   status: StationFuelStatus!
+  tel: String!
   scheduleString: String!
   icon: String!
   reference: StationReference!
@@ -51,6 +52,7 @@ enum StationProvider {
   Wog
   Socar
   UPG
+  Avias
 }
 
 enum GasStationDescriptionType {

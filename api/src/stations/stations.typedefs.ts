@@ -41,6 +41,7 @@ export enum StationProvider {
   Wog = 'WOG',
   Socar = 'SOCAR',
   UPG = 'UPG',
+  Avias = 'AVIAS',
 }
 
 registerEnumType(StationProvider, {

@@ -120,6 +120,7 @@ export class UPGEntity {
     return {
       id: `upg_${this.station.id}`,
       provider: StationProvider.UPG,
+      tel: '+380800500064',
       name: this.mapName(),
       coordinates: {
         lat: Number(this.station.Latitude),
