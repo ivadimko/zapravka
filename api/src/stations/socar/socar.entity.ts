@@ -89,7 +89,7 @@ export class SocarEntity {
       id: `socar_${this.station.id}`,
       provider: StationProvider.Socar,
       name: this.mapName(),
-      tel: '+380800508585',
+      tel: '0800508585',
       coordinates: {
         lat: this.station.attributes.marker.lat,
         lng: this.station.attributes.marker.lng,

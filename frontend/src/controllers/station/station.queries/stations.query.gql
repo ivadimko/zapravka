@@ -24,6 +24,7 @@ fragment Station on Station {
   id
   provider
   name
+  tel
   coordinates {
     ...Coordinates
   }
