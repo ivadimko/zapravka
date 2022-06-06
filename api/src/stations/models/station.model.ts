@@ -17,6 +17,7 @@ export class Station {
   workDescription: string;
   descriptionType: GasStationDescriptionType;
   status: StationFuelStatus;
+  tel: string;
 
   @Field(() => GasStationSchedule, { nullable: true })
   schedule: GasStationSchedule | null;

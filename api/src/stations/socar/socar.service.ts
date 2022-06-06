@@ -34,9 +34,9 @@ export class SocarService {
     const result = await this.scraper.scrape();
 
     const stations = result.data.map((station) => {
-      const okkoEntity = new SocarEntity(station);
+      const entity = new SocarEntity(station);
 
-      return okkoEntity.map();
+      return entity.map();
     });
 
     await fs.writeFile(this.filePath, JSON.stringify(stations));

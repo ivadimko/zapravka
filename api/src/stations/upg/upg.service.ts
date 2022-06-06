@@ -34,9 +34,9 @@ export class UpgService {
     const result = await this.scraper.scrape();
 
     const stations = result.data.map((station) => {
-      const upgEntity = new UPGEntity(station);
+      const entity = new UPGEntity(station);
 
-      return upgEntity.map();
+      return entity.map();
     });
 
     await fs.writeFile(this.filePath, JSON.stringify(stations));

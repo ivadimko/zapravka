@@ -160,6 +160,7 @@ export class OkkoEntity {
       id: `okko_${this.station.attributes.Cod_AZK}`,
       provider: StationProvider.Okko,
       name: this.mapName(),
+      tel: '+380800501101',
       coordinates: {
         lat: this.station.attributes.coordinates.lat,
         lng: this.station.attributes.coordinates.lng,
