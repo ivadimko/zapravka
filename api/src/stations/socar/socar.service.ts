@@ -33,7 +33,7 @@ export class SocarService {
   async scrape() {
     const result = await this.scraper.scrape();
 
-    const stations = result.data.map((station) => {
+    const stations = result.map((station) => {
       const entity = new SocarEntity(station);
 
       return entity.map();
