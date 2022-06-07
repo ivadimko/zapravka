@@ -88,7 +88,7 @@ export class SocarEntity {
             const price = fuel.price ?? '--';
             const limit = fuel.limit ? ` (ліміт - ${fuel.limit}л)` : '';
 
-            `<li>${fuel.name}: ${price}${limit}</li>`;
+            return `<li>${fuel.name}: ${price}${limit}</li>`;
           })
           .join('')}
     </ul>
