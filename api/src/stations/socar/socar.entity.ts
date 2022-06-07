@@ -27,14 +27,10 @@ export class SocarEntity {
   getStationParams(station: SocarGasStationRaw) {
     const status = {} as Record<SocarFuelType, FuelStatus>;
 
-    const { fuelPrices } = station.attributes;
-
-    fuelPrices.forEach((row) => {
-      const priceStartIndex = row.indexOf(' (');
-
-      const fuel = row.substring(0, priceStartIndex);
-
-      status[fuel as SocarFuelType] = FuelStatus.Available;
+    station.services.forEach((serviceItem) => {
+      if (serviceItem.type === 'fuel' && serviceItem.price > 0) {
+        status[serviceItem.name] = FuelStatus.Available;
+      }
     });
 
     return {
@@ -43,7 +39,7 @@ export class SocarEntity {
   }
 
   mapName(): string {
-    return `${this.station.attributes.title} \n ${this.station.attributes.address}`;
+    return `SOCAR ${this.station.number} \n ${this.station.address}`;
   }
 
   mapFuelStatus(): Station['status'] {
@@ -71,12 +67,29 @@ export class SocarEntity {
     return result;
   }
 
+  mapSchedule() {
+    if (!this.station.working_hours) {
+      return null;
+    }
+
+    return {
+      opensAt: this.station.working_hours.from,
+      closesAt: this.station.working_hours.to,
+    };
+  }
+
   mapWorkDescription() {
     const fuels = `
     <strong>Доступне пальне:</strong>
     <ul>
-        ${this.station.attributes.fuelPrices
-          .map((el) => `<li>${el}</li>`)
+        ${this.station.services
+          .filter((service) => service.type === 'fuel')
+          .map((fuel) => {
+            const price = fuel.price ?? '--';
+            const limit = fuel.limit ? ` (ліміт - ${fuel.limit}л)` : '';
+
+            `<li>${fuel.name}: ${price}${limit}</li>`;
+          })
           .join('')}
     </ul>
   `;
@@ -91,13 +104,13 @@ export class SocarEntity {
       name: this.mapName(),
       tel: '0800508585',
       coordinates: {
-        lat: this.station.attributes.marker.lat,
-        lng: this.station.attributes.marker.lng,
+        lat: this.station.coordinates.lat,
+        lng: this.station.coordinates.lng,
       },
       workDescription: this.mapWorkDescription(),
       descriptionType: GasStationDescriptionType.HTML,
       status: this.mapFuelStatus(),
-      schedule: null,
+      schedule: this.mapSchedule(),
       scheduleString: '',
       icon: '/marker/socar.svg',
       reference: {
