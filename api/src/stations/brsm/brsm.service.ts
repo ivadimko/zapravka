@@ -2,7 +2,6 @@ import { Injectable, Logger } from '@nestjs/common';
 import * as path from 'path';
 import * as fs from 'fs/promises';
 import { Cron } from '@nestjs/schedule';
-import { SocarEntity } from '@/stations/socar/socar.entity';
 import { BrsmScraper } from '@/stations/brsm/brsm.scraper';
 import { BrsmEntity } from '@/stations/brsm/brsm.entity';
 
