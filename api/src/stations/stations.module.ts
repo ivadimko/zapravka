@@ -6,6 +6,7 @@ import { UpgService } from './upg/upg.service';
 import { SocarService } from './socar/socar.service';
 import { WogService } from './wog/wog.service';
 import { AviasService } from './avias/avias.service';
+import { BrsmService } from './brsm/brsm.service';
 
 @Module({
   providers: [
@@ -16,6 +17,7 @@ import { AviasService } from './avias/avias.service';
     SocarService,
     WogService,
     AviasService,
+    BrsmService,
   ],
 })
 export class StationsModule {}
