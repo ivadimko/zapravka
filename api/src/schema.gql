@@ -53,6 +53,7 @@ enum StationProvider {
   Socar
   UPG
   Avias
+  BRSM
 }
 
 enum GasStationDescriptionType {
