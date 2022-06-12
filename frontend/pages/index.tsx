@@ -2,7 +2,7 @@ import type { GetStaticProps, NextPage } from 'next';
 import { useMemo } from 'react';
 import { NextSeo } from 'next-seo';
 import { Map } from '@/components/Map';
-import MapImage from '@/components/Map/MapImage.png';
+import MapImage from '@/components/Map/MapImage.jpeg';
 import { initializeApollo } from '@/controllers/graphql/graphql.client';
 import {
   StationFragment,

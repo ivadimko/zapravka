@@ -116,7 +116,7 @@ export class AviasEntity {
       status: this.mapFuelStatus(),
       schedule: null,
       scheduleString: '',
-      icon: '/marker/avias.png',
+      icon: '/marker/avias.svg',
       reference: {
         title: 'avias.ua',
         link: 'https://avias.ua/karta-azs/',

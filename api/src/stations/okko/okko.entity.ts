@@ -170,7 +170,7 @@ export class OkkoEntity {
       status: this.mapFuelStatus(),
       schedule: this.mapSchedule(),
       scheduleString: '',
-      icon: '/marker/okko.png',
+      icon: '/marker/okko.svg',
       reference: {
         title: 'okko.ua',
         link: 'https://www.okko.ua/fuel-map',
