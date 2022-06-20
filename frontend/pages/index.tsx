@@ -1,23 +1,23 @@
 import type { GetStaticProps, NextPage } from 'next';
 import { useMemo } from 'react';
 import { NextSeo } from 'next-seo';
+import cloneDeep from 'lodash/cloneDeep';
 import { Map } from '@/components/Map';
 import MapImage from '@/components/Map/MapImage.jpeg';
 import { initializeApollo } from '@/controllers/graphql/graphql.client';
 import {
+  StationFragment,
   StationsDocument,
   StationsQuery,
 } from '@/controllers/graphql/generated';
 
 interface Props {
-  data: string
+  data: Array<StationFragment>
   revalidated: number
 }
 
 const Home: NextPage<Props> = (props) => {
   const { data, revalidated } = props;
-
-  const stations = JSON.parse(Buffer.from(data, 'base64').toString('utf-8'));
 
   const updatedAt = useMemo(() => ({
     short: new Date(revalidated).toLocaleDateString('uk', {
@@ -57,7 +57,7 @@ const Home: NextPage<Props> = (props) => {
       />
 
       <Map
-        data={stations}
+        data={data}
         updatedAt={updatedAt.long}
       />
     </>
@@ -71,9 +71,23 @@ export const getStaticProps: GetStaticProps = async () => {
     query: StationsDocument,
   });
 
+  const result: Array<StationFragment> = cloneDeep(data.stations);
+
+  result.forEach((station) => {
+    Object.values((station.status)).forEach((fuel) => {
+      Object.entries(fuel).forEach(([name, status]) => {
+        if (!status) {
+          // @ts-ignore
+          // eslint-disable-next-line no-param-reassign
+          delete fuel[name];
+        }
+      });
+    });
+  });
+
   return {
     props: {
-      data: Buffer.from(JSON.stringify(data.stations)).toString('base64'),
+      data: result,
       revalidated: Date.now(),
     },
   };
