@@ -6,6 +6,9 @@ import { FuelMap } from '@/components/FuelMap';
 import { FuelStatus, FuelType } from '@/controllers/fuel/fuel.typedefs';
 import { UpdatedAt } from '@/components/Map/components/UpdatedAt';
 import { StationFragment } from '@/controllers/graphql/generated';
+import {
+  amplitudeClient,
+} from '@/controllers/analytics/amplitude/amplitude.client';
 import styles from './Map.module.scss';
 
 const statusOptions = [
@@ -59,6 +62,14 @@ export const Map: FC<Props> = (props) => {
 
   const updateFuelType = useCallback(
     (value: SingleValue<{ label: string, value: FuelType }>) => {
+      amplitudeClient.logEvent(
+        amplitudeClient.events.FilterChanged,
+        {
+          type: 'fuel',
+          value: value?.value || null,
+        },
+      );
+
       setFuel(value);
 
       localStorage.setItem(FUEL_TYPE_KEY, JSON.stringify(value));
@@ -68,6 +79,14 @@ export const Map: FC<Props> = (props) => {
 
   const updateFuelStatus = useCallback(
     (value: SingleValue<{ label: string, value: FuelStatus }>) => {
+      amplitudeClient.logEvent(
+        amplitudeClient.events.FilterChanged,
+        {
+          type: 'status',
+          value: value?.value || null,
+        },
+      );
+
       setStatus(value);
 
       localStorage.setItem(FUEL_STATUS_KEY, JSON.stringify(value));

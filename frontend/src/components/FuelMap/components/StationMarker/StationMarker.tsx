@@ -12,6 +12,9 @@ import {
 import {
   makeExternalUtm,
 } from '@/controllers/analytics/analytics.utils/makeExternalUtm';
+import {
+  amplitudeClient,
+} from '@/controllers/analytics/amplitude/amplitude.client';
 import styles from './StationMarker.module.scss';
 
 interface Props {
@@ -78,7 +81,16 @@ export const StationMarker: FC<Props> = (props) => {
         options={{
           opacity: stationStatus === StationStatus.Closed ? 0.5 : 1,
         }}
-        onClick={open}
+        onClick={() => {
+          amplitudeClient.logEvent(amplitudeClient.events.MarkerClicked, {
+            station_id: station.id,
+            station_provider: station.provider,
+            station_lat: station.coordinates.lat,
+            station_lng: station.coordinates.lng,
+          });
+
+          open();
+        }}
         icon={station.icon}
       />
 
@@ -94,12 +106,40 @@ export const StationMarker: FC<Props> = (props) => {
               <p>{station.scheduleString}</p>
             )}
 
-            <DirectionLink coordinates={station.coordinates} />
+            <DirectionLink
+              coordinates={station.coordinates}
+              onClick={() => {
+                amplitudeClient.logEvent(
+                  amplitudeClient.events.DirectionLinkClicked,
+                  {
+                    station_id: station.id,
+                    station_provider: station.provider,
+                    station_lat: station.coordinates.lat,
+                    station_lng: station.coordinates.lng,
+                    direction_provider: 'google',
+                  },
+                );
+              }}
+            />
 
             <p>
               Гаряча лінія:
               {' '}
-              <a className={styles.link} href={`tel:${station.tel}`}>
+              <a
+                className={styles.link}
+                href={`tel:${station.tel}`}
+                onClick={() => {
+                  amplitudeClient.logEvent(
+                    amplitudeClient.events.StationPhoneLinkClicked,
+                    {
+                      station_id: station.id,
+                      station_provider: station.provider,
+                      station_lat: station.coordinates.lat,
+                      station_lng: station.coordinates.lng,
+                    },
+                  );
+                }}
+              >
                 {station.tel}
               </a>
             </p>
@@ -126,6 +166,17 @@ export const StationMarker: FC<Props> = (props) => {
                   href={makeExternalUtm(station.reference.link)}
                   target="_blank"
                   rel="noreferrer"
+                  onClick={() => {
+                    amplitudeClient.logEvent(
+                      amplitudeClient.events.StationWebsiteLinkClicked,
+                      {
+                        station_id: station.id,
+                        station_provider: station.provider,
+                        station_lat: station.coordinates.lat,
+                        station_lng: station.coordinates.lng,
+                      },
+                    );
+                  }}
                 >
                   {station.reference.title}
                 </a>
