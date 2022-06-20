@@ -3,21 +3,21 @@ import { useMemo } from 'react';
 import { NextSeo } from 'next-seo';
 import { Map } from '@/components/Map';
 import MapImage from '@/components/Map/MapImage.jpeg';
-import {
-  addApolloState,
-  initializeApollo,
-} from '@/controllers/graphql/graphql.client';
+import { initializeApollo } from '@/controllers/graphql/graphql.client';
 import {
   StationsDocument,
-  StationsQuery, useStationsQuery,
+  StationsQuery,
 } from '@/controllers/graphql/generated';
 
 interface Props {
+  data: string
   revalidated: number
 }
 
 const Home: NextPage<Props> = (props) => {
-  const { revalidated } = props;
+  const { data, revalidated } = props;
+
+  const stations = JSON.parse(Buffer.from(data, 'base64').toString('utf-8'));
 
   const updatedAt = useMemo(() => ({
     short: new Date(revalidated).toLocaleDateString('uk', {
@@ -35,8 +35,6 @@ const Home: NextPage<Props> = (props) => {
 
   const title = 'Пальне в наявності сьогодні';
   const description = 'Де заправитись? Інтерактивна мапа наявності пального на АЗК в Україні. Статус заправок WOG, OKKO, SOCAR, UPG, АВІАС ПЛЮС, АВІАС, ANP, Sentosa Oіl, МАВЕКС, УКРТАТНАФТА, ЮКОН, ЭЛИН, ЮКОН Сервіс, Rubіx, МАВЕКС плюс, Петрол Гарант, ЗНП, БРСМ Нафта.';
-
-  const { data } = useStationsQuery();
 
   return (
     <>
@@ -59,7 +57,7 @@ const Home: NextPage<Props> = (props) => {
       />
 
       <Map
-        data={data?.stations ?? []}
+        data={stations}
         updatedAt={updatedAt.long}
       />
     </>
@@ -69,16 +67,16 @@ const Home: NextPage<Props> = (props) => {
 export const getStaticProps: GetStaticProps = async () => {
   const apolloClient = initializeApollo();
 
-  await apolloClient.query<StationsQuery>({
+  const { data } = await apolloClient.query<StationsQuery>({
     query: StationsDocument,
   });
 
-  return addApolloState(apolloClient, {
+  return {
     props: {
-      // data: data.stations,
+      data: Buffer.from(JSON.stringify(data.stations)).toString('base64'),
       revalidated: Date.now(),
     },
-  });
+  };
 };
 
 export default Home;
