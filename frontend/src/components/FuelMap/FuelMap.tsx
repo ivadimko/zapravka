@@ -4,6 +4,9 @@ import {
 } from 'react';
 import { debounce } from '@/utils/debounce';
 import { StationFragment } from '@/controllers/graphql/generated';
+import {
+  amplitudeClient,
+} from '@/controllers/analytics/amplitude/amplitude.client';
 import { StationMarker } from './components/StationMarker';
 import { IconTarget } from './components/IconTarget';
 import styles from './FuelMap.module.scss';
@@ -78,6 +81,13 @@ export const FuelMap: FC<Props> = (props) => {
   );
 
   const goToLocation = useCallback(() => {
+    amplitudeClient.logEvent(
+      amplitudeClient.events.GoToLocationButtonClicked,
+      {
+        locationExists: Boolean(userLocation),
+      },
+    );
+
     if (userLocation && map) {
       map.setCenter(userLocation);
 

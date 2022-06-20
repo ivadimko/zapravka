@@ -9,10 +9,11 @@ interface Props {
     lat: number
     lng: number
   }
+  onClick: () => void
 }
 
 export const DirectionLink: FC<Props> = (props) => {
-  const { coordinates } = props;
+  const { coordinates, onClick } = props;
 
   return (
     <a
@@ -20,6 +21,7 @@ export const DirectionLink: FC<Props> = (props) => {
       target="_blank"
       rel="noreferrer"
       className={styles.directionLink}
+      onClick={onClick}
     >
       <NavigateIcon />
 
