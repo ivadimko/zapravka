@@ -74,15 +74,25 @@ export const getStaticProps: GetStaticProps = async () => {
   const result: Array<StationFragment> = cloneDeep(data.stations);
 
   result.forEach((station) => {
+    /* eslint-disable no-param-reassign */
+    delete station.__typename;
+    delete station.status.__typename;
+    delete station.coordinates.__typename;
+    delete station.reference.__typename;
+    if (station.schedule) {
+      delete station.schedule?.__typename;
+    }
+
+    station.workDescription = station.workDescription.replace(/  +/g, ' ');
     Object.values((station.status)).forEach((fuel) => {
       Object.entries(fuel).forEach(([name, status]) => {
-        if (!status) {
+        if (!status || name === '__typename') {
           // @ts-ignore
-          // eslint-disable-next-line no-param-reassign
           delete fuel[name];
         }
       });
     });
+    /* eslint-enable no-param-reassign */
   });
 
   return {
