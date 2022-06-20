@@ -13,7 +13,8 @@ export default async function handler(
   try {
     await res.unstable_revalidate('/');
     return res.json({ revalidated: true });
-  } catch (err) {
-    return res.status(500).send('Error revalidating');
+  } catch (error) {
+    // @ts-ignore
+    return res.status(500).send(`Error revalidating, ${error.message}`);
   }
 }
