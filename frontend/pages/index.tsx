@@ -3,20 +3,21 @@ import { useMemo } from 'react';
 import { NextSeo } from 'next-seo';
 import { Map } from '@/components/Map';
 import MapImage from '@/components/Map/MapImage.jpeg';
-import { initializeApollo } from '@/controllers/graphql/graphql.client';
 import {
-  StationFragment,
+  addApolloState,
+  initializeApollo,
+} from '@/controllers/graphql/graphql.client';
+import {
   StationsDocument,
-  StationsQuery,
+  StationsQuery, useStationsQuery,
 } from '@/controllers/graphql/generated';
 
 interface Props {
-  data: Array<StationFragment>
   revalidated: number
 }
 
 const Home: NextPage<Props> = (props) => {
-  const { data, revalidated } = props;
+  const { revalidated } = props;
 
   const updatedAt = useMemo(() => ({
     short: new Date(revalidated).toLocaleDateString('uk', {
@@ -34,6 +35,8 @@ const Home: NextPage<Props> = (props) => {
 
   const title = 'Пальне в наявності сьогодні';
   const description = 'Де заправитись? Інтерактивна мапа наявності пального на АЗК в Україні. Статус заправок WOG, OKKO, SOCAR, UPG, АВІАС ПЛЮС, АВІАС, ANP, Sentosa Oіl, МАВЕКС, УКРТАТНАФТА, ЮКОН, ЭЛИН, ЮКОН Сервіс, Rubіx, МАВЕКС плюс, Петрол Гарант, ЗНП, БРСМ Нафта.';
+
+  const { data } = useStationsQuery();
 
   return (
     <>
@@ -56,7 +59,7 @@ const Home: NextPage<Props> = (props) => {
       />
 
       <Map
-        data={data}
+        data={data?.stations ?? []}
         updatedAt={updatedAt.long}
       />
     </>
@@ -66,16 +69,16 @@ const Home: NextPage<Props> = (props) => {
 export const getStaticProps: GetStaticProps = async () => {
   const apolloClient = initializeApollo();
 
-  const { data } = await apolloClient.query<StationsQuery>({
+  await apolloClient.query<StationsQuery>({
     query: StationsDocument,
   });
 
-  return {
+  return addApolloState(apolloClient, {
     props: {
-      data: data.stations,
+      // data: data.stations,
       revalidated: Date.now(),
     },
-  };
+  });
 };
 
 export default Home;
