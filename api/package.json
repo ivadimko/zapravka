@@ -28,6 +28,7 @@
     "@nestjs/platform-express": "^8.1.1",
     "@nestjs/schedule": "^2.0.1",
     "apollo-server-express": "^3.8.2",
+    "compression": "^1.7.4",
     "extract-zip": "^2.0.1",
     "graphql": "^16.5.0",
     "node-html-parser": "^5.3.3",
