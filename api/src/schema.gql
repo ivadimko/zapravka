@@ -54,6 +54,7 @@ enum StationProvider {
   UPG
   Avias
   BRSM
+  Motto
 }
 
 enum GasStationDescriptionType {

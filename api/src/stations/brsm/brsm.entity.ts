@@ -85,7 +85,7 @@ export class BrsmEntity {
   map(): Station {
     return {
       id: `brsm_${this.station.id}`,
-      provider: StationProvider.Socar,
+      provider: StationProvider.BRSM,
       name: this.mapName(),
       tel: this.station.phone || '0800303404',
       coordinates: {
