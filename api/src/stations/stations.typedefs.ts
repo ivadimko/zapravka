@@ -43,6 +43,7 @@ export enum StationProvider {
   UPG = 'UPG',
   Avias = 'AVIAS',
   BRSM = 'BRSM',
+  Motto = 'MOTTO',
 }
 
 registerEnumType(StationProvider, {
