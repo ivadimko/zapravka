@@ -6,6 +6,7 @@ import { SocarService } from '@/stations/socar/socar.service';
 import { WogService } from '@/stations/wog/wog.service';
 import { AviasService } from '@/stations/avias/avias.service';
 import { BrsmService } from '@/stations/brsm/brsm.service';
+import { MottoService } from '@/stations/motto/motto.service';
 
 @Injectable()
 export class StationsService {
@@ -16,10 +17,12 @@ export class StationsService {
     private readonly wogService: WogService,
     private readonly aviasService: AviasService,
     private readonly brsmService: BrsmService,
+    private readonly mottoService: MottoService,
   ) {}
 
   async findAll(): Promise<Station[]> {
     const stations = await Promise.all([
+      this.mottoService.findAll(),
       this.brsmService.findAll(),
       this.aviasService.findAll(),
       this.wogService.findAll(),
