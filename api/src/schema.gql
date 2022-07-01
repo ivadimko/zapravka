@@ -55,6 +55,7 @@ enum StationProvider {
   Avias
   BRSM
   Motto
+  Amic
 }
 
 enum GasStationDescriptionType {

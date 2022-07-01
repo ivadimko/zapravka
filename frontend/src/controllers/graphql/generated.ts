@@ -76,7 +76,8 @@ export enum StationProvider {
   Upg = 'UPG',
   Avias = 'Avias',
   Brsm = 'BRSM',
-  Motto = 'Motto'
+  Motto = 'Motto',
+  Amic = 'Amic'
 }
 
 export type StationReference = {
