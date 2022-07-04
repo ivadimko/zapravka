@@ -12,7 +12,6 @@ export class MottoService {
   private readonly scraper = new MottoScraper();
 
   async findAll(attempt = 1) {
-    await this.scrape();
     try {
       const file = await fs.readFile(this.filePath);
 
