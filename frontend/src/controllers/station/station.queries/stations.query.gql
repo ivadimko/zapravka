@@ -37,9 +37,6 @@ fragment Station on Station {
     gas {
       ...FuelStatus
     }
-    ad_blue {
-      ...FuelStatus
-    }
     petrol {
      ...FuelStatus
     }

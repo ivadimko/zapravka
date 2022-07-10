@@ -95,9 +95,29 @@ export const getStaticProps: GetStaticProps = async () => {
     /* eslint-enable no-param-reassign */
   });
 
+  const final = result.filter((station) => {
+    const statuses = Object.values(station.status);
+
+    return statuses.some((status) => Object.values(status).length > 0);
+  });
+
+  // const finalMap = final.reduce<Record<string, StationFragment>>((acc, cur) => {
+  //   acc[cur.id] = cur;
+  //
+  //   return acc;
+  // }, {});
+  //
+  // const diffs = [];
+  //
+  // result.forEach((station) => {
+  //   if (!finalMap[station.id]) {
+  //     diffs.push(station);
+  //   }
+  // });
+
   return {
     props: {
-      data: result,
+      data: final,
       revalidated: Date.now(),
     },
   };

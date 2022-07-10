@@ -120,9 +120,6 @@ export type StationFragment = (
     ), gas: (
       { __typename?: 'FuelStatusesMap' }
       & FuelStatusFragment
-    ), ad_blue: (
-      { __typename?: 'FuelStatusesMap' }
-      & FuelStatusFragment
     ), petrol: (
       { __typename?: 'FuelStatusesMap' }
       & FuelStatusFragment
@@ -192,9 +189,6 @@ export const StationFragmentDoc = /*#__PURE__*/ gql`
       ...FuelStatus
     }
     gas {
-      ...FuelStatus
-    }
-    ad_blue {
       ...FuelStatus
     }
     petrol {
