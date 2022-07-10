@@ -3,7 +3,7 @@ export enum FuelType {
   Petrol = 'petrol',
   Diesel = 'diesel',
   Gas = 'gas',
-  AdBlue = 'ad_blue',
+  // AdBlue = 'ad_blue',
 }
 
 export enum FuelStatus {
