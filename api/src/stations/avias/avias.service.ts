@@ -12,6 +12,8 @@ export class AviasService {
   private readonly scraper = new AviasScraper();
 
   async findAll(attempt = 1) {
+    await this.scraper.scrape();
+
     try {
       const file = await fs.readFile(this.filePath);
 

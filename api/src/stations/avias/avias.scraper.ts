@@ -64,6 +64,7 @@ export class AviasScraper {
       result.fuels = fuels;
 
       await fs.promises.writeFile(this.filePath, JSON.stringify(result));
+      await fs.promises.rm(directory, { recursive: true });
 
       return result;
     } catch (error) {
