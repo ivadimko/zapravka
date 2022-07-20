@@ -29,7 +29,7 @@ export class BrsmService {
     }
   }
 
-  @Cron('0 */10 * * * *')
+  @Cron('0 2/10 * * * *')
   async scrape() {
     const result = await this.scraper.scrape();
 

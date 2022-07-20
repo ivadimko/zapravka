@@ -29,7 +29,7 @@ export class AviasService {
     }
   }
 
-  @Cron('0 */10 * * * *')
+  @Cron('0 1/10 * * * *')
   async scrape() {
     const result = await this.scraper.scrape();
 

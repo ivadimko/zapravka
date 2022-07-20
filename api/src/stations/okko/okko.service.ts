@@ -29,7 +29,7 @@ export class OkkoService {
     }
   }
 
-  @Cron('0 */10 * * * *')
+  @Cron('0 4/10 * * * *')
   async scrape() {
     const result = await this.scraper.scrape();
 

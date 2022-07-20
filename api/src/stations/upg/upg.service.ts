@@ -29,7 +29,7 @@ export class UpgService {
     }
   }
 
-  @Cron('0 */10 * * * *')
+  @Cron('0 5/10 * * * *')
   async scrape() {
     const result = await this.scraper.scrape();
 

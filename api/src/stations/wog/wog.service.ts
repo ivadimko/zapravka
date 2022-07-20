@@ -29,7 +29,7 @@ export class WogService {
     }
   }
 
-  @Cron('0 */10 * * * *')
+  @Cron('0 6/10 * * * *')
   async scrape() {
     const result = await this.scraper.scrape();
 

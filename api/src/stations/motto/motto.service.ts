@@ -29,7 +29,7 @@ export class MottoService {
     }
   }
 
-  @Cron('0 */10 * * * *')
+  @Cron('0 3/10 * * * *')
   async scrape() {
     const result = await this.scraper.scrape();
 
