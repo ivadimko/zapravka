@@ -39,7 +39,7 @@ export class AviasEntity {
 
     try {
       Object.entries(station.units).forEach(([fuelId, options]) => {
-        if (options.status === 'ok') {
+        if (options.status === 'ok' && options.rate) {
           fuelStatus[fuelId] = FuelStatus.Available;
         }
       });
