@@ -29,6 +29,26 @@ export class BrsmService {
     }
   }
 
+  async findById(id: string, attempt = 1) {
+    try {
+      const file = await fs.readFile(this.filePath);
+
+      const data = JSON.parse(file.toString());
+
+      return data.find((el) => el.id === id);
+    } catch (error) {
+      this.logger.warn('Missing file', this.filePath);
+
+      if (attempt === 3) {
+        return null;
+      }
+
+      await this.scrape();
+
+      return this.findById(id, attempt + 1);
+    }
+  }
+
   @Cron('0 2/10 * * * *')
   async scrape() {
     const result = await this.scraper.scrape();

@@ -3,6 +3,7 @@ fragment FuelStatus on FuelStatusesMap {
   available_fuel_cards
   only_critical_vehicles
   empty
+  price
 }
 
 fragment Coordinates on Coordinates {
@@ -28,7 +29,7 @@ fragment Station on Station {
   coordinates {
     ...Coordinates
   }
-  workDescription
+#  workDescription
   descriptionType
   status {
     diesel {
@@ -57,5 +58,15 @@ fragment Station on Station {
 query stations {
   stations {
     ...Station
+  }
+}
+
+query station($provider: StationProvider!, $id: String!) {
+  station(
+    provider: $provider,
+    id: $id
+  ) {
+    id
+    workDescription
   }
 }

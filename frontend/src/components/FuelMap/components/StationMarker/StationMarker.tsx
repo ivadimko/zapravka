@@ -15,6 +15,9 @@ import {
 import {
   amplitudeClient,
 } from '@/controllers/analytics/amplitude/amplitude.client';
+import {
+  StationDescription,
+} from '@/components/FuelMap/components/StationMarker/StationDescription';
 import styles from './StationMarker.module.scss';
 
 interface Props {
@@ -144,7 +147,9 @@ export const StationMarker: FC<Props> = (props) => {
               </a>
             </p>
 
-            <p
+            <StationDescription
+              provider={station.provider}
+              id={station.id}
               className={cn(
                 styles.description,
                 {
@@ -152,9 +157,6 @@ export const StationMarker: FC<Props> = (props) => {
                     === GasStationDescriptionType.Raw,
                 },
               )}
-              dangerouslySetInnerHTML={{
-                __html: station.workDescription,
-              }}
             />
 
             <div className={styles.footer}>

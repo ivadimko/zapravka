@@ -1,4 +1,4 @@
-import { FuelStatus } from '@/fuels/fuels.typedefs';
+import { FuelStatusWithPrice } from '@/fuels/fuels.typedefs';
 
 export enum MottoFuelType {
   M100 = '1644b5d5-8d4c-11de-849b-00e081b1bf9b',
@@ -45,5 +45,5 @@ export interface MottoGasStationRaw {
 }
 
 export interface MottoGasStation extends MottoGasStationRaw {
-  status: Record<MottoFuelType, FuelStatus>;
+  status: Record<MottoFuelType, FuelStatusWithPrice>;
 }

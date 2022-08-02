@@ -1,4 +1,4 @@
-import { Field, ObjectType, registerEnumType } from '@nestjs/graphql';
+import { Field, Float, ObjectType, registerEnumType } from '@nestjs/graphql';
 
 export enum FuelType {
   Petrol92 = 'petrol_92',
@@ -36,6 +36,9 @@ export class FuelStatusesMap {
 
   @Field(() => Boolean, { nullable: true })
   [FuelStatus.AvailableFuelCards]?: boolean;
+
+  @Field(() => Float, { nullable: true })
+  price?: number;
 }
 
 @ObjectType()
@@ -54,4 +57,9 @@ export class StationFuelStatus {
 
   @Field()
   [FuelType.AdBlue]: FuelStatusesMap;
+}
+
+export interface FuelStatusWithPrice {
+  status: FuelStatus;
+  price: number;
 }

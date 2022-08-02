@@ -103,14 +103,16 @@ export class UPGEntity {
     this.station.FuelsAsArray.forEach((fuel) => {
       const { Title, Price } = fuel;
 
+      const price = Number(Price);
       const mappedFuel = UpgFuelMapping[Title];
-      const mappedStatus = this.resolveMappedStatus(Title, Number(Price));
+      const mappedStatus = this.resolveMappedStatus(Title, price);
 
       if (!result[mappedFuel]) {
         result[mappedFuel] = {};
       }
 
       result[mappedFuel][mappedStatus] = true;
+      result[mappedFuel].price = price;
     });
 
     return result;

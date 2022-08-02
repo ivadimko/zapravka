@@ -26,6 +26,7 @@ export type FuelStatusesMap = {
   only_critical_vehicles?: Maybe<Scalars['Boolean']>;
   available_cash?: Maybe<Scalars['Boolean']>;
   available_fuel_cards?: Maybe<Scalars['Boolean']>;
+  price?: Maybe<Scalars['Float']>;
 };
 
 export enum GasStationDescriptionType {
@@ -42,6 +43,13 @@ export type GasStationSchedule = {
 export type Query = {
   __typename?: 'Query';
   stations: Array<Station>;
+  station?: Maybe<Station>;
+};
+
+
+export type QueryStationArgs = {
+  provider: StationProvider;
+  id: Scalars['String'];
 };
 
 export type Station = {
@@ -88,7 +96,7 @@ export type StationReference = {
 
 export type FuelStatusFragment = (
   { __typename?: 'FuelStatusesMap' }
-  & Pick<FuelStatusesMap, 'available_cash' | 'available_fuel_cards' | 'only_critical_vehicles' | 'empty'>
+  & Pick<FuelStatusesMap, 'available_cash' | 'available_fuel_cards' | 'only_critical_vehicles' | 'empty' | 'price'>
 );
 
 export type CoordinatesFragment = (
@@ -108,7 +116,7 @@ export type StationReferenceFragment = (
 
 export type StationFragment = (
   { __typename?: 'Station' }
-  & Pick<Station, 'id' | 'provider' | 'name' | 'tel' | 'workDescription' | 'descriptionType' | 'scheduleString' | 'icon'>
+  & Pick<Station, 'id' | 'provider' | 'name' | 'tel' | 'descriptionType' | 'scheduleString' | 'icon'>
   & { coordinates: (
     { __typename?: 'Coordinates' }
     & CoordinatesFragment
@@ -147,6 +155,20 @@ export type StationsQuery = (
   )> }
 );
 
+export type StationQueryVariables = Exact<{
+  provider: StationProvider;
+  id: Scalars['String'];
+}>;
+
+
+export type StationQuery = (
+  { __typename?: 'Query' }
+  & { station?: Maybe<(
+    { __typename?: 'Station' }
+    & Pick<Station, 'id' | 'workDescription'>
+  )> }
+);
+
 export const CoordinatesFragmentDoc = /*#__PURE__*/ gql`
     fragment Coordinates on Coordinates {
   lat
@@ -159,6 +181,7 @@ export const FuelStatusFragmentDoc = /*#__PURE__*/ gql`
   available_fuel_cards
   only_critical_vehicles
   empty
+  price
 }
     `;
 export const GasStationScheduleFragmentDoc = /*#__PURE__*/ gql`
@@ -182,7 +205,6 @@ export const StationFragmentDoc = /*#__PURE__*/ gql`
   coordinates {
     ...Coordinates
   }
-  workDescription
   descriptionType
   status {
     diesel {
@@ -245,9 +267,47 @@ export function useStationsLazyQuery(baseOptions?: Apollo.LazyQueryHookOptions<S
 export type StationsQueryHookResult = ReturnType<typeof useStationsQuery>;
 export type StationsLazyQueryHookResult = ReturnType<typeof useStationsLazyQuery>;
 export type StationsQueryResult = Apollo.QueryResult<StationsQuery, StationsQueryVariables>;
+export const StationDocument = /*#__PURE__*/ gql`
+    query station($provider: StationProvider!, $id: String!) {
+  station(provider: $provider, id: $id) {
+    id
+    workDescription
+  }
+}
+    `;
+
+/**
+ * __useStationQuery__
+ *
+ * To run a query within a React component, call `useStationQuery` and pass it any options that fit your needs.
+ * When your component renders, `useStationQuery` returns an object from Apollo Client that contains loading, error, and data properties
+ * you can use to render your UI.
+ *
+ * @param baseOptions options that will be passed into the query, supported options are listed on: https://www.apollographql.com/docs/react/api/react-hooks/#options;
+ *
+ * @example
+ * const { data, loading, error } = useStationQuery({
+ *   variables: {
+ *      provider: // value for 'provider'
+ *      id: // value for 'id'
+ *   },
+ * });
+ */
+export function useStationQuery(baseOptions: Apollo.QueryHookOptions<StationQuery, StationQueryVariables>) {
+        const options = {...defaultOptions, ...baseOptions}
+        return Apollo.useQuery<StationQuery, StationQueryVariables>(StationDocument, options);
+      }
+export function useStationLazyQuery(baseOptions?: Apollo.LazyQueryHookOptions<StationQuery, StationQueryVariables>) {
+          const options = {...defaultOptions, ...baseOptions}
+          return Apollo.useLazyQuery<StationQuery, StationQueryVariables>(StationDocument, options);
+        }
+export type StationQueryHookResult = ReturnType<typeof useStationQuery>;
+export type StationLazyQueryHookResult = ReturnType<typeof useStationLazyQuery>;
+export type StationQueryResult = Apollo.QueryResult<StationQuery, StationQueryVariables>;
 export const namedOperations = {
   Query: {
-    stations: 'stations'
+    stations: 'stations',
+    station: 'station'
   },
   Fragment: {
     FuelStatus: 'FuelStatus',

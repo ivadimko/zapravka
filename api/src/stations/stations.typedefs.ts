@@ -37,14 +37,14 @@ registerEnumType(GasStationDescriptionType, {
 });
 
 export enum StationProvider {
-  Okko = 'OKKO',
-  Wog = 'WOG',
-  Socar = 'SOCAR',
+  Okko = 'Okko',
+  Wog = 'Wog',
+  Socar = 'Socar',
   UPG = 'UPG',
-  Avias = 'AVIAS',
+  Avias = 'Avias',
   BRSM = 'BRSM',
-  Motto = 'MOTTO',
-  Amic = 'AMIC',
+  Motto = 'Motto',
+  Amic = 'Amic',
 }
 
 registerEnumType(StationProvider, {

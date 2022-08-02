@@ -4,7 +4,11 @@ import {
   GasStationDescriptionType,
   StationProvider,
 } from '@/stations/stations.typedefs';
-import { FuelStatus, FuelType } from '@/fuels/fuels.typedefs';
+import {
+  FuelStatus,
+  FuelStatusWithPrice,
+  FuelType,
+} from '@/fuels/fuels.typedefs';
 import {
   SocarFuelType,
   SocarGasStation,
@@ -25,11 +29,14 @@ export class SocarEntity {
   }
 
   getStationParams(station: SocarGasStationRaw) {
-    const status = {} as Record<SocarFuelType, FuelStatus>;
+    const status = {} as Record<SocarFuelType, FuelStatusWithPrice>;
 
     station.services.forEach((serviceItem) => {
       if (serviceItem.type === 'fuel' && serviceItem.price > 0) {
-        status[serviceItem.name] = FuelStatus.Available;
+        status[serviceItem.name] = {
+          status: FuelStatus.Available,
+          price: serviceItem.price,
+        };
       }
     });
 
@@ -52,7 +59,7 @@ export class SocarEntity {
     };
 
     Object.entries(this.station.status).forEach((entry) => {
-      const [fuel, status] = entry;
+      const [fuel, { status, price }] = entry;
 
       const mappedFuel = SocarFuelMapping[fuel as SocarFuelType];
       const mappedStatus = status;
@@ -62,6 +69,7 @@ export class SocarEntity {
       }
 
       result[mappedFuel][mappedStatus] = true;
+      result[mappedFuel].price = price;
     });
 
     return result;
