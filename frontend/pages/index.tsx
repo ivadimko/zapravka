@@ -83,7 +83,7 @@ export const getStaticProps: GetStaticProps = async () => {
       delete station.schedule?.__typename;
     }
 
-    station.workDescription = station.workDescription.replace(/  +/g, ' ');
+    // station.workDescription = station.workDescription.replace(/  +/g, ' ');
     Object.values((station.status)).forEach((fuel) => {
       Object.entries(fuel).forEach(([name, status]) => {
         if (!status || name === '__typename') {
@@ -100,20 +100,6 @@ export const getStaticProps: GetStaticProps = async () => {
 
     return statuses.some((status) => Object.values(status).length > 0);
   });
-
-  // const finalMap = final.reduce<Record<string, StationFragment>>((acc, cur) => {
-  //   acc[cur.id] = cur;
-  //
-  //   return acc;
-  // }, {});
-  //
-  // const diffs = [];
-  //
-  // result.forEach((station) => {
-  //   if (!finalMap[station.id]) {
-  //     diffs.push(station);
-  //   }
-  // });
 
   return {
     props: {

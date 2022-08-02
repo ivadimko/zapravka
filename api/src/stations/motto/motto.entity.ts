@@ -5,7 +5,11 @@ import {
   GasStationSchedule,
   StationProvider,
 } from '@/stations/stations.typedefs';
-import { FuelStatus, FuelType } from '@/fuels/fuels.typedefs';
+import {
+  FuelStatus,
+  FuelStatusWithPrice,
+  FuelType,
+} from '@/fuels/fuels.typedefs';
 import {
   MottoFuelStatus,
   MottoFuelType,
@@ -27,19 +31,29 @@ export class MottoEntity {
   }
 
   getStationParams(station: MottoGasStationRaw) {
-    const status = {} as Record<MottoFuelType, FuelStatus>;
+    const status = {} as Record<MottoFuelType, FuelStatusWithPrice>;
 
     station.Goods.forEach((fuelItem) => {
       const [fuelName, fuelStatus] = Object.entries(fuelItem)[0];
 
+      const priceItem = station.Prices.find((el) => {
+        return el.GUID === fuelName;
+      });
+
       switch (fuelStatus) {
         case MottoFuelStatus.Available: {
-          status[fuelName] = FuelStatus.Available;
+          status[fuelName] = {
+            status: FuelStatus.Available,
+            price: priceItem?.price,
+          };
           break;
         }
 
         case MottoFuelStatus.CriticalVehicles: {
-          status[fuelName] = FuelStatus.OnlyCriticalVehicles;
+          status[fuelName] = {
+            status: FuelStatus.OnlyCriticalVehicles,
+            price: priceItem?.price,
+          };
           break;
         }
 
@@ -69,7 +83,7 @@ export class MottoEntity {
     };
 
     Object.entries(this.station.status).forEach((entry) => {
-      const [fuel, status] = entry;
+      const [fuel, { status, price }] = entry;
 
       const mappedFuel = MottoFuelMapping[fuel];
       const mappedStatus = status;
@@ -79,6 +93,7 @@ export class MottoEntity {
       }
 
       result[mappedFuel][mappedStatus] = true;
+      result[mappedFuel].price = price;
     });
 
     return result;

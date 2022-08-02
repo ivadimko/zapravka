@@ -4,7 +4,11 @@ import {
   GasStationDescriptionType,
   StationProvider,
 } from '@/stations/stations.typedefs';
-import { FuelStatus, FuelType } from '@/fuels/fuels.typedefs';
+import {
+  FuelStatus,
+  FuelStatusWithPrice,
+  FuelType,
+} from '@/fuels/fuels.typedefs';
 import {
   AviasFuelInfo,
   AviasFuelType,
@@ -35,12 +39,15 @@ export class AviasEntity {
   }
 
   getStationParams(station: AviasGasStationRaw) {
-    const fuelStatus = {} as Record<AviasFuelType, FuelStatus>;
+    const fuelStatus = {} as Record<AviasFuelType, FuelStatusWithPrice>;
 
     try {
       Object.entries(station.units).forEach(([fuelId, options]) => {
         if (options.status === 'ok' && options.rate) {
-          fuelStatus[fuelId] = FuelStatus.Available;
+          fuelStatus[fuelId] = {
+            status: FuelStatus.Available,
+            price: options.rate,
+          };
         }
       });
     } catch {
@@ -66,7 +73,7 @@ export class AviasEntity {
     };
 
     Object.entries(this.station.fuelStatus).forEach((entry) => {
-      const [fuel, status] = entry;
+      const [fuel, { status, price }] = entry;
 
       const mappedFuel = AviasFuelMapping[fuel];
       const mappedStatus = status;
@@ -76,6 +83,7 @@ export class AviasEntity {
       }
 
       result[mappedFuel][mappedStatus] = true;
+      result[mappedFuel].price = price;
     });
 
     return result;

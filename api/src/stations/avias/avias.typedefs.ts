@@ -1,4 +1,4 @@
-import { FuelStatus } from '@/fuels/fuels.typedefs';
+import { FuelStatus, FuelStatusWithPrice } from '@/fuels/fuels.typedefs';
 import { PartialRecord } from '@/utils/PartialRecord';
 
 export interface AviasFuelInfo {
@@ -48,5 +48,5 @@ export interface AviasGasStationRaw {
 }
 
 export interface AviasGasStation extends AviasGasStationRaw {
-  fuelStatus: Record<AviasFuelType, FuelStatus>;
+  fuelStatus: Record<AviasFuelType, FuelStatusWithPrice>;
 }

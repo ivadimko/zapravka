@@ -1,4 +1,4 @@
-import { FuelStatus } from '@/fuels/fuels.typedefs';
+import { FuelStatus, FuelStatusWithPrice } from '@/fuels/fuels.typedefs';
 
 export enum BRSMFuelType {
   A92Euro = '92 EURO',
@@ -33,5 +33,5 @@ export interface BRSMGasStationRaw {
 }
 
 export interface BRSMGasStation extends BRSMGasStationRaw {
-  status: Record<BRSMFuelType, FuelStatus>;
+  status: Record<BRSMFuelType, FuelStatusWithPrice>;
 }

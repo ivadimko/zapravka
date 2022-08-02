@@ -1,4 +1,4 @@
-import { FuelStatus } from '@/fuels/fuels.typedefs';
+import { FuelStatusWithPrice } from '@/fuels/fuels.typedefs';
 
 export enum SocarFuelType {
   A92 = 'A 92',
@@ -60,5 +60,5 @@ export interface SocarGasStationRaw {
 }
 
 export interface SocarGasStation extends SocarGasStationRaw {
-  status: Record<SocarFuelType, FuelStatus>;
+  status: Record<SocarFuelType, FuelStatusWithPrice>;
 }

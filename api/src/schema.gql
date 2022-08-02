@@ -22,6 +22,7 @@ type FuelStatusesMap {
   only_critical_vehicles: Boolean
   available_cash: Boolean
   available_fuel_cards: Boolean
+  price: Float
 }
 
 type StationFuelStatus {
@@ -65,4 +66,5 @@ enum GasStationDescriptionType {
 
 type Query {
   stations: [Station!]!
+  station(provider: StationProvider!, id: String!): Station
 }

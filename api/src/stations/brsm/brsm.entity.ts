@@ -4,7 +4,11 @@ import {
   GasStationDescriptionType,
   StationProvider,
 } from '@/stations/stations.typedefs';
-import { FuelStatus, FuelType } from '@/fuels/fuels.typedefs';
+import {
+  FuelStatus,
+  FuelStatusWithPrice,
+  FuelType,
+} from '@/fuels/fuels.typedefs';
 import {
   BRSMFuelType,
   BRSMGasStation,
@@ -25,10 +29,13 @@ export class BrsmEntity {
   }
 
   getStationParams(station: BRSMGasStationRaw) {
-    const status = {} as Record<BRSMFuelType, FuelStatus>;
+    const status = {} as Record<BRSMFuelType, FuelStatusWithPrice>;
 
     station.fuelsItems.forEach((fuelItem) => {
-      status[fuelItem.latName] = FuelStatus.Available;
+      status[fuelItem.latName] = {
+        status: FuelStatus.Available,
+        price: fuelItem.price,
+      };
     });
 
     return {
@@ -50,7 +57,7 @@ export class BrsmEntity {
     };
 
     Object.entries(this.station.status).forEach((entry) => {
-      const [fuel, status] = entry;
+      const [fuel, { status, price }] = entry;
 
       const mappedFuel = BRSMFuelMapping[fuel];
       const mappedStatus = status;
@@ -60,6 +67,7 @@ export class BrsmEntity {
       }
 
       result[mappedFuel][mappedStatus] = true;
+      result[mappedFuel].price = price;
     });
 
     return result;
