@@ -2,7 +2,6 @@ import { Station } from '@/stations/models/station.model';
 
 import {
   GasStationDescriptionType,
-  GasStationSchedule,
   StationProvider,
 } from '@/stations/stations.typedefs';
 import { FuelStatus, FuelType } from '@/fuels/fuels.typedefs';
@@ -18,36 +17,6 @@ export class UPGEntity {
     [UPGFuelType.A95Prepaid]: true,
     [UPGFuelType.DieselPrepaid]: true,
   };
-
-  getScheduleString(): string {
-    if (this.station.Active) {
-      return this.station.FullName.slice(-13);
-    }
-
-    return 'closed';
-  }
-
-  mapSchedule(): GasStationSchedule | null {
-    const schedule = this.getScheduleString();
-
-    if (!schedule) {
-      return null;
-    }
-
-    if (schedule === 'closed') {
-      return {
-        opensAt: '00:00',
-        closesAt: '00:00',
-      };
-    }
-
-    const [start, end] = schedule.split(' - ');
-
-    return {
-      opensAt: (start || '').trim(),
-      closesAt: (end || '').trim(),
-    };
-  }
 
   mapWorkDescription() {
     if (!this.station.Active) {
@@ -131,8 +100,8 @@ export class UPGEntity {
       workDescription: this.mapWorkDescription(),
       descriptionType: GasStationDescriptionType.HTML,
       status: this.mapFuelStatus(),
-      schedule: this.mapSchedule(), // "АЗС №98 00:00 - 24:00"
-      scheduleString: `Графік роботи: ${this.getScheduleString()}`,
+      schedule: null,
+      scheduleString: '',
       icon: '/marker/upg.svg',
       reference: {
         title: 'upg.ua',
