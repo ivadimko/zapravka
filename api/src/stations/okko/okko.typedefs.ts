@@ -1,12 +1,12 @@
 import { FuelStatus } from '@/fuels/fuels.typedefs';
 
 export enum OkkoFuelType {
-  A92 = 'А-92',
-  A95 = 'А-95',
-  Pulls95 = 'PULLS 95',
-  Diesel = 'ДП',
-  PullsDiesel = 'PULLS Diesel',
-  Gas = 'ГАЗ',
+  A92 = 'a92_evro_tip_oplati',
+  A95 = 'a95_evro_tip_oplati',
+  Pulls95 = 'pulls95_tip_oplati',
+  Diesel = 'dp_evro_tip_oplati',
+  PullsDiesel = 'pullsdiesel_tip_oplati',
+  Gas = 'gas_tip_oplati',
 }
 
 interface OkkoEntity {
@@ -17,8 +17,14 @@ interface OkkoEntity {
   widgets: string[];
 }
 
-export interface OkkoGasStationRaw {
+export interface OkkoGasStation {
   attributes: {
+    [OkkoFuelType.A92]: boolean | null;
+    [OkkoFuelType.A95]: boolean | null;
+    [OkkoFuelType.Pulls95]: boolean | null;
+    [OkkoFuelType.Diesel]: boolean | null;
+    [OkkoFuelType.PullsDiesel]: boolean | null;
+    [OkkoFuelType.Gas]: boolean | null;
     Cod_AZK: number;
     Oblast: string[];
     Naselenyy_punkt: string;
@@ -40,9 +46,4 @@ export interface OkkoGasStationRaw {
     type_azk: number;
   };
   widgets: string[];
-}
-
-export interface OkkoGasStation extends OkkoGasStationRaw {
-  schedule: string;
-  status: Record<OkkoFuelType, Array<FuelStatus>>;
 }

@@ -1,5 +1,5 @@
 import { chromium } from 'playwright-chromium';
-import { OkkoGasStationRaw } from '@/stations/okko/okko.typedefs';
+import { OkkoGasStation } from '@/stations/okko/okko.typedefs';
 import * as path from 'path';
 import * as fs from 'fs/promises';
 import { Logger } from '@nestjs/common';
@@ -9,7 +9,7 @@ interface AllStationsApiResponse {
     layout: Array<{
       data: {
         list: {
-          collection: Array<OkkoGasStationRaw>;
+          collection: Array<OkkoGasStation>;
         };
       };
     }>;

@@ -3,7 +3,7 @@ import * as fs from 'fs/promises';
 import { Logger } from '@nestjs/common';
 import fetch from 'node-fetch';
 import { MottoGasStationRaw } from '@/stations/motto/motto.typedefs';
-import { OkkoGasStationRaw } from '@/stations/okko/okko.typedefs';
+import { OkkoGasStation } from '@/stations/okko/okko.typedefs';
 
 interface AllStationsApiResponse {
   FuelStations: MottoGasStationRaw[];
