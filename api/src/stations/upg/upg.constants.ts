@@ -9,6 +9,8 @@ export const UpgFuelMapping = {
   [UPGFuelType.A95]: FuelType.Petrol,
   [UPGFuelType.A100]: FuelType.Petrol,
   [UPGFuelType.Diesel]: FuelType.Diesel,
+  [UPGFuelType.DieselUpg]: FuelType.Diesel,
   [UPGFuelType.DieselPrepaid]: FuelType.Diesel,
+  [UPGFuelType.DieselArctic]: FuelType.Diesel,
   [UPGFuelType.Gas]: FuelType.Gas,
 };

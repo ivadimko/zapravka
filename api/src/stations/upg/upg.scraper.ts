@@ -34,7 +34,7 @@ export class UPGScraper {
 
       const page = await context.newPage();
 
-      await page.goto('https://upg.ua/merezha_azs?gclid=123xyz');
+      await page.goto('https://upg.ua/merezha_azk?gclid=123xyz');
 
       const content: AllStationsApiResponse = await page.evaluate('objmap');
       await browser.close();
