@@ -2,6 +2,7 @@ import '@/styles/globals.css';
 import type { AppProps } from 'next/app';
 import { ApolloProvider } from '@apollo/client';
 import { useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { Seo } from '@/components/Seo';
 import { useApollo } from '@/controllers/graphql/graphql.client';
 import {
@@ -19,6 +20,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <ApolloProvider client={apolloClient}>
       <Seo />
       <Component {...pageProps} />
+      <Analytics />
     </ApolloProvider>
   );
 }
