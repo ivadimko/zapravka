@@ -1,9 +1,9 @@
 export enum WogFuelType {
-  A92 = 'А92',
-  A95 = 'А95',
-  Mustang95 = 'М95',
+  A92 = 'А-92',
+  A95 = 'А-95',
+  Mustang95 = 'А-95 М',
   A98 = 'А-98',
-  Mustang100 = 'М100',
+  Mustang100 = 'М-100',
   Diesel = 'ДП',
   MustangDiesel = 'МДП',
   MustangDieselPlus = 'МДП+',

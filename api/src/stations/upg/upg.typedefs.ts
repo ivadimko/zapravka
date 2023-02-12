@@ -5,8 +5,10 @@ export enum UPGFuelType {
   UPG95 = 'upg 95',
   A92Prepaid = '92 (передоплата)',
   A92 = '92',
-  Diesel = 'upg DP',
+  Diesel = 'ДП',
+  DieselUpg = 'upg DP',
   DieselPrepaid = 'ДП (передоплата)',
+  DieselArctic = 'Arctic diesel',
   Gas = 'Газ',
 }
 
